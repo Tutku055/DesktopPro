@@ -1,0 +1,32 @@
+<Solution>
+  <Folder Name="/Backend/" />
+  <Folder Name="/Backend/src/" />
+  <Folder Name="/Backend/src/Core/">
+    <Project Path="src/Core/DesktopPro.Application/DesktopPro.Application.csproj" />
+    <Project Path="src/Core/DesktopPro.Domain/DesktopPro.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Backend/src/Infrastructure/">
+    <Project Path="src/Infrastructure/DesktopPro.Infrastructure/DesktopPro.Infrastructure.csproj" />
+    <Project Path="src/Infrastructure/DesktopPro.Persistence/DesktopPro.Persistence.csproj" />
+  </Folder>
+  <Folder Name="/Backend/src/Presentation/">
+    <Project Path="src/Presentation/DesktopPro.WebApi/DesktopPro.WebApi.csproj" />
+  </Folder>
+  <Folder Name="/Frontend/">
+    <Folder Name="/Frontend/public/" />
+    <Folder Name="/Frontend/src/">
+      <Folder Name="/Frontend/src/app/" />
+      <Folder Name="/Frontend/src/assets/" />
+      <Folder Name="/Frontend/src/components/" />
+      <Folder Name="/Frontend/src/features/" />
+      <Folder Name="/Frontend/src/hooks/" />
+      <Folder Name="/Frontend/src/layouts/" />
+      <Folder Name="/Frontend/src/lib/" />
+      <Folder Name="/Frontend/src/routes/" />
+      <Folder Name="/Frontend/src/services/" />
+      <Folder Name="/Frontend/src/store/" />
+      <Folder Name="/Frontend/src/types/" />
+      <Folder Name="/Frontend/src/utils/" />
+    </Folder>
+  </Folder>
+</Solution>

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\DesktopPro.Application\DesktopPro.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\DesktopPro.Infrastructure\DesktopPro.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\DesktopPro.Persistence\DesktopPro.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ActionFilters\" />
+    <Folder Include="Configurations\" />
+    <Folder Include="Contracts\Requests\" />
+    <Folder Include="Contracts\Responses\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Endpoints\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Middlewares\" />
+  </ItemGroup>
+
+</Project>

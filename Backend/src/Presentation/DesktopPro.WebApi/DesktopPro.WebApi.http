@@ -1,0 +1,6 @@
+@DesktopPro.WebApi_HostAddress = http://localhost:5128
+
+GET {{DesktopPro.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

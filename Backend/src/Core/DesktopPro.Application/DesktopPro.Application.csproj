@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DesktopPro.Domain\DesktopPro.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstractions\Data\" />
+    <Folder Include="Abstractions\Hubs\" />
+    <Folder Include="Abstractions\Identity\" />
+    <Folder Include="Abstractions\Messaging\" />
+    <Folder Include="Abstractions\Services\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Common\Interfaces\" />
+    <Folder Include="Common\Models\" />
+    <Folder Include="Features\" />
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+
+</Project>
