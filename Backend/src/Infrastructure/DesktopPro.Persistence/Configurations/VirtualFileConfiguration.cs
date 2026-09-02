@@ -32,6 +32,9 @@ namespace DesktopPro.Persistence.Configurations
 
             builder.Property(x => x.LlmSummary)
                    .HasMaxLength(2000);
+            
+            builder.Property(x => x.IconPath)
+                   .HasMaxLength(1000);
         }
     }
 }

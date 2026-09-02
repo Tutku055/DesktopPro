@@ -24,6 +24,6 @@ public class FileWorkspaceLinkConfiguration : IEntityTypeConfiguration<FileWorks
         builder.HasOne(x => x.WorkspaceGroup)
                .WithMany(x => x.FileLinks)
                .HasForeignKey(x => x.WorkspaceGroupId)
-               .OnDelete(DeleteBehavior.SetNull);
+               .OnDelete(DeleteBehavior.NoAction);
     }
 }

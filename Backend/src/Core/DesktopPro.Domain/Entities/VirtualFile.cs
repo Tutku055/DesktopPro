@@ -12,6 +12,7 @@ namespace DesktopPro.Domain.Entities
         public string VaultPath { get; private set; }
         public string FileHash { get; private set; } = string.Empty;
         public long FileSize { get; private set; }
+        public string? IconPath { get; private set; }
         public FileStatus Status { get; private set; } = FileStatus.Inbox;
         public Guid AppUserId { get; private set; }
 
@@ -24,7 +25,7 @@ namespace DesktopPro.Domain.Entities
 
         private VirtualFile() { }
 
-        public VirtualFile(string fileName, string originalName, string vaultPath, string fileHash, long fileSize, Guid appUserId)
+        public VirtualFile(string fileName, string originalName, string vaultPath, string fileHash, Guid appUserId, long fileSize, string? iconPath = null)
         {
             FileName = fileName;
             OriginalName = originalName;
@@ -32,6 +33,7 @@ namespace DesktopPro.Domain.Entities
             FileHash = fileHash;
             FileSize = fileSize;
             AppUserId = appUserId;
+            IconPath = iconPath;
         }
 
         public void Rename(string newFileName)
@@ -75,6 +77,12 @@ namespace DesktopPro.Domain.Entities
         public void Relocate(string newVaultPath)
         {
             VaultPath = newVaultPath;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateIconPath(string? newIconPath)
+        {
+            IconPath = newIconPath;
             UpdatedAt = DateTime.UtcNow;
         }
 

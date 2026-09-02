@@ -18,13 +18,13 @@ namespace DesktopPro.Domain.Entities
 
         private Workspace() { }
 
-        public Workspace(Guid appUserId, string name, bool isTemporal = false, string? iconPath = null, DateTime? expiresAtUtc = null)
+        public Workspace(Guid appUserId, string name, bool isTemporal = false, DateTime? expiresAtUtc = null, string? iconPath = null)
         {
             AppUserId = appUserId;
             Name = name;
             IsTemporal = isTemporal;
-            IconPath = iconPath;
             ExpiresAtUtc = expiresAtUtc;
+            IconPath = iconPath;
         }
 
         public void Rename(string newName)
