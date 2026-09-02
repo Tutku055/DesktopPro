@@ -22,5 +22,18 @@ namespace DesktopPro.Domain.Entities
         {
             LastLoginDateUtc = DateTime.UtcNow;
         }
+
+        public void UpdatePasswordHash(string newPasswordHash)
+        {
+            PasswordHash = newPasswordHash;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateUsername(string newUsername)
+        {
+            Username = newUsername;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
     }
 }

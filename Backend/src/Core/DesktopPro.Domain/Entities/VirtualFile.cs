@@ -20,7 +20,7 @@ namespace DesktopPro.Domain.Entities
 
 
        //Navigation properties
-       public ICollection<FileWorkspaceLink> FileWorkspaceLinks { get; private set; } = new List<FileWorkspaceLink>();
+       public ICollection<FileWorkspaceLink> WorkspaceLinks { get; private set; } = new List<FileWorkspaceLink>();
 
         private VirtualFile() { }
 
@@ -61,6 +61,20 @@ namespace DesktopPro.Domain.Entities
         public void UpdateUserNote(string note)
         {
             UserNote = note;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateContent(string newFileName, string newFileHash, long newFileSize)
+        {
+            FileName = newFileName;
+            FileHash = newFileHash;
+            FileSize = newFileSize;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void Relocate(string newVaultPath)
+        {
+            VaultPath = newVaultPath;
             UpdatedAt = DateTime.UtcNow;
         }
 

@@ -11,7 +11,7 @@ namespace DesktopPro.Domain.Entities
 
         //Navigation properties
         public Workspace Workspace { get; private set; }
-        public ICollection<FileWorkspaceLink> FileWorkspaceLinks { get; private set; } = new List<FileWorkspaceLink>();
+        public ICollection<FileWorkspaceLink> FileLinks { get; private set; } = new List<FileWorkspaceLink>();
 
 
         private WorkspaceGroup() { }
@@ -20,6 +20,12 @@ namespace DesktopPro.Domain.Entities
         {
             WorkspaceId = workspaceId;
             Name = name;
+        }
+
+        public void Rename(string newName)
+        {
+            Name = newName;
+            UpdatedAt = DateTime.UtcNow;
         }
     }
 }
