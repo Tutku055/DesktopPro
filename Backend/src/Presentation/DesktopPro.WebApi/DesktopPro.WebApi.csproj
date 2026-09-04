@@ -26,10 +26,8 @@
     <Folder Include="Configurations\" />
     <Folder Include="Contracts\Requests\" />
     <Folder Include="Contracts\Responses\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Endpoints\" />
     <Folder Include="Extensions\" />
-    <Folder Include="Middlewares\" />
   </ItemGroup>
 
 </Project>

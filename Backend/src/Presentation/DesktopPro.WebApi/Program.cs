@@ -1,5 +1,7 @@
+using DesktopPro.Application;
 using DesktopPro.Persistence;
 using DesktopPro.Persistence.Contexts;
+using DesktopPro.WebApi.Middlewares;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
@@ -9,6 +11,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+//Layer Records and Services
+builder.Services.AddApplication();
+
+//Cental Exception Handling and RFC7807 Problem Details Records
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
+
 
 //API Services
 builder.Services.AddControllers();

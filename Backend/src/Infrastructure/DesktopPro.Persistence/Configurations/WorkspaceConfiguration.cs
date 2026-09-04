@@ -19,9 +19,6 @@ namespace DesktopPro.Persistence.Configurations
                 .IsRequired()
                 .HasMaxLength(100);
 
-            builder.Property(x => x.IconPath)
-                .HasMaxLength(50);
-
             builder.Property(x=> x.IconPath)
                 .HasMaxLength(1000);
         }
