@@ -7,18 +7,32 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\DesktopPro.Application\DesktopPro.Application.csproj" />
-    <ProjectReference Include="..\..\Core\DesktopPro.Domain\DesktopPro.Domain.csproj" />
+    <Compile Remove="BackgroundJobs\**" />
+    <Compile Remove="Configurations\**" />
+    <Compile Remove="Identity\**" />
+    <Compile Remove="Logging\**" />
+    <Compile Remove="Notifications\**" />
+    <Compile Remove="Services\**" />
+    <Compile Remove="Storage\**" />
+    <EmbeddedResource Remove="BackgroundJobs\**" />
+    <EmbeddedResource Remove="Configurations\**" />
+    <EmbeddedResource Remove="Identity\**" />
+    <EmbeddedResource Remove="Logging\**" />
+    <EmbeddedResource Remove="Notifications\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <EmbeddedResource Remove="Storage\**" />
+    <None Remove="BackgroundJobs\**" />
+    <None Remove="Configurations\**" />
+    <None Remove="Identity\**" />
+    <None Remove="Logging\**" />
+    <None Remove="Notifications\**" />
+    <None Remove="Services\**" />
+    <None Remove="Storage\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BackgroundJobs\" />
-    <Folder Include="Configurations\" />
-    <Folder Include="Identity\" />
-    <Folder Include="Logging\" />
-    <Folder Include="Notifications\" />
-    <Folder Include="Services\" />
-    <Folder Include="Storage\" />
+    <ProjectReference Include="..\..\Core\DesktopPro.Application\DesktopPro.Application.csproj" />
+    <ProjectReference Include="..\..\Core\DesktopPro.Domain\DesktopPro.Domain.csproj" />
   </ItemGroup>
 
 </Project>

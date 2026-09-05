@@ -6,6 +6,21 @@ using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//CORS Configuration
+const string corsPolicyName = "DesktopProFrontend";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(corsPolicyName, policy =>
+    {
+        policy.WithOrigins("http://localhost:5173", "http://localhost:3000") // Vite and React ports
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials(); // Necessary for cookies and authentication headers
+    });
+});
+
+
 //Layer Records and Services
 builder.Services.AddApplication();
 builder.Services.AddPersistence(builder.Configuration);
@@ -37,6 +52,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(corsPolicyName);
+
 app.UseAuthorization();
 
 app.MapControllers();

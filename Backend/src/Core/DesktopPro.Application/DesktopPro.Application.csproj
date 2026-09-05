@@ -7,18 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Abstractions\**" />
+    <Compile Remove="Mappings\**" />
+    <EmbeddedResource Remove="Abstractions\**" />
+    <EmbeddedResource Remove="Mappings\**" />
+    <None Remove="Abstractions\**" />
+    <None Remove="Mappings\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DesktopPro.Domain\DesktopPro.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Abstractions\Data\" />
-    <Folder Include="Abstractions\Hubs\" />
-    <Folder Include="Abstractions\Identity\" />
-    <Folder Include="Abstractions\Messaging\" />
-    <Folder Include="Abstractions\Services\" />
     <Folder Include="Common\Exceptions\" />
     <Folder Include="Common\Models\" />
-    <Folder Include="Mappings\" />
   </ItemGroup>
 
   <ItemGroup>

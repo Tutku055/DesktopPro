@@ -7,16 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Design\**" />
+    <Compile Remove="Interceptors\**" />
+    <Compile Remove="Repositories\**" />
+    <Compile Remove="Seeders\**" />
+    <EmbeddedResource Remove="Design\**" />
+    <EmbeddedResource Remove="Interceptors\**" />
+    <EmbeddedResource Remove="Repositories\**" />
+    <EmbeddedResource Remove="Seeders\**" />
+    <None Remove="Design\**" />
+    <None Remove="Interceptors\**" />
+    <None Remove="Repositories\**" />
+    <None Remove="Seeders\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\Core\DesktopPro.Application\DesktopPro.Application.csproj" />
     <ProjectReference Include="..\..\Core\DesktopPro.Domain\DesktopPro.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Design\" />
-    <Folder Include="Interceptors\" />
     <Folder Include="Migrations\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Seeders\" />
   </ItemGroup>
 
   <ItemGroup>
