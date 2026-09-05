@@ -2,18 +2,13 @@ using DesktopPro.Application;
 using DesktopPro.Persistence;
 using DesktopPro.Persistence.Contexts;
 using DesktopPro.WebApi.Middlewares;
-using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
-
 //Layer Records and Services
 builder.Services.AddApplication();
+builder.Services.AddPersistence(builder.Configuration);
 
 //Cental Exception Handling and RFC7807 Problem Details Records
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
@@ -28,6 +23,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+
+app.UseExceptionHandler();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
