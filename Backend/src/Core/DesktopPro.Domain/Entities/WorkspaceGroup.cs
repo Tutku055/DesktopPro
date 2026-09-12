@@ -1,31 +1,63 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace DesktopPro.Domain.Entities
+namespace DesktopPro.Domain.Entities;
+
+/// <summary>
+/// Acts as a "Virtual Folder" inside a Workspace to support folder drag-and-drop and nested directories.
+/// </summary>
+public class WorkspaceGroup : BaseEntity
 {
-    public class WorkspaceGroup: BaseEntitiy
+    public Guid WorkspaceId { get; private set; }
+
+    /// <summary>
+    /// Virtual folder name. Max length configured in persistence: 100.
+    /// </summary>
+    public string Name { get; private set; } = string.Empty;
+
+    /// <summary>
+    /// Parent group ID to support nested virtual folders when a directory hierarchy is dragged and dropped.
+    /// </summary>
+    public Guid? ParentGroupId { get; private set; }
+
+    // Navigation properties
+    public Workspace Workspace { get; private set; } = null!;
+    public WorkspaceGroup? ParentGroup { get; private set; }
+    public ICollection<WorkspaceGroup> SubGroups { get; private set; } = new List<WorkspaceGroup>();
+    public ICollection<FileWorkspaceLink> FileLinks { get; private set; } = new List<FileWorkspaceLink>();
+
+    protected WorkspaceGroup()
     {
-        public Guid WorkspaceId { get; private set; }
-        public string Name { get; private set; }
+        SubGroups = new List<WorkspaceGroup>();
+        FileLinks = new List<FileWorkspaceLink>();
+    }
 
-        //Navigation properties
-        public Workspace Workspace { get; private set; }
-        public ICollection<FileWorkspaceLink> FileLinks { get; private set; } = new List<FileWorkspaceLink>();
+    public WorkspaceGroup(Guid workspaceId, string name, Guid? parentGroupId = null)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(name);
 
+        WorkspaceId = workspaceId;
+        Name = name;
+        ParentGroupId = parentGroupId;
+        SubGroups = new List<WorkspaceGroup>();
+        FileLinks = new List<FileWorkspaceLink>();
+    }
 
-        private WorkspaceGroup() { }
+    public void Rename(string newName)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(newName);
+        Name = newName;
+        UpdatedAt = DateTime.UtcNow;
+    }
 
-        public WorkspaceGroup(Guid workspaceId, string name)
+    public void MoveToParentGroup(Guid? newParentId)
+    {
+        if (newParentId.HasValue && newParentId.Value == Id)
         {
-            WorkspaceId = workspaceId;
-            Name = name;
+            throw new InvalidOperationException("A group cannot be its own parent group.");
         }
 
-        public void Rename(string newName)
-        {
-            Name = newName;
-            UpdatedAt = DateTime.UtcNow;
-        }
+        ParentGroupId = newParentId;
+        UpdatedAt = DateTime.UtcNow;
     }
 }

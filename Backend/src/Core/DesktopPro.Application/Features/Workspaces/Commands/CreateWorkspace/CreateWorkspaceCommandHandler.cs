@@ -1,4 +1,4 @@
-﻿using DesktopPro.Application.Common.Interfaces;
+using DesktopPro.Application.Common.Interfaces;
 using DesktopPro.Domain.Entities;
 using MediatR;
 
@@ -20,7 +20,7 @@ namespace DesktopPro.Application.Features.Workspaces.Commands.CreateWorkspace
                 request.CreateWorkspaceDto.Name,
                 request.CreateWorkspaceDto.IsTemporal,
                 request.CreateWorkspaceDto.ExpiresAtUtc,
-                request.CreateWorkspaceDto.IconPath
+                request.CreateWorkspaceDto.IconName
             );
             _context.Workspaces.Add(workspace);
             await _context.SaveChangesAsync(cancellationToken);

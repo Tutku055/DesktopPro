@@ -1,8 +1,8 @@
-﻿namespace DesktopPro.Application.Features.Workspaces.DTOs;
+namespace DesktopPro.Application.Features.Workspaces.DTOs;
 
 public sealed record CreateWorkspaceDto(
     string Name,
     bool IsTemporal = false,
     DateTime? ExpiresAtUtc = null,
-    string? IconPath = null
+    string? IconName = null
 );

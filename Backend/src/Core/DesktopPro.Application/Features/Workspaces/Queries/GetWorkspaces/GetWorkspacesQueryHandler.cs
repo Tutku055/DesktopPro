@@ -1,4 +1,4 @@
-﻿using DesktopPro.Application.Features.Workspaces.DTOs;
+using DesktopPro.Application.Features.Workspaces.DTOs;
 using DesktopPro.Application.Common.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -25,7 +25,7 @@ namespace DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces
                 .Select(w=> new WorkspaceDto(
                     w.Id,
                     w.Name,
-                    w.IconPath,
+                    w.IconName,
                     w.IsTemporal,
                     w.ExpiresAtUtc,
                     w.CreatedAt

@@ -2,9 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Browser / System theme based favicon links -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/DesktopPro_Icon_White.png"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/DesktopPro_Icon_Black.png"
+      media="(prefers-color-scheme: light)"
+    />
+    <link id="app-favicon" rel="icon" type="image/png" href="/DesktopPro_Icon_Black.png" />
+    <link rel="apple-touch-icon" href="/DesktopPro_Icon_Black.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <title>Desktop Pro</title>
+    <script>
+      (function () {
+        try {
+          // Initialize in-app theme
+          const darkThemes = [
+            "charcoal",
+            "monaco",
+            "emerald",
+            "cashmere",
+            "espresso",
+          ];
+          const theme = localStorage.getItem("app-theme") || "parchment";
+          document.documentElement.setAttribute("data-theme", theme);
+          if (darkThemes.includes(theme)) {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+
+          // Browser / OS System theme detection for browser tab favicon
+          const systemDarkMatcher = window.matchMedia("(prefers-color-scheme: dark)");
+
+          function updateFaviconBySystem(isDark) {
+            const icon = document.getElementById("app-favicon");
+            if (icon) {
+              const targetHref = isDark
+                ? "/DesktopPro_Icon_White.png"
+                : "/DesktopPro_Icon_Black.png";
+              if (icon.getAttribute("href") !== targetHref) {
+                icon.href = targetHref;
+              }
+            }
+          }
+
+          // Set initial icon based on system theme
+          updateFaviconBySystem(systemDarkMatcher.matches);
+
+          // Listen for system/browser theme changes (e.g. Windows dark/light toggle)
+          if (systemDarkMatcher.addEventListener) {
+            systemDarkMatcher.addEventListener("change", function (e) {
+              updateFaviconBySystem(e.matches);
+            });
+          } else if (systemDarkMatcher.addListener) {
+            systemDarkMatcher.addListener(function (e) {
+              updateFaviconBySystem(e.matches);
+            });
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

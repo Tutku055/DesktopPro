@@ -1,27 +1,38 @@
-﻿using DesktopPro.Domain.Entities;
+using DesktopPro.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DesktopPro.Persistence.Configurations
+namespace DesktopPro.Persistence.Configurations;
+
+public class WorkspaceConfiguration : IEntityTypeConfiguration<Workspace>
 {
-    public class WorkspaceConfiguration: IEntityTypeConfiguration<Workspace>
+    public void Configure(EntityTypeBuilder<Workspace> builder)
     {
-        public void Configure(EntityTypeBuilder<Workspace> builder) 
-        {
-            builder.HasKey(x=> x.Id);
+        builder.HasKey(x => x.Id);
 
-            builder.HasOne<AppUser>()
-                .WithMany()
-                .HasForeignKey(x => x.AppUserId)
-                .OnDelete(DeleteBehavior.Cascade);
+        builder.HasOne<AppUser>()
+            .WithMany()
+            .HasForeignKey(x => x.AppUserId)
+            .OnDelete(DeleteBehavior.Cascade);
 
-            builder.Property(x => x.Name)
-                .IsRequired()
-                .HasMaxLength(100);
+        builder.Property(x => x.Name)
+            .IsRequired()
+            .HasMaxLength(100);
 
-            builder.Property(x=> x.IconPath)
-                .HasMaxLength(1000);
-        }
-        
+        builder.Property(x => x.IconName)
+            .HasMaxLength(100);
+
+        builder.Property(x => x.IsTemporal)
+            .HasDefaultValue(false);
+
+        builder.HasMany(x => x.WorkspaceGroups)
+            .WithOne(x => x.Workspace)
+            .HasForeignKey(x => x.WorkspaceId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasMany(x => x.FileLinks)
+            .WithOne(x => x.Workspace)
+            .HasForeignKey(x => x.WorkspaceId)
+            .OnDelete(DeleteBehavior.NoAction);
     }
 }

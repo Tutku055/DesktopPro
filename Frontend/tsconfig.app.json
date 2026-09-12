@@ -9,9 +9,8 @@
     "skipLibCheck": true,
 
     /* Path Aliasing */
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     },
 
     /* Bundler mode */

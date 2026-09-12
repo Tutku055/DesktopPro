@@ -1,62 +1,87 @@
-﻿    using System;
+using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace DesktopPro.Domain.Entities
+namespace DesktopPro.Domain.Entities;
+
+/// <summary>
+/// Represents a logical workspace grouping files and virtual folder hierarchies.
+/// </summary>
+public class Workspace : BaseEntity
 {
-    public class Workspace: BaseEntitiy
+    public Guid AppUserId { get; private set; }
+
+    /// <summary>
+    /// Logical workspace name. Max length configured in persistence: 100.
+    /// </summary>
+    public string Name { get; private set; } = string.Empty;
+
+    public bool IsTemporal { get; private set; }
+
+    /// <summary>
+    /// Optional UI icon identifier. Max length configured in persistence: 100.
+    /// </summary>
+    public string? IconName { get; private set; }
+
+    public DateTime? ExpiresAtUtc { get; private set; }
+
+    // Navigation properties
+    public ICollection<WorkspaceGroup> WorkspaceGroups { get; private set; } = new List<WorkspaceGroup>();
+    public ICollection<FileWorkspaceLink> FileLinks { get; private set; } = new List<FileWorkspaceLink>();
+
+    protected Workspace()
     {
-        public Guid AppUserId { get; private set; }
-        public string Name { get; private set; }
-        public bool IsTemporal { get; private set; }
-        public string? IconPath { get; private set; }
-        public DateTime? ExpiresAtUtc { get; private set; }
+        WorkspaceGroups = new List<WorkspaceGroup>();
+        FileLinks = new List<FileWorkspaceLink>();
+    }
 
-        //Navigation properties
-        public ICollection<FileWorkspaceLink> FileLinks { get; private set; } = new List<FileWorkspaceLink>();
-        public ICollection<WorkspaceGroup> WorkspaceGroups { get; private set; } = new List<WorkspaceGroup>();
+    public Workspace(
+        Guid appUserId,
+        string name,
+        bool isTemporal = false,
+        DateTime? expiresAtUtc = null,
+        string? iconName = null)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(name);
 
-        private Workspace() { }
+        AppUserId = appUserId;
+        Name = name;
+        IsTemporal = isTemporal;
+        ExpiresAtUtc = expiresAtUtc;
+        IconName = iconName;
+        WorkspaceGroups = new List<WorkspaceGroup>();
+        FileLinks = new List<FileWorkspaceLink>();
+    }
 
-        public Workspace(Guid appUserId, string name, bool isTemporal = false, DateTime? expiresAtUtc = null, string? iconPath = null)
-        {
-            AppUserId = appUserId;
-            Name = name;
-            IsTemporal = isTemporal;
-            ExpiresAtUtc = expiresAtUtc;
-            IconPath = iconPath;
-        }
+    public void Rename(string newName)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(newName);
+        Name = newName;
+        UpdatedAt = DateTime.UtcNow;
+    }
 
-        public void Rename(string newName)
-        {
-            Name = newName;
-            UpdatedAt = DateTime.UtcNow;
-        }
+    public void MakeTemporal(DateTime? expiresAtUtc)
+    {
+        IsTemporal = true;
+        ExpiresAtUtc = expiresAtUtc;
+        UpdatedAt = DateTime.UtcNow;
+    }
 
-        public void UpdateExpiration(DateTime? newExpiration)
-        {
-            ExpiresAtUtc = newExpiration;
-            UpdatedAt = DateTime.UtcNow;
-        }
+    public void MakePermanent()
+    {
+        IsTemporal = false;
+        ExpiresAtUtc = null;
+        UpdatedAt = DateTime.UtcNow;
+    }
 
-        public void MakePermanent()
-        {
-            IsTemporal = false;
-            ExpiresAtUtc = null;
-            UpdatedAt = DateTime.UtcNow;
-        }
+    public void UpdateIconName(string? newIconName)
+    {
+        IconName = newIconName;
+        UpdatedAt = DateTime.UtcNow;
+    }
 
-        public void MakeTemporal(DateTime? expiresAtUtc)
-        {
-            IsTemporal = true;
-            ExpiresAtUtc = expiresAtUtc;
-            UpdatedAt = DateTime.UtcNow;
-        }
-
-        public void UpdateIconPath(string? newIconPath)
-        {
-            IconPath = newIconPath;
-            UpdatedAt = DateTime.UtcNow;
-        }
+    public void UpdateExpiration(DateTime? newExpiration)
+    {
+        ExpiresAtUtc = newExpiration;
+        UpdatedAt = DateTime.UtcNow;
     }
 }

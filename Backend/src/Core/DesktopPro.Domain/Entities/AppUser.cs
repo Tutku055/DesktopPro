@@ -1,39 +1,51 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System;
 
-namespace DesktopPro.Domain.Entities
+namespace DesktopPro.Domain.Entities;
+
+/// <summary>
+/// Represents an application user account.
+/// </summary>
+public class AppUser : BaseEntity
 {
-    public class AppUser: BaseEntitiy
+    /// <summary>
+    /// Unique username. Max length configured in persistence: 50.
+    /// </summary>
+    public string Username { get; private set; } = string.Empty;
+
+    /// <summary>
+    /// Password hash representation. Max length configured in persistence: 256.
+    /// </summary>
+    public string PasswordHash { get; private set; } = string.Empty;
+
+    public DateTime? LastLoginDateUtc { get; private set; }
+
+    protected AppUser() { }
+
+    public AppUser(string username, string passwordHash)
     {
-        public string Username { get; private set; }
-        public string PasswordHash { get; private set; }
-        public DateTime? LastLoginDateUtc { get; private set; }
-        
-        private AppUser() { }
+        ArgumentException.ThrowIfNullOrWhiteSpace(username);
+        ArgumentException.ThrowIfNullOrWhiteSpace(passwordHash);
 
-        public AppUser(string username, string passwordHash)
-        {
-            Username = username;
-            PasswordHash = passwordHash;
-        }
+        Username = username;
+        PasswordHash = passwordHash;
+    }
 
-        public void UpdateLastLoginDate()
-        {
-            LastLoginDateUtc = DateTime.UtcNow;
-        }
+    public void UpdateLastLoginDate()
+    {
+        LastLoginDateUtc = DateTime.UtcNow;
+    }
 
-        public void UpdatePasswordHash(string newPasswordHash)
-        {
-            PasswordHash = newPasswordHash;
-            UpdatedAt = DateTime.UtcNow;
-        }
+    public void UpdatePasswordHash(string newPasswordHash)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(newPasswordHash);
+        PasswordHash = newPasswordHash;
+        UpdatedAt = DateTime.UtcNow;
+    }
 
-        public void UpdateUsername(string newUsername)
-        {
-            Username = newUsername;
-            UpdatedAt = DateTime.UtcNow;
-        }
-
+    public void UpdateUsername(string newUsername)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(newUsername);
+        Username = newUsername;
+        UpdatedAt = DateTime.UtcNow;
     }
 }

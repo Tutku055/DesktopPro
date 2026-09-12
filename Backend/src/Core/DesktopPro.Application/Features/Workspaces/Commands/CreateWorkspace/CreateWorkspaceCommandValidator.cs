@@ -1,4 +1,4 @@
-﻿using FluentValidation;
+using FluentValidation;
 
 namespace DesktopPro.Application.Features.Workspaces.Commands.CreateWorkspace
 {
@@ -14,8 +14,8 @@ namespace DesktopPro.Application.Features.Workspaces.Commands.CreateWorkspace
                 .NotNull().WithMessage("Name is required.")
                 .MaximumLength(100).WithMessage("Name cannot exceed 100 characters.");
 
-            RuleFor(x => x.CreateWorkspaceDto.IconPath)
-                .MaximumLength(1000).WithMessage("IconPath cannot exceed 1000 characters.");
+            RuleFor(x => x.CreateWorkspaceDto.IconName)
+                .MaximumLength(100).WithMessage("IconName cannot exceed 100 characters.");
 
             When(x => x.CreateWorkspaceDto.IsTemporal, () =>
             {

@@ -1,4 +1,4 @@
-﻿using DesktopPro.Domain.Entities;
+using DesktopPro.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -10,11 +10,15 @@ public class WorkspaceGroupConfiguration : IEntityTypeConfiguration<WorkspaceGro
     {
         builder.HasKey(x => x.Id);
 
-        
         builder.HasOne(x => x.Workspace)
                .WithMany(x => x.WorkspaceGroups)
                .HasForeignKey(x => x.WorkspaceId)
                .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasOne(x => x.ParentGroup)
+               .WithMany(x => x.SubGroups)
+               .HasForeignKey(x => x.ParentGroupId)
+               .OnDelete(DeleteBehavior.Restrict);
 
         builder.Property(x => x.Name)
                .IsRequired()

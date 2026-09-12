@@ -1,158 +1,557 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
+@import "@fontsource-variable/newsreader";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-zinc-950 text-zinc-100 antialiased selection:bg-zinc-800 selection:text-zinc-200;
-}
-
 @layer base {
-  .theme {
+  /* ==========================================================================
+     Theme 1: Parchment (Warm Japanese Cream & Roasted Espresso)
+     ========================================================================== */
+  :root,
+  [data-theme="parchment"] {
+    --font-serif: 'Lora', 'Newsreader Variable', Newsreader, Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Geist Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Lora', 'Newsreader Variable', Newsreader, Georgia, serif;
 
-    --font-heading: var(--font-sans);
+    --radius: 0.375rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
 
-    --font-sans: 'Geist Variable', sans-serif
+    /* Surfaces */
+    --background: #f7f4ec;
+    --foreground: #2b2520;
+    --card: #fdfbf7;
+    --card-foreground: #2b2520;
+    --popover: #fdfbf7;
+    --popover-foreground: #2b2520;
+
+    /* Actions & Hierarchy */
+    --primary: #2b2520;
+    --primary-foreground: #f7f4ec;
+    --secondary: #e8e1d5;
+    --secondary-foreground: #2b2520;
+    --muted: #ebe5da;
+    --muted-foreground: #72685d;
+    --accent: #e2dacb;
+    --accent-foreground: #2b2520;
+    --destructive: #be123c;
+    --destructive-foreground: #ffffff;
+
+    /* Borders & Inputs */
+    --border: #ded5c5;
+    --input: #ded5c5;
+    --ring: #2b2520;
+
+    /* Sidebar Hierarchy */
+    --sidebar: #efeae0;
+    --sidebar-foreground: #332c26;
+    --sidebar-primary: #2b2520;
+    --sidebar-primary-foreground: #f7f4ec;
+    --sidebar-hover: #e5decfa8;
+    --sidebar-hover-foreground: #1c1815;
+    --sidebar-accent: #ddd3c1;
+    --sidebar-accent-foreground: #1c1815;
+    --sidebar-border: #ded5c5;
+    --sidebar-ring: #2b2520;
+    --sidebar-logo-filter: brightness(0) saturate(100%) invert(13%) sepia(4%) saturate(2056%) hue-rotate(345deg) brightness(94%) contrast(94%);
   }
-  :root {
 
-    --background: oklch(1 0 0);
+  /* ==========================================================================
+     Theme 2: Charcoal (Volcanic Slate & Luminous Ivory)
+     ========================================================================== */
+  .dark,
+  [data-theme="charcoal"] {
+    --font-serif: 'Lora', 'Newsreader Variable', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Geist Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Lora', 'Newsreader Variable', Newsreader, Georgia, serif;
 
-    --foreground: oklch(0.145 0 0);
+    --radius: 0.375rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
 
-    --card: oklch(1 0 0);
+    /* Surfaces */
+    --background: #131315;
+    --foreground: #ededef;
+    --card: #1f1f22;
+    --card-foreground: #ededef;
+    --popover: #1f1f22;
+    --popover-foreground: #ededef;
 
-    --card-foreground: oklch(0.145 0 0);
+    /* Actions & Hierarchy */
+    --primary: #f2f2f4;
+    --primary-foreground: #131315;
+    --secondary: #29292d;
+    --secondary-foreground: #ededef;
+    --muted: #212124;
+    --muted-foreground: #8f8f96;
+    --accent: #2e2e33;
+    --accent-foreground: #ededef;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
 
-    --popover: oklch(1 0 0);
+    /* Borders & Inputs */
+    --border: #2c2c31;
+    --input: #2c2c31;
+    --ring: #d4d4d8;
 
-    --popover-foreground: oklch(0.145 0 0);
-
-    --primary: oklch(0.205 0 0);
-
-    --primary-foreground: oklch(0.985 0 0);
-
-    --secondary: oklch(0.97 0 0);
-
-    --secondary-foreground: oklch(0.205 0 0);
-
-    --muted: oklch(0.97 0 0);
-
-    --muted-foreground: oklch(0.556 0 0);
-
-    --accent: oklch(0.97 0 0);
-
-    --accent-foreground: oklch(0.205 0 0);
-
-    --destructive: oklch(0.577 0.245 27.325);
-
-    --border: oklch(0.922 0 0);
-
-    --input: oklch(0.922 0 0);
-
-    --ring: oklch(0.708 0 0);
-
-    --chart-1: oklch(0.87 0 0);
-
-    --chart-2: oklch(0.556 0 0);
-
-    --chart-3: oklch(0.439 0 0);
-
-    --chart-4: oklch(0.371 0 0);
-
-    --chart-5: oklch(0.269 0 0);
-
-    --radius: 0.625rem;
-
-    --sidebar: oklch(0.985 0 0);
-
-    --sidebar-foreground: oklch(0.145 0 0);
-
-    --sidebar-primary: oklch(0.205 0 0);
-
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-
-    --sidebar-accent: oklch(0.97 0 0);
-
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-
-    --sidebar-border: oklch(0.922 0 0);
-
-    --sidebar-ring: oklch(0.708 0 0)
+    /* Sidebar Hierarchy */
+    --sidebar: #18181b;
+    --sidebar-foreground: #e1e1e6;
+    --sidebar-primary: #f2f2f4;
+    --sidebar-primary-foreground: #131315;
+    --sidebar-hover: #26262a;
+    --sidebar-hover-foreground: #ffffff;
+    --sidebar-accent: #2f2f35;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #28282d;
+    --sidebar-ring: #d4d4d8;
+    --sidebar-logo-filter: brightness(0) saturate(100%) invert(100%);
   }
-  .dark {
 
-    --background: oklch(0.145 0 0);
+  /* ==========================================================================
+     Theme 3: Rose (Porcelain Blush & Haute Velvet Wine)
+     ========================================================================== */
+  [data-theme="rose"] {
+    --font-serif: 'Lora', 'Newsreader Variable', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Geist Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Lora', 'Newsreader Variable', Newsreader, Georgia, serif;
 
-    --foreground: oklch(0.985 0 0);
+    --radius: 0.375rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
 
-    --card: oklch(0.205 0 0);
+    /* Surfaces */
+    --background: #faf5f5;
+    --foreground: #381b23;
+    --card: #ffffff;
+    --card-foreground: #381b23;
+    --popover: #ffffff;
+    --popover-foreground: #381b23;
 
-    --card-foreground: oklch(0.985 0 0);
+    /* Actions & Hierarchy */
+    --primary: #9d3853;
+    --primary-foreground: #ffffff;
+    --secondary: #edd5da;
+    --secondary-foreground: #381b23;
+    --muted: #f2dfe2;
+    --muted-foreground: #7e505a;
+    --accent: #e7cacf;
+    --accent-foreground: #381b23;
+    --destructive: #be123c;
+    --destructive-foreground: #ffffff;
 
-    --popover: oklch(0.205 0 0);
+    /* Borders & Inputs */
+    --border: #e6cbd1;
+    --input: #e6cbd1;
+    --ring: #9d3853;
 
-    --popover-foreground: oklch(0.985 0 0);
-
-    --primary: oklch(0.922 0 0);
-
-    --primary-foreground: oklch(0.205 0 0);
-
-    --secondary: oklch(0.269 0 0);
-
-    --secondary-foreground: oklch(0.985 0 0);
-
-    --muted: oklch(0.269 0 0);
-
-    --muted-foreground: oklch(0.708 0 0);
-
-    --accent: oklch(0.269 0 0);
-
-    --accent-foreground: oklch(0.985 0 0);
-
-    --destructive: oklch(0.704 0.191 22.216);
-
-    --border: oklch(1 0 0 / 10%);
-
-    --input: oklch(1 0 0 / 15%);
-
-    --ring: oklch(0.556 0 0);
-
-    --chart-1: oklch(0.87 0 0);
-
-    --chart-2: oklch(0.556 0 0);
-
-    --chart-3: oklch(0.439 0 0);
-
-    --chart-4: oklch(0.371 0 0);
-
-    --chart-5: oklch(0.269 0 0);
-
-    --sidebar: oklch(0.205 0 0);
-
-    --sidebar-foreground: oklch(0.985 0 0);
-
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-
-    --sidebar-accent: oklch(0.269 0 0);
-
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-
-    --sidebar-border: oklch(1 0 0 / 10%);
-
-    --sidebar-ring: oklch(0.556 0 0)
+    /* Sidebar Hierarchy */
+    --sidebar: #f4eaec;
+    --sidebar-foreground: #47232e;
+    --sidebar-primary: #9d3853;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-hover: #ead3d7;
+    --sidebar-hover-foreground: #2a1117;
+    --sidebar-accent: #e0bece;
+    --sidebar-accent-foreground: #2a1117;
+    --sidebar-border: #e2c4cb;
+    --sidebar-ring: #9d3853;
+    --sidebar-logo-filter: brightness(0) saturate(100%) invert(35%) sepia(49%) saturate(4347%) hue-rotate(326deg) brightness(55%) contrast(85%);
   }
+
+  /* ==========================================================================
+     Theme 4: Monaco (Mediterranean Twilight & Brushed Italian Gold)
+     ========================================================================== */
+  [data-theme="monaco"] {
+    --font-serif: 'Lora', 'Newsreader Variable', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Geist Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Lora', 'Newsreader Variable', Newsreader, Georgia, serif;
+
+    --radius: 0.375rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+
+    /* Surfaces */
+    --background: #0b1220;
+    --foreground: #f5f0e6;
+    --card: #111b2e;
+    --card-foreground: #f5f0e6;
+    --popover: #111b2e;
+    --popover-foreground: #f5f0e6;
+
+    /* Actions & Hierarchy */
+    --primary: #c7a97b;
+    --primary-foreground: #070c17;
+    --secondary: #17243b;
+    --secondary-foreground: #f5f0e6;
+    --muted: #121d30;
+    --muted-foreground: #8998b2;
+    --accent: #1c2c48;
+    --accent-foreground: #f5f0e6;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+
+    /* Borders & Inputs */
+    --border: #1a2842;
+    --input: #1a2842;
+    --ring: #c7a97b;
+
+    /* Sidebar Hierarchy */
+    --sidebar: #070c17;
+    --sidebar-foreground: #dce4f2;
+    --sidebar-primary: #c7a97b;
+    --sidebar-primary-foreground: #070c17;
+    --sidebar-hover: #142036;
+    --sidebar-hover-foreground: #ffffff;
+    --sidebar-accent: #1c2c49;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #16243d;
+    --sidebar-ring: #c7a97b;
+    --sidebar-logo-filter: brightness(0) saturate(100%) invert(69%) sepia(6%) saturate(4414%) hue-rotate(332deg) brightness(130%) contrast(54%);
+  }
+
+  /* ==========================================================================
+     Theme 5: Emerald (Savile Row Racing Green & Polished Brass)
+     ========================================================================== */
+  [data-theme="emerald"] {
+    --font-serif: 'Lora', 'Newsreader Variable', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Geist Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Lora', 'Newsreader Variable', Newsreader, Georgia, serif;
+
+    --radius: 0.375rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+
+    /* Surfaces */
+    --background: #091612;
+    --foreground: #f4ece1;
+    --card: #0f221d;
+    --card-foreground: #f4ece1;
+    --popover: #0f221d;
+    --popover-foreground: #f4ece1;
+
+    /* Actions & Hierarchy */
+    --primary: #c29d5b;
+    --primary-foreground: #050e0b;
+    --secondary: #142e27;
+    --secondary-foreground: #f4ece1;
+    --muted: #10241e;
+    --muted-foreground: #809a91;
+    --accent: #19382f;
+    --accent-foreground: #f4ece1;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+
+    /* Borders & Inputs */
+    --border: #17342b;
+    --input: #17342b;
+    --ring: #c29d5b;
+
+    /* Sidebar Hierarchy */
+    --sidebar: #050e0b;
+    --sidebar-foreground: #dbe7e1;
+    --sidebar-primary: #c29d5b;
+    --sidebar-primary-foreground: #050e0b;
+    --sidebar-hover: #132c25;
+    --sidebar-hover-foreground: #ffffff;
+    --sidebar-accent: #1a3a30;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #142e26;
+    --sidebar-ring: #c29d5b;
+    --sidebar-logo-filter: brightness(0) saturate(100%) invert(81%) sepia(5%) saturate(3681%) hue-rotate(354deg) brightness(81%) contrast(77%);
+  }
+
+  /* ==========================================================================
+     Theme 6: Cashmere (Warm Loro Piana Stone & Brushed Pewter)
+     ========================================================================== */
+  [data-theme="cashmere"] {
+    --font-serif: 'Lora', 'Newsreader Variable', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Geist Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Lora', 'Newsreader Variable', Newsreader, Georgia, serif;
+
+    --radius: 0.375rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+
+    /* Surfaces */
+    --background: #1a1a1c;
+    --foreground: #f4f4f6;
+    --card: #28282b;
+    --card-foreground: #f4f4f6;
+    --popover: #28282b;
+    --popover-foreground: #f4f4f6;
+
+    /* Actions & Hierarchy */
+    --primary: #e2e2e6;
+    --primary-foreground: #1a1a1c;
+    --secondary: #333337;
+    --secondary-foreground: #f4f4f6;
+    --muted: #242427;
+    --muted-foreground: #98989f;
+    --accent: #3a3a40;
+    --accent-foreground: #f4f4f6;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+
+    /* Borders & Inputs */
+    --border: #36363c;
+    --input: #36363c;
+    --ring: #e2e2e6;
+
+    /* Sidebar Hierarchy */
+    --sidebar: #212124;
+    --sidebar-foreground: #e4e4e9;
+    --sidebar-primary: #e2e2e6;
+    --sidebar-primary-foreground: #1a1a1c;
+    --sidebar-hover: #2f2f34;
+    --sidebar-hover-foreground: #ffffff;
+    --sidebar-accent: #393940;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #313137;
+    --sidebar-ring: #e2e2e6;
+    --sidebar-logo-filter: brightness(0) saturate(100%) invert(83%) sepia(2%) saturate(3779%) hue-rotate(325deg) brightness(121%) contrast(68%);
+  }
+
+  /* ==========================================================================
+     Theme 7: Platinum (Swiss Architectural Frosted Titanium)
+     ========================================================================== */
+  [data-theme="platinum"] {
+    --font-serif: 'Lora', 'Newsreader Variable', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Geist Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Lora', 'Newsreader Variable', Newsreader, Georgia, serif;
+
+    --radius: 0.375rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+
+    /* Surfaces */
+    --background: #f5f5f7;
+    --foreground: #18181b;
+    --card: #ffffff;
+    --card-foreground: #18181b;
+    --popover: #ffffff;
+    --popover-foreground: #18181b;
+
+    /* Actions & Hierarchy */
+    --primary: #38383b;
+    --primary-foreground: #ffffff;
+    --secondary: #dfdfe3;
+    --secondary-foreground: #18181b;
+    --muted: #e3e3e7;
+    --muted-foreground: #68686e;
+    --accent: #d8d8dd;
+    --accent-foreground: #18181b;
+    --destructive: #dc2626;
+    --destructive-foreground: #ffffff;
+
+    /* Borders & Inputs */
+    --border: #d2d2d8;
+    --input: #d2d2d8;
+    --ring: #38383b;
+
+    /* Sidebar Hierarchy */
+    --sidebar: #ebebef;
+    --sidebar-foreground: #28282b;
+    --sidebar-primary: #38383b;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-hover: #dedee3;
+    --sidebar-hover-foreground: #18181b;
+    --sidebar-accent: #d3d3d9;
+    --sidebar-accent-foreground: #18181b;
+    --sidebar-border: #ceced4;
+    --sidebar-ring: #38383b;
+    --sidebar-logo-filter: brightness(0) saturate(100%) invert(1%) sepia(14%) saturate(4696%) hue-rotate(213deg) brightness(109%) contrast(83%);
+  }
+
+  /* ==========================================================================
+     Theme 8: Espresso (Milanese Roast & Golden Crema)
+     ========================================================================== */
+  [data-theme="espresso"] {
+    --font-serif: 'Lora', 'Newsreader Variable', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Geist Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Lora', 'Newsreader Variable', Newsreader, Georgia, serif;
+
+    --radius: 0.375rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+
+    /* Surfaces */
+    --background: #16110f;
+    --foreground: #f6f1eb;
+    --card: #221b17;
+    --card-foreground: #f6f1eb;
+    --popover: #221b17;
+    --popover-foreground: #f6f1eb;
+
+    /* Actions & Hierarchy */
+    --primary: #d89a5b;
+    --primary-foreground: #100c0a;
+    --secondary: #2b221e;
+    --secondary-foreground: #f6f1eb;
+    --muted: #201915;
+    --muted-foreground: #a39288;
+    --accent: #342823;
+    --accent-foreground: #f6f1eb;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+
+    /* Borders & Inputs */
+    --border: #2e2420;
+    --input: #2e2420;
+    --ring: #d89a5b;
+
+    /* Sidebar Hierarchy */
+    --sidebar: #100c0a;
+    --sidebar-foreground: #e7dfd8;
+    --sidebar-primary: #d89a5b;
+    --sidebar-primary-foreground: #100c0a;
+    --sidebar-hover: #221b17;
+    --sidebar-hover-foreground: #ffffff;
+    --sidebar-accent: #2f2520;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #281f1b;
+    --sidebar-ring: #d89a5b;
+    --sidebar-logo-filter: brightness(0) saturate(100%) invert(70%) sepia(4%) saturate(3505%) hue-rotate(340deg) brightness(130%) contrast(59%);
+  }
+
   * {
-    @apply border-border outline-ring/50;
+    border-color: var(--border);
   }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-serif);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
-  html {
-    @apply font-sans;
+
+  /* Editorial typography for headings */
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.015em;
+  }
+
+  /* Theme-adaptive logo filter styling */
+  .sidebar-logo {
+    filter: var(--sidebar-logo-filter, none);
+    transition: filter 0.2s ease-in-out;
+  }
+
+  /* ==========================================================================
+     Global Ultra-Thin Luxury Scrollbars (Theme-Compatible)
+     ========================================================================== */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, var(--foreground) 18%, transparent) transparent;
+  }
+
+  /* WebKit & Chromium Browsers */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: color-mix(in srgb, var(--foreground) 18%, transparent);
+    border-radius: 9999px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: color-mix(in srgb, var(--primary) 50%, transparent);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  /* ==========================================================================
+     Global Theme-Compatible Luxury Range Sliders
+     ========================================================================== */
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    accent-color: var(--primary);
+  }
+
+  input[type="range"]:focus {
+    outline: none;
+  }
+
+  /* Track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: var(--secondary);
+    height: 4px;
+    border-radius: 9999px;
+    border: 1px solid var(--border);
+    transition: background-color 0.2s ease;
+  }
+
+  input[type="range"]::-moz-range-track {
+    background-color: var(--secondary);
+    height: 4px;
+    border-radius: 9999px;
+    border: 1px solid var(--border);
+    transition: background-color 0.2s ease;
+  }
+
+  /* Thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -5px;
+    background-color: var(--primary);
+    height: 14px;
+    width: 14px;
+    border-radius: 9999px;
+    border: 2px solid var(--card);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease;
+  }
+
+  input[type="range"]:hover::-webkit-slider-thumb {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 20%, transparent);
+  }
+
+  input[type="range"]:active::-webkit-slider-thumb {
+    transform: scale(0.95);
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    background-color: var(--primary);
+    height: 14px;
+    width: 14px;
+    border-radius: 9999px;
+    border: 2px solid var(--card);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease;
+  }
+
+  input[type="range"]:hover::-moz-range-thumb {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 20%, transparent);
   }
 }
