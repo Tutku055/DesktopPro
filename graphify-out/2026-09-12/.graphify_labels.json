@@ -21,7 +21,7 @@
   "19": "AiTriageSuggestion",
   "20": "tsconfig.json",
   "21": "WorkspaceGroup",
-  "22": "VirtualFile",
+  "22": "GetWorkspacesQuery",
   "23": "Workspace",
   "24": "vite-env.d.ts",
   "25": "Graphify Knowledge Graph Rule",
@@ -38,5 +38,12 @@
   "36": "DesktopPro.Persistence.Migrations",
   "37": "IsolatedVaultArchitecture",
   "38": ".BuildModel",
-  "39": ".BuildTargetModel"
+  "39": ".BuildTargetModel",
+  "40": "BaseEntity",
+  "41": ".CreateWorkspaceAsync",
+  "42": "WorkspaceDetailDto",
+  "43": "DesktopPro.Application.Features.Workspaces.DTOs",
+  "44": "GetWorkspaceByIdQuery",
+  "45": "CreateWorkspaceCommandValidator",
+  "46": "CreateWorkspaceDto"
 }

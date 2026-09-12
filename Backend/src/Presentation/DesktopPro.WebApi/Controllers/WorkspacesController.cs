@@ -1,5 +1,6 @@
 ﻿using DesktopPro.Application.Features.Workspaces.Commands.CreateWorkspace;
 using DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces;
+using DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaceById;
 using DesktopPro.Application.Features.Workspaces.DTOs;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -42,6 +43,20 @@ public sealed class WorkspacesController: ControllerBase
         var query = new GetWorkspacesQuery(currentUserId);
         var workspaces = await _sender.Send(query, cancellationToken);
         return Ok(workspaces);
+    }
+
+    [HttpGet("{id:guid}")]
+    [ProducesResponseType(typeof(WorkspaceDetailDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> GetWorkspaceByIdAsync(
+        [FromRoute] Guid id,
+        CancellationToken cancellationToken)
+    {
+        var currentUserId = Guid.Parse("A1B2C3D4-E5F6-7890-ABCD-EF1234567890");
+
+        var query = new GetWorkspaceByIdQuery(id, currentUserId);
+        var workspace = await _sender.Send(query, cancellationToken);
+        return Ok(workspace);
     }
 
 

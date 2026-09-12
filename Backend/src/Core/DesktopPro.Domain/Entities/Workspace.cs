@@ -48,6 +48,7 @@ public class Workspace : BaseEntity
         IsTemporal = isTemporal;
         ExpiresAtUtc = expiresAtUtc;
         IconName = iconName;
+        UpdatedAt = DateTime.UtcNow;
         WorkspaceGroups = new List<WorkspaceGroup>();
         FileLinks = new List<FileWorkspaceLink>();
     }

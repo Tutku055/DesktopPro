@@ -13,3 +13,12 @@ export interface CreateWorkspaceDto {
   expiresAtUtc?: string | null;
   iconName?: string | null;
 }
+
+export interface WorkspaceDetailDto {
+  id: string;
+  name: string;
+  isTemporal: boolean;
+  iconName?: string;
+  expiresAtUtc?: string;
+  createdAt: string;
+}

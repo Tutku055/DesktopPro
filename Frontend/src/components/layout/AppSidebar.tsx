@@ -18,7 +18,7 @@ export const AppSidebar = ({
     <div className={`h-full flex flex-col select-none ${isOpen ? 'w-full' : 'items-center'}`}>
       {/* 1. New Workspace Action (Icon-only when collapsed, full button when open) */}
       <div className={isOpen ? 'mb-2' : 'mb-2 w-full flex justify-center'}>
-        <CreateWorkspaceDialog />
+        <CreateWorkspaceDialog onWorkspaceCreated={onSelectWorkspace} />
       </div>
 
       {/* 2. Workspace List (Completely hidden when collapsed) */}

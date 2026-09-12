@@ -1,4 +1,4 @@
-import { ClockIcon } from '@phosphor-icons/react';
+import { ClockCountdown } from '@phosphor-icons/react';
 import type { WorkspaceDto } from '../types/workspace.types';
 import { getWorkspaceIcon } from '../utils/workspaceIcons';
 
@@ -16,13 +16,13 @@ export const WorkspaceItem = ({ workspace, isSelected, onSelect }: WorkspaceItem
     <button
       type="button"
       onClick={() => onSelect(workspace.id)}
-      className={`w-full group flex items-center justify-between px-2.5 py-1.5 rounded-md text-xs font-medium transition-all duration-150 text-left truncate cursor-pointer select-none ${
+      className={`w-full group flex items-center px-2.5 py-1.5 rounded-md text-xs font-medium transition-all duration-150 text-left truncate cursor-pointer select-none ${
         isSelected
           ? 'bg-sidebar-accent text-sidebar-accent-foreground font-semibold shadow-2xs'
           : 'text-sidebar-foreground/75 hover:bg-sidebar-hover hover:text-sidebar-hover-foreground'
       }`}
     >
-      <div className="flex items-center gap-2 truncate">
+      <div className="flex items-center gap-1.5 truncate min-w-0">
         <IconComponent
           size={15}
           weight={isSelected ? 'fill' : 'regular'}
@@ -33,13 +33,20 @@ export const WorkspaceItem = ({ workspace, isSelected, onSelect }: WorkspaceItem
           }`}
         />
         <span className="truncate">{displayName}</span>
-      </div>
 
-      {workspace.isTemporal && (
-        <span title="Temporal Workspace" className="shrink-0 text-amber-500/80">
-          <ClockIcon size={13} />
-        </span>
-      )}
+        {workspace.isTemporal && (
+          <span
+            title="Temporal Workspace"
+            className={`shrink-0 transition-colors ${
+              isSelected
+                ? 'text-sidebar-primary'
+                : 'text-sidebar-foreground/50 group-hover:text-sidebar-foreground/80'
+            }`}
+          >
+            <ClockCountdown size={13} weight="bold" />
+          </span>
+        )}
+      </div>
     </button>
   );
 };

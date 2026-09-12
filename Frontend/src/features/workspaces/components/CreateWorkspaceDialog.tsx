@@ -14,10 +14,16 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { WORKSPACE_ICONS, DEFAULT_WORKSPACE_ICON } from '../utils/workspaceIcons';
 
-export const CreateWorkspaceDialog = () => {
+interface CreateWorkspaceDialogProps {
+  onWorkspaceCreated?: (id: string) => void;
+}
+
+export const CreateWorkspaceDialog = ({ onWorkspaceCreated }: CreateWorkspaceDialogProps) => {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState('');
   const [selectedIcon, setSelectedIcon] = useState<string>(DEFAULT_WORKSPACE_ICON);
+  const [isTemporal, setIsTemporal] = useState(false);
+  const [temporalHours, setTemporalHours] = useState(24);
   const createMutation = useCreateWorkspace();
   const { isOpen } = useSidebar();
 
@@ -27,14 +33,25 @@ export const CreateWorkspaceDialog = () => {
     if (!trimmed || createMutation.isPending) return;
 
     try {
-      await createMutation.mutateAsync({
+      const expiresAtUtc = isTemporal
+        ? new Date(Date.now() + temporalHours * 60 * 60 * 1000).toISOString()
+        : null;
+
+      const createdId = await createMutation.mutateAsync({
         name: trimmed,
-        isTemporal: false,
+        isTemporal,
+        expiresAtUtc,
         iconName: selectedIcon,
       });
+
       setName('');
       setSelectedIcon(DEFAULT_WORKSPACE_ICON);
+      setIsTemporal(false);
       setOpen(false);
+
+      if (createdId && onWorkspaceCreated) {
+        onWorkspaceCreated(createdId);
+      }
     } catch {
       // API errors are handled centrally by apiClient interceptor
     }
@@ -124,6 +141,36 @@ export const CreateWorkspaceDialog = () => {
                 );
               })}
             </div>
+          </div>
+
+          {/* Temporal Workspace Option */}
+          <div className="p-2.5 rounded-md border border-border/50 bg-muted/20 space-y-2">
+            <label className="flex items-center gap-2 cursor-pointer text-xs font-medium text-foreground select-none">
+              <input
+                type="checkbox"
+                checked={isTemporal}
+                onChange={(e) => setIsTemporal(e.target.checked)}
+                className="h-3.5 w-3.5 rounded border-input text-primary accent-primary cursor-pointer"
+              />
+              <span>Temporal Workspace</span>
+            </label>
+
+            {isTemporal && (
+              <div className="flex items-center gap-2 text-[11px] text-muted-foreground pl-5">
+                <span>Expires in:</span>
+                <select
+                  value={temporalHours}
+                  onChange={(e) => setTemporalHours(Number(e.target.value))}
+                  className="h-6 rounded border border-input bg-card text-foreground px-1.5 text-xs outline-none"
+                >
+                  <option value={1}>1 hour</option>
+                  <option value={6}>6 hours</option>
+                  <option value={24}>24 hours (1 day)</option>
+                  <option value={72}>3 days</option>
+                  <option value={168}>7 days</option>
+                </select>
+              </div>
+            )}
           </div>
 
           {/* Action Buttons */}

@@ -1,10 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { AppSidebar } from '@/components/layout/AppSidebar';
+import { WorkspaceDetailView } from '@/features/workspaces/components/WorkspaceDetailView';
+import { useWorkspaces } from '@/features/workspaces/api/useWorkspaces';
 
 export default function App() {
   // Track currently active workspace ID across slices
   const [selectedWorkspaceId, setSelectedWorkspaceId] = useState<string | null>(null);
+  const { data: workspaces } = useWorkspaces();
+
+  // Automatically select the first workspace if none is currently selected
+  useEffect(() => {
+    if (!selectedWorkspaceId && workspaces && workspaces.length > 0) {
+      setSelectedWorkspaceId(workspaces[0].id);
+    }
+  }, [workspaces, selectedWorkspaceId]);
 
   return (
     <MainLayout
@@ -15,28 +25,7 @@ export default function App() {
         />
       }
     >
-      {/* Main Workspace Viewport */}
-      <div className="h-full flex items-center justify-center p-6">
-        {selectedWorkspaceId ? (
-          <div className="text-center space-y-2">
-            <h1 className="text-2xl font-heading font-medium tracking-tight">
-              Active Workspace
-            </h1>
-            <p className="text-xs text-muted-foreground font-mono">
-              ID: {selectedWorkspaceId}
-            </p>
-          </div>
-        ) : (
-          <div className="text-center space-y-1.5">
-            <h1 className="text-sm font-medium text-foreground">
-              No workspace selected
-            </h1>
-            <p className="text-xs text-muted-foreground">
-              Choose a workspace from the sidebar or create a new one to begin.
-            </p>
-          </div>
-        )}
-      </div>
+      <WorkspaceDetailView workspaceId={selectedWorkspaceId} />
     </MainLayout>
   );
 }

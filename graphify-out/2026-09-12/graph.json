@@ -42,120 +42,6 @@
       "source_location": "L7"
     },
     {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_commands_createworkspace_createworkspacecommandvalidator_desktoppro_application_features_workspaces_commands_createworkspace_createworkspacecommandvalidator",
-      "label": "CreateWorkspaceCommandValidator",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Application.Features.Workspaces.Commands.CreateWorkspace",
-        "scope_chain": [
-          "s27"
-        ]
-      },
-      "norm_label": "createworkspacecommandvalidator",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Commands/CreateWorkspace/CreateWorkspaceCommandValidator.cs",
-      "source_location": "L5"
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_createworkspacedto_desktoppro_application_features_workspaces_dtos_createworkspacedto",
-      "label": "CreateWorkspaceDto",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
-        "scope_chain": [
-          "s0"
-        ]
-      },
-      "norm_label": "createworkspacedto",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/CreateWorkspaceDto.cs",
-      "source_location": "L3"
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto_desktoppro_application_features_workspaces_dtos_workspacedto",
-      "label": "WorkspaceDto",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
-        "scope_chain": [
-          "s72"
-        ]
-      },
-      "norm_label": "workspacedto",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDto.cs",
-      "source_location": "L7"
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery",
-      "label": "GetWorkspacesQuery",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces",
-        "scope_chain": [
-          "s77"
-        ]
-      },
-      "norm_label": "getworkspacesquery",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQuery.cs",
-      "source_location": "L6"
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler",
-      "label": "GetWorkspacesQueryHandler",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces",
-        "scope_chain": [
-          "s161"
-        ]
-      },
-      "norm_label": "getworkspacesqueryhandler",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQueryHandler.cs",
-      "source_location": "L8"
-    },
-    {
-      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller",
-      "label": "WorkspacesController",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.WebApi.Controllers",
-        "scope_chain": [
-          "s259"
-        ]
-      },
-      "norm_label": "workspacescontroller",
-      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L9"
-    },
-    {
       "id": "frontend_src_components_layout_appsidebar_appsidebarprops",
       "label": "AppSidebarProps",
       "_callable": true,
@@ -208,6 +94,45 @@
       "source_location": "L14"
     },
     {
+      "id": "frontend_src_features_workspaces_components_createworkspacedialog_createworkspacedialogprops",
+      "label": "CreateWorkspaceDialogProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "createworkspacedialogprops",
+      "source_file": "Frontend/src/features/workspaces/components/CreateWorkspaceDialog.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "frontend_src_features_workspaces_components_workspacedetailview_workspacedetailviewprops",
+      "label": "WorkspaceDetailViewProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "workspacedetailviewprops",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "frontend_src_features_workspaces_components_workspacelist_workspacelistprops",
+      "label": "WorkspaceListProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "workspacelistprops",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceList.tsx",
+      "source_location": "L5"
+    },
+    {
       "id": "frontend_src_features_workspaces_utils_workspaceicons_workspaceiconoption",
       "label": "WorkspaceIconOption",
       "_callable": true,
@@ -219,44 +144,6 @@
       "norm_label": "workspaceiconoption",
       "source_file": "Frontend/src/features/workspaces/utils/workspaceIcons.ts",
       "source_location": "L25"
-    },
-    {
-      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_aitriagesuggestionconfiguration_desktoppro_persistence_configurations_aitriagesuggestionconfiguration",
-      "label": "AiTriageSuggestionConfiguration",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "DesktopPro.Domain.Entities",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Persistence.Configurations",
-        "scope_chain": [
-          "s134"
-        ]
-      },
-      "norm_label": "aitriagesuggestionconfiguration",
-      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/AiTriageSuggestionConfiguration.cs",
-      "source_location": "L7"
-    },
-    {
-      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_fileworkspacelinkconfiguration_desktoppro_persistence_configurations_fileworkspacelinkconfiguration",
-      "label": "FileWorkspaceLinkConfiguration",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "DesktopPro.Domain.Entities",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Persistence.Configurations",
-        "scope_chain": [
-          "s134"
-        ]
-      },
-      "norm_label": "fileworkspacelinkconfiguration",
-      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/FileWorkspaceLinkConfiguration.cs",
-      "source_location": "L7"
     },
     {
       "id": "backend_src_core_desktoppro_application_common_interfaces_iappdbcontext_desktoppro_application_common_interfaces_iappdbcontext",
@@ -276,6 +163,25 @@
       "norm_label": "iappdbcontext",
       "source_file": "Backend/src/Core/DesktopPro.Application/Common/Interfaces/IAppDbContext.cs",
       "source_location": "L6"
+    },
+    {
+      "id": "backend_src_infrastructure_desktoppro_persistence_dependencyinjection_desktoppro_persistence_dependencyinjection",
+      "label": "DependencyInjection",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "IAppDbContext",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Persistence",
+        "scope_chain": [
+          "s224"
+        ]
+      },
+      "norm_label": "dependencyinjection",
+      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/DependencyInjection.cs",
+      "source_location": "L9"
     },
     {
       "id": "backend_src_infrastructure_desktoppro_persistence_contexts_appdbcontext_desktoppro_persistence_contexts_appdbcontext",
@@ -308,7 +214,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "appuser",
@@ -335,6 +241,25 @@
       "source_location": "L7"
     },
     {
+      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_virtualfileconfiguration_desktoppro_persistence_configurations_virtualfileconfiguration",
+      "label": "VirtualFileConfiguration",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "AppUser",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Persistence.Configurations",
+        "scope_chain": [
+          "s131"
+        ]
+      },
+      "norm_label": "virtualfileconfiguration",
+      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/VirtualFileConfiguration.cs",
+      "source_location": "L7"
+    },
+    {
       "id": "backend_src_core_desktoppro_domain_entities_aitriagesuggestion_desktoppro_domain_entities_aitriagesuggestion",
       "label": "AiTriageSuggestion",
       "_callable": true,
@@ -346,12 +271,31 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "aitriagesuggestion",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/AiTriageSuggestion.cs",
       "source_location": "L8"
+    },
+    {
+      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_aitriagesuggestionconfiguration_desktoppro_persistence_configurations_aitriagesuggestionconfiguration",
+      "label": "AiTriageSuggestionConfiguration",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AiTriageSuggestion",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Persistence.Configurations",
+        "scope_chain": [
+          "s134"
+        ]
+      },
+      "norm_label": "aitriagesuggestionconfiguration",
+      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/AiTriageSuggestionConfiguration.cs",
+      "source_location": "L7"
     },
     {
       "id": "backend_src_infrastructure_desktoppro_persistence_migrations_20260902122851_initialcreate_designer_desktoppro_persistence_migrations_initialcreate",
@@ -385,7 +329,7 @@
       "metadata": {
         "namespace": "DesktopPro.Persistence.Configurations",
         "scope_chain": [
-          "s127"
+          "s131"
         ]
       },
       "norm_label": "workspacegroupconfiguration",
@@ -393,23 +337,61 @@
       "source_location": "L7"
     },
     {
-      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_virtualfileconfiguration_desktoppro_persistence_configurations_virtualfileconfiguration",
-      "label": "VirtualFileConfiguration",
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto_desktoppro_application_features_workspaces_dtos_workspacedto",
+      "label": "WorkspaceDto",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 22,
-      "community_name": "VirtualFile",
+      "community_name": "GetWorkspacesQuery",
       "file_type": "code",
       "metadata": {
-        "namespace": "DesktopPro.Persistence.Configurations",
+        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
         "scope_chain": [
-          "s127"
+          "s72"
         ]
       },
-      "norm_label": "virtualfileconfiguration",
-      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/VirtualFileConfiguration.cs",
+      "norm_label": "workspacedto",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDto.cs",
       "source_location": "L7"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery",
+      "label": "GetWorkspacesQuery",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GetWorkspacesQuery",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces",
+        "scope_chain": [
+          "s77"
+        ]
+      },
+      "norm_label": "getworkspacesquery",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQuery.cs",
+      "source_location": "L6"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler",
+      "label": "GetWorkspacesQueryHandler",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GetWorkspacesQuery",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces",
+        "scope_chain": [
+          "s161"
+        ]
+      },
+      "norm_label": "getworkspacesqueryhandler",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQueryHandler.cs",
+      "source_location": "L8"
     },
     {
       "id": "backend_src_infrastructure_desktoppro_persistence_configurations_workspaceconfiguration_desktoppro_persistence_configurations_workspaceconfiguration",
@@ -423,7 +405,7 @@
       "metadata": {
         "namespace": "DesktopPro.Persistence.Configurations",
         "scope_chain": [
-          "s127"
+          "s131"
         ]
       },
       "norm_label": "workspaceconfiguration",
@@ -468,31 +450,12 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "workspace",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
       "source_location": "L9"
-    },
-    {
-      "id": "backend_src_core_desktoppro_domain_entities_baseentity_desktoppro_domain_entities_baseentity",
-      "label": "BaseEntity",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "WorkspaceGroup",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Domain.Entities",
-        "scope_chain": [
-          "s15"
-        ]
-      },
-      "norm_label": "baseentity",
-      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/BaseEntity.cs",
-      "source_location": "L5"
     },
     {
       "id": "backend_src_core_desktoppro_domain_entities_workspacegroup_desktoppro_domain_entities_workspacegroup",
@@ -506,7 +469,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "workspacegroup",
@@ -525,12 +488,31 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "fileworkspacelink",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/FileWorkspaceLink.cs",
       "source_location": "L8"
+    },
+    {
+      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_fileworkspacelinkconfiguration_desktoppro_persistence_configurations_fileworkspacelinkconfiguration",
+      "label": "FileWorkspaceLinkConfiguration",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "FileWorkspaceLink",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Persistence.Configurations",
+        "scope_chain": [
+          "s134"
+        ]
+      },
+      "norm_label": "fileworkspacelinkconfiguration",
+      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/FileWorkspaceLinkConfiguration.cs",
+      "source_location": "L7"
     },
     {
       "id": "backend_src_infrastructure_desktoppro_persistence_migrations_20260911163813_removeiconpathandaddworkspaceiconname_designer_desktoppro_persistence_migrations_removeiconpathandaddworkspaceiconname",
@@ -613,6 +595,158 @@
       "source_location": "L13"
     },
     {
+      "id": "backend_src_core_desktoppro_domain_entities_baseentity_desktoppro_domain_entities_baseentity",
+      "label": "BaseEntity",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "BaseEntity",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Domain.Entities",
+        "scope_chain": [
+          "s17"
+        ]
+      },
+      "norm_label": "baseentity",
+      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/BaseEntity.cs",
+      "source_location": "L5"
+    },
+    {
+      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller",
+      "label": "WorkspacesController",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.WebApi.Controllers",
+        "scope_chain": [
+          "s335"
+        ]
+      },
+      "norm_label": "workspacescontroller",
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L10"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "label": "WorkspaceDetailDto",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "WorkspaceDetailDto",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "norm_label": "workspacedetaildto",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L5"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler",
+      "label": "GetWorkspaceByIdQueryHandler",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "GetWorkspaceByIdQuery",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaceById",
+        "scope_chain": [
+          "s275"
+        ]
+      },
+      "norm_label": "getworkspacebyidqueryhandler",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L12"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "label": "GetWorkspaceByIdQuery",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "GetWorkspaceByIdQuery",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaceById",
+        "scope_chain": [
+          "s92"
+        ]
+      },
+      "norm_label": "getworkspacebyidquery",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQuery.cs",
+      "source_location": "L7"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_commands_createworkspace_createworkspacecommandvalidator_desktoppro_application_features_workspaces_commands_createworkspace_createworkspacecommandvalidator",
+      "label": "CreateWorkspaceCommandValidator",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "CreateWorkspaceCommandValidator",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.Commands.CreateWorkspace",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "norm_label": "createworkspacecommandvalidator",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Commands/CreateWorkspace/CreateWorkspaceCommandValidator.cs",
+      "source_location": "L5"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator",
+      "label": "GetWorkspaceByIdQueryValidator",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "CreateWorkspaceCommandValidator",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaceById",
+        "scope_chain": [
+          "s30"
+        ]
+      },
+      "norm_label": "getworkspacebyidqueryvalidator",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQueryValidator.cs",
+      "source_location": "L5"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_createworkspacedto_desktoppro_application_features_workspaces_dtos_createworkspacedto",
+      "label": "CreateWorkspaceDto",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "CreateWorkspaceDto",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "createworkspacedto",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/CreateWorkspaceDto.cs",
+      "source_location": "L3"
+    },
+    {
       "id": "backend_src_core_desktoppro_application_common_behaviors_validationbehavior_desktoppro_application_common_behaviors_validationbehavior",
       "label": "ValidationBehavior",
       "_callable": true,
@@ -651,25 +785,6 @@
       "source_location": "L8"
     },
     {
-      "id": "backend_src_infrastructure_desktoppro_persistence_dependencyinjection_desktoppro_persistence_dependencyinjection",
-      "label": "DependencyInjection",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "ValidationBehavior",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Persistence",
-        "scope_chain": [
-          "s224"
-        ]
-      },
-      "norm_label": "dependencyinjection",
-      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/DependencyInjection.cs",
-      "source_location": "L9"
-    },
-    {
       "id": "backend_src_presentation_desktoppro_webapi_middlewares_globalexceptionhandler_desktoppro_webapi_middlewares_globalexceptionhandler",
       "label": "GlobalExceptionHandler",
       "_callable": true,
@@ -700,7 +815,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "virtualfile",
@@ -740,19 +855,6 @@
       "source_location": "L5"
     },
     {
-      "id": "frontend_src_features_workspaces_components_workspacelist_workspacelistprops",
-      "label": "WorkspaceListProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "client.ts",
-      "file_type": "code",
-      "norm_label": "workspacelistprops",
-      "source_file": "Frontend/src/features/workspaces/components/WorkspaceList.tsx",
-      "source_location": "L5"
-    },
-    {
       "id": "frontend_src_features_workspaces_types_workspace_types_createworkspacedto",
       "label": "CreateWorkspaceDto",
       "_callable": true,
@@ -764,6 +866,19 @@
       "norm_label": "createworkspacedto",
       "source_file": "Frontend/src/features/workspaces/types/workspace.types.ts",
       "source_location": "L10"
+    },
+    {
+      "id": "frontend_src_features_workspaces_types_workspace_types_workspacedetaildto",
+      "label": "WorkspaceDetailDto",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "client.ts",
+      "file_type": "code",
+      "norm_label": "workspacedetaildto",
+      "source_file": "Frontend/src/features/workspaces/types/workspace.types.ts",
+      "source_location": "L17"
     },
     {
       "id": "frontend_src_features_workspaces_types_workspace_types_workspacedto",
@@ -841,88 +956,6 @@
       "source_location": "L16"
     },
     {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_handle",
-      "label": ".Handle()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces",
-        "scope_chain": [
-          "s161"
-        ]
-      },
-      "norm_label": ".handle()",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQueryHandler.cs",
-      "source_location": "L17"
-    },
-    {
-      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_createworkspaceasync",
-      "label": ".CreateWorkspaceAsync()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.WebApi.Controllers",
-        "scope_chain": [
-          "s259"
-        ],
-        "unresolved_calls": [
-          {
-            "callee": "Parse",
-            "receiver_type": "Guid",
-            "lang": "csharp",
-            "line": "L28"
-          },
-          {
-            "callee": "Send",
-            "receiver_type": "ISender",
-            "lang": "csharp",
-            "line": "L31"
-          }
-        ]
-      },
-      "norm_label": ".createworkspaceasync()",
-      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L20"
-    },
-    {
-      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacesasync",
-      "label": ".GetWorkspacesAsync()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.WebApi.Controllers",
-        "scope_chain": [
-          "s259"
-        ],
-        "unresolved_calls": [
-          {
-            "callee": "Parse",
-            "receiver_type": "Guid",
-            "lang": "csharp",
-            "line": "L40"
-          },
-          {
-            "callee": "Send",
-            "receiver_type": "ISender",
-            "lang": "csharp",
-            "line": "L43"
-          }
-        ]
-      },
-      "norm_label": ".getworkspacesasync()",
-      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L35"
-    },
-    {
       "id": "frontend_src_app_app",
       "label": "App()",
       "_callable": true,
@@ -932,7 +965,7 @@
       "file_type": "code",
       "norm_label": "app()",
       "source_file": "Frontend/src/App.tsx",
-      "source_location": "L5"
+      "source_location": "L7"
     },
     {
       "id": "frontend_src_components_layout_appsidebar_appsidebar",
@@ -1139,6 +1172,54 @@
       "source_location": "L5"
     },
     {
+      "id": "frontend_src_components_ui_tooltip_tooltip",
+      "label": "Tooltip()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "tooltip()",
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "frontend_src_components_ui_tooltip_tooltipcontent",
+      "label": "TooltipContent()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "tooltipcontent()",
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L34"
+    },
+    {
+      "id": "frontend_src_components_ui_tooltip_tooltipprovider",
+      "label": "TooltipProvider()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "tooltipprovider()",
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "frontend_src_components_ui_tooltip_tooltiptrigger",
+      "label": "TooltipTrigger()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "tooltiptrigger()",
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L28"
+    },
+    {
       "id": "frontend_src_features_workspaces_api_usecreateworkspace_usecreateworkspace",
       "label": "useCreateWorkspace()",
       "_callable": true,
@@ -1151,6 +1232,18 @@
       "source_location": "L6"
     },
     {
+      "id": "frontend_src_features_workspaces_api_useworkspaces_useworkspaces",
+      "label": "useWorkspaces()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "useworkspaces()",
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspaces.ts",
+      "source_location": "L9"
+    },
+    {
       "id": "frontend_src_features_workspaces_components_createworkspacedialog_createworkspacedialog",
       "label": "CreateWorkspaceDialog()",
       "_callable": true,
@@ -1160,7 +1253,105 @@
       "file_type": "code",
       "norm_label": "createworkspacedialog()",
       "source_file": "Frontend/src/features/workspaces/components/CreateWorkspaceDialog.tsx",
-      "source_location": "L17"
+      "source_location": "L21"
+    },
+    {
+      "id": "frontend_src_features_workspaces_components_workspacedetailview_formatexpirationdate",
+      "label": "formatExpirationDate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "formatexpirationdate()",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L13"
+    },
+    {
+      "id": "frontend_src_features_workspaces_components_workspacedetailview_workspacedetailview",
+      "label": "WorkspaceDetailView()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "workspacedetailview()",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L31"
+    },
+    {
+      "id": "frontend_src_features_workspaces_components_workspaceitem_workspaceitem",
+      "label": "WorkspaceItem()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "workspaceitem()",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceItem.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "frontend_src_features_workspaces_components_workspacelist_workspacelist",
+      "label": "WorkspaceList()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "workspacelist()",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceList.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "frontend_src_features_workspaces_utils_workspaceicons_getworkspaceicon",
+      "label": "getWorkspaceIcon()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "getworkspaceicon()",
+      "source_file": "Frontend/src/features/workspaces/utils/workspaceIcons.ts",
+      "source_location": "L73"
+    },
+    {
+      "id": "backend_src_infrastructure_desktoppro_persistence_dependencyinjection_desktoppro_persistence_dependencyinjection_addpersistence",
+      "label": ".AddPersistence()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "IAppDbContext",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Persistence",
+        "scope_chain": [
+          "s224"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "GetConnectionString",
+            "receiver_type": "IConfiguration",
+            "lang": "csharp",
+            "line": "L15"
+          },
+          {
+            "callee": "AddDbContext",
+            "receiver_type": "IServiceCollection",
+            "lang": "csharp",
+            "line": "L17"
+          },
+          {
+            "callee": "AddScoped",
+            "receiver_type": "IServiceCollection",
+            "lang": "csharp",
+            "line": "L22"
+          }
+        ]
+      },
+      "norm_label": ".addpersistence()",
+      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/DependencyInjection.cs",
+      "source_location": "L11"
     },
     {
       "id": "backend_src_infrastructure_desktoppro_persistence_contexts_appdbcontext_desktoppro_persistence_contexts_appdbcontext_onmodelcreating",
@@ -1205,7 +1396,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": ".updatelastlogindate()",
@@ -1223,7 +1414,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ],
         "unresolved_calls": [
           {
@@ -1249,7 +1440,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ],
         "unresolved_calls": [
           {
@@ -1303,6 +1494,50 @@
       "source_location": "L9"
     },
     {
+      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_virtualfileconfiguration_desktoppro_persistence_configurations_virtualfileconfiguration_configure",
+      "label": ".Configure()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "AppUser",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Persistence.Configurations",
+        "scope_chain": [
+          "s131"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "HasKey",
+            "receiver_type": "EntityTypeBuilder",
+            "lang": "csharp",
+            "line": "L11"
+          },
+          {
+            "callee": "HasOne",
+            "receiver_type": "EntityTypeBuilder",
+            "lang": "csharp",
+            "line": "L13"
+          },
+          {
+            "callee": "Property",
+            "receiver_type": "EntityTypeBuilder",
+            "lang": "csharp",
+            "line": "L18"
+          },
+          {
+            "callee": "HasMany",
+            "receiver_type": "EntityTypeBuilder",
+            "lang": "csharp",
+            "line": "L53"
+          }
+        ]
+      },
+      "norm_label": ".configure()",
+      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/VirtualFileConfiguration.cs",
+      "source_location": "L9"
+    },
+    {
       "id": "backend_src_core_desktoppro_domain_entities_aitriagesuggestion_desktoppro_domain_entities_aitriagesuggestion_updatesuggestion",
       "label": ".UpdateSuggestion()",
       "_callable": true,
@@ -1313,7 +1548,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ],
         "unresolved_calls": [
           {
@@ -1473,7 +1708,7 @@
       "metadata": {
         "namespace": "DesktopPro.Persistence.Configurations",
         "scope_chain": [
-          "s127"
+          "s131"
         ],
         "unresolved_calls": [
           {
@@ -1501,48 +1736,22 @@
       "source_location": "L9"
     },
     {
-      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_virtualfileconfiguration_desktoppro_persistence_configurations_virtualfileconfiguration_configure",
-      "label": ".Configure()",
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_handle",
+      "label": ".Handle()",
       "_callable": true,
       "_origin": "ast",
       "community": 22,
-      "community_name": "VirtualFile",
+      "community_name": "GetWorkspacesQuery",
       "file_type": "code",
       "metadata": {
-        "namespace": "DesktopPro.Persistence.Configurations",
+        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces",
         "scope_chain": [
-          "s127"
-        ],
-        "unresolved_calls": [
-          {
-            "callee": "HasKey",
-            "receiver_type": "EntityTypeBuilder",
-            "lang": "csharp",
-            "line": "L11"
-          },
-          {
-            "callee": "HasOne",
-            "receiver_type": "EntityTypeBuilder",
-            "lang": "csharp",
-            "line": "L13"
-          },
-          {
-            "callee": "Property",
-            "receiver_type": "EntityTypeBuilder",
-            "lang": "csharp",
-            "line": "L18"
-          },
-          {
-            "callee": "HasMany",
-            "receiver_type": "EntityTypeBuilder",
-            "lang": "csharp",
-            "line": "L53"
-          }
+          "s161"
         ]
       },
-      "norm_label": ".configure()",
-      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/VirtualFileConfiguration.cs",
-      "source_location": "L9"
+      "norm_label": ".handle()",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQueryHandler.cs",
+      "source_location": "L17"
     },
     {
       "id": "backend_src_infrastructure_desktoppro_persistence_configurations_workspaceconfiguration_desktoppro_persistence_configurations_workspaceconfiguration_configure",
@@ -1555,7 +1764,7 @@
       "metadata": {
         "namespace": "DesktopPro.Persistence.Configurations",
         "scope_chain": [
-          "s127"
+          "s131"
         ],
         "unresolved_calls": [
           {
@@ -1599,12 +1808,12 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": ".makepermanent()",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L69"
+      "source_location": "L70"
     },
     {
       "id": "backend_src_core_desktoppro_domain_entities_workspace_desktoppro_domain_entities_workspace_maketemporal",
@@ -1617,12 +1826,12 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": ".maketemporal()",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L62"
+      "source_location": "L63"
     },
     {
       "id": "backend_src_core_desktoppro_domain_entities_workspace_desktoppro_domain_entities_workspace_rename",
@@ -1635,20 +1844,20 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ],
         "unresolved_calls": [
           {
             "callee": "ThrowIfNullOrWhiteSpace",
             "receiver_type": "ArgumentException",
             "lang": "csharp",
-            "line": "L57"
+            "line": "L58"
           }
         ]
       },
       "norm_label": ".rename()",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L55"
+      "source_location": "L56"
     },
     {
       "id": "backend_src_core_desktoppro_domain_entities_workspace_desktoppro_domain_entities_workspace_updateexpiration",
@@ -1661,12 +1870,12 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": ".updateexpiration()",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L82"
+      "source_location": "L83"
     },
     {
       "id": "backend_src_core_desktoppro_domain_entities_workspace_desktoppro_domain_entities_workspace_updateiconname",
@@ -1679,12 +1888,12 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": ".updateiconname()",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L76"
+      "source_location": "L77"
     },
     {
       "id": "backend_src_core_desktoppro_domain_entities_workspacegroup_desktoppro_domain_entities_workspacegroup_movetoparentgroup",
@@ -1697,7 +1906,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": ".movetoparentgroup()",
@@ -1715,7 +1924,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ],
         "unresolved_calls": [
           {
@@ -1741,7 +1950,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": ".movetogroup()",
@@ -2161,6 +2370,120 @@
       "source_location": "L19"
     },
     {
+      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_createworkspaceasync",
+      "label": ".CreateWorkspaceAsync()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.WebApi.Controllers",
+        "scope_chain": [
+          "s335"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Parse",
+            "receiver_type": "Guid",
+            "lang": "csharp",
+            "line": "L29"
+          },
+          {
+            "callee": "Send",
+            "receiver_type": "ISender",
+            "lang": "csharp",
+            "line": "L32"
+          }
+        ]
+      },
+      "norm_label": ".createworkspaceasync()",
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L21"
+    },
+    {
+      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacebyidasync",
+      "label": ".GetWorkspaceByIdAsync()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.WebApi.Controllers",
+        "scope_chain": [
+          "s335"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Parse",
+            "receiver_type": "Guid",
+            "lang": "csharp",
+            "line": "L55"
+          },
+          {
+            "callee": "Send",
+            "receiver_type": "ISender",
+            "lang": "csharp",
+            "line": "L58"
+          }
+        ]
+      },
+      "norm_label": ".getworkspacebyidasync()",
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L48"
+    },
+    {
+      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacesasync",
+      "label": ".GetWorkspacesAsync()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.WebApi.Controllers",
+        "scope_chain": [
+          "s335"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Parse",
+            "receiver_type": "Guid",
+            "lang": "csharp",
+            "line": "L41"
+          },
+          {
+            "callee": "Send",
+            "receiver_type": "ISender",
+            "lang": "csharp",
+            "line": "L44"
+          }
+        ]
+      },
+      "norm_label": ".getworkspacesasync()",
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L36"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler_handle",
+      "label": ".Handle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "GetWorkspaceByIdQuery",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaceById",
+        "scope_chain": [
+          "s275"
+        ]
+      },
+      "norm_label": ".handle()",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L21"
+    },
+    {
       "id": "backend_src_core_desktoppro_application_common_behaviors_validationbehavior_desktoppro_application_common_behaviors_validationbehavior_handle",
       "label": ".Handle()",
       "_callable": true,
@@ -2237,44 +2560,6 @@
       "source_location": "L10"
     },
     {
-      "id": "backend_src_infrastructure_desktoppro_persistence_dependencyinjection_desktoppro_persistence_dependencyinjection_addpersistence",
-      "label": ".AddPersistence()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "ValidationBehavior",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Persistence",
-        "scope_chain": [
-          "s224"
-        ],
-        "unresolved_calls": [
-          {
-            "callee": "GetConnectionString",
-            "receiver_type": "IConfiguration",
-            "lang": "csharp",
-            "line": "L15"
-          },
-          {
-            "callee": "AddDbContext",
-            "receiver_type": "IServiceCollection",
-            "lang": "csharp",
-            "line": "L17"
-          },
-          {
-            "callee": "AddScoped",
-            "receiver_type": "IServiceCollection",
-            "lang": "csharp",
-            "line": "L22"
-          }
-        ]
-      },
-      "norm_label": ".addpersistence()",
-      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/DependencyInjection.cs",
-      "source_location": "L11"
-    },
-    {
       "id": "backend_src_presentation_desktoppro_webapi_middlewares_globalexceptionhandler_desktoppro_webapi_middlewares_globalexceptionhandler_tryhandleasync",
       "label": ".TryHandleAsync()",
       "_callable": true,
@@ -2311,7 +2596,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": ".markasfound()",
@@ -2329,7 +2614,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": ".markasmissing()",
@@ -2347,7 +2632,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": ".markasorganized()",
@@ -2365,7 +2650,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": ".movetorecyclebin()",
@@ -2383,7 +2668,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": ".relocateinvault()",
@@ -2401,7 +2686,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ],
         "unresolved_calls": [
           {
@@ -2427,7 +2712,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ],
         "unresolved_calls": [
           {
@@ -2453,7 +2738,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": ".updatellmsummary()",
@@ -2471,7 +2756,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": ".updateusernote()",
@@ -2489,7 +2774,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ],
         "unresolved_calls": [
           {
@@ -2505,63 +2790,28 @@
       "source_location": "L142"
     },
     {
-      "id": "frontend_src_features_workspaces_api_useworkspaces_useworkspaces",
-      "label": "useWorkspaces()",
+      "id": "frontend_src_features_workspaces_api_useworkspace_useworkspace",
+      "label": "useWorkspace()",
       "_callable": true,
       "_origin": "ast",
       "community": 7,
       "community_name": "client.ts",
       "file_type": "code",
-      "norm_label": "useworkspaces()",
-      "source_file": "Frontend/src/features/workspaces/api/useWorkspaces.ts",
-      "source_location": "L9"
+      "norm_label": "useworkspace()",
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L8"
     },
     {
-      "id": "frontend_src_features_workspaces_components_workspaceitem_workspaceitem",
-      "label": "WorkspaceItem()",
+      "id": "frontend_src_features_workspaces_api_useworkspace_workspacedetailkey",
+      "label": "workspaceDetailKey()",
       "_callable": true,
       "_origin": "ast",
       "community": 7,
       "community_name": "client.ts",
       "file_type": "code",
-      "norm_label": "workspaceitem()",
-      "source_file": "Frontend/src/features/workspaces/components/WorkspaceItem.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "frontend_src_features_workspaces_components_workspacelist_workspacelist",
-      "label": "WorkspaceList()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "client.ts",
-      "file_type": "code",
-      "norm_label": "workspacelist()",
-      "source_file": "Frontend/src/features/workspaces/components/WorkspaceList.tsx",
-      "source_location": "L10"
-    },
-    {
-      "id": "frontend_src_features_workspaces_utils_workspaceicons_getworkspaceicon",
-      "label": "getWorkspaceIcon()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "client.ts",
-      "file_type": "code",
-      "norm_label": "getworkspaceicon()",
-      "source_file": "Frontend/src/features/workspaces/utils/workspaceIcons.ts",
-      "source_location": "L73"
-    },
-    {
-      "id": "abstractvalidator",
-      "label": "AbstractValidator",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "abstractvalidator",
-      "source_file": "",
-      "source_location": ""
+      "norm_label": "workspacedetailkey()",
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L6"
     },
     {
       "id": "backend_src_core_desktoppro_application_common_interfaces_iappdbcontext_cs_cancellationtoken",
@@ -2652,252 +2902,6 @@
       "source_location": ""
     },
     {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_commands_createworkspace_createworkspacecommandvalidator",
-      "label": "CreateWorkspaceCommandValidator.cs",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "createworkspacecommandvalidator.cs",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Commands/CreateWorkspace/CreateWorkspaceCommandValidator.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_createworkspacedto",
-      "label": "CreateWorkspaceDto.cs",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "createworkspacedto.cs",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/CreateWorkspaceDto.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_createworkspacedto_cs_datetime",
-      "label": "DateTime",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "datetime",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto",
-      "label": "WorkspaceDto.cs",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "workspacedto.cs",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDto.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto_cs_datetime",
-      "label": "DateTime",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "datetime",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto_cs_guid",
-      "label": "Guid",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "guid",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery",
-      "label": "GetWorkspacesQuery.cs",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "getworkspacesquery.cs",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQuery.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery_cs_guid",
-      "label": "Guid",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "guid",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery_cs_ireadonlylist",
-      "label": "IReadOnlyList",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "ireadonlylist",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler",
-      "label": "GetWorkspacesQueryHandler.cs",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "getworkspacesqueryhandler.cs",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQueryHandler.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_cs_cancellationtoken",
-      "label": "CancellationToken",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "cancellationtoken",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_cs_ireadonlylist",
-      "label": "IReadOnlyList",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "ireadonlylist",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_cs_task",
-      "label": "Task",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "task",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_cs_workspacedto",
-      "label": "WorkspaceDto",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "workspacedto",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller",
-      "label": "WorkspacesController.cs",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "workspacescontroller.cs",
-      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_cs_cancellationtoken",
-      "label": "CancellationToken",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "cancellationtoken",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_cs_task",
-      "label": "Task",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "task",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "controllerbase",
-      "label": "ControllerBase",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "controllerbase",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "csharp_namespace:52b3febdf43fc8db",
-      "label": "DesktopPro.WebApi.Controllers",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "kind": "csharp_namespace",
-        "namespace": "DesktopPro.WebApi.Controllers"
-      },
-      "norm_label": "desktoppro.webapi.controllers",
-      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L7",
-      "type": "namespace"
-    },
-    {
-      "id": "csharp_namespace:80f87349dc80f41e",
-      "label": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "kind": "csharp_namespace",
-        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces"
-      },
-      "norm_label": "desktoppro.application.features.workspaces.queries.getworkspaces",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQuery.cs",
-      "source_location": "L4",
-      "type": "namespace"
-    },
-    {
-      "id": "csharp_namespace:bf8bb63131d4289d",
-      "label": "DesktopPro.Application.Features.Workspaces.DTOs",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "metadata": {
-        "kind": "csharp_namespace",
-        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs"
-      },
-      "norm_label": "desktoppro.application.features.workspaces.dtos",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/CreateWorkspaceDto.cs",
-      "source_location": "L1",
-      "type": "namespace"
-    },
-    {
       "id": "csharp_namespace:f1f69eee3b3347a2",
       "label": "DesktopPro.Application.Features.Workspaces.Commands.CreateWorkspace",
       "_origin": "ast",
@@ -2914,39 +2918,6 @@
       "type": "namespace"
     },
     {
-      "id": "httpget",
-      "label": "HttpGet",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "httpget",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "httppost",
-      "label": "HttpPost",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "httppost",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "iactionresult",
-      "label": "IActionResult",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "iactionresult",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "irequest",
       "label": "IRequest",
       "_origin": "ast",
@@ -2954,39 +2925,6 @@
       "community_name": "CreateWorkspaceCommand",
       "file_type": "code",
       "norm_label": "irequest",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "irequesthandler",
-      "label": "IRequestHandler",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "irequesthandler",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "isender",
-      "label": "ISender",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "isender",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "producesresponsetype",
-      "label": "ProducesResponseType",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "CreateWorkspaceCommand",
-      "file_type": "code",
-      "norm_label": "producesresponsetype",
       "source_file": "",
       "source_location": ""
     },
@@ -3134,6 +3072,17 @@
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_components_ui_tooltip",
+      "label": "tooltip.tsx",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "tooltip.tsx",
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_features_workspaces_components_createworkspacedialog",
       "label": "CreateWorkspaceDialog.tsx",
       "_origin": "ast",
@@ -3142,6 +3091,28 @@
       "file_type": "code",
       "norm_label": "createworkspacedialog.tsx",
       "source_file": "Frontend/src/features/workspaces/components/CreateWorkspaceDialog.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_features_workspaces_components_workspacedetailview",
+      "label": "WorkspaceDetailView.tsx",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "workspacedetailview.tsx",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_features_workspaces_components_workspacelist",
+      "label": "WorkspaceList.tsx",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "CreateWorkspaceDialog.tsx",
+      "file_type": "code",
+      "norm_label": "workspacelist.tsx",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceList.tsx",
       "source_location": "L1"
     },
     {
@@ -3222,15 +3193,15 @@
       "source_location": "L8"
     },
     {
-      "id": "ref_class_variance_authority",
-      "label": "class-variance-authority",
+      "id": "frontend_src_features_workspaces_components_workspacelist_tsx_docref_rfc_7807",
+      "label": "RFC-7807",
       "_origin": "ast",
       "community": 1,
       "community_name": "CreateWorkspaceDialog.tsx",
       "file_type": "concept",
-      "norm_label": "class-variance-authority",
-      "source_file": "Frontend/package.json",
-      "source_location": "L18"
+      "norm_label": "rfc-7807",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceList.tsx",
+      "source_location": "L23"
     },
     {
       "id": "ref_cn",
@@ -3242,17 +3213,6 @@
       "norm_label": "cn",
       "source_file": "Frontend/package.json",
       "source_location": "L20"
-    },
-    {
-      "id": "ref_lucide_react",
-      "label": "lucide-react",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "CreateWorkspaceDialog.tsx",
-      "file_type": "concept",
-      "norm_label": "lucide-react",
-      "source_file": "Frontend/package.json",
-      "source_location": "L21"
     },
     {
       "id": "ref_phosphor_icons_react",
@@ -4069,6 +4029,17 @@
       "source_location": "L34"
     },
     {
+      "id": "backend_src_core_desktoppro_application_common_interfaces_iappdbcontext",
+      "label": "IAppDbContext.cs",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "DesktopPro.Domain.Entities",
+      "file_type": "code",
+      "norm_label": "iappdbcontext.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Common/Interfaces/IAppDbContext.cs",
+      "source_location": "L1"
+    },
+    {
       "id": "backend_src_core_desktoppro_domain_entities_appuser",
       "label": "AppUser.cs",
       "_origin": "ast",
@@ -4091,17 +4062,6 @@
       "source_location": "L1"
     },
     {
-      "id": "backend_src_core_desktoppro_domain_entities_workspace",
-      "label": "Workspace.cs",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "DesktopPro.Domain.Entities",
-      "file_type": "code",
-      "norm_label": "workspace.cs",
-      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L1"
-    },
-    {
       "id": "backend_src_core_desktoppro_domain_entities_workspacegroup",
       "label": "WorkspaceGroup.cs",
       "_origin": "ast",
@@ -4110,28 +4070,6 @@
       "file_type": "code",
       "norm_label": "workspacegroup.cs",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/WorkspaceGroup.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_aitriagesuggestionconfiguration",
-      "label": "AiTriageSuggestionConfiguration.cs",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "DesktopPro.Domain.Entities",
-      "file_type": "code",
-      "norm_label": "aitriagesuggestionconfiguration.cs",
-      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/AiTriageSuggestionConfiguration.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_fileworkspacelinkconfiguration",
-      "label": "FileWorkspaceLinkConfiguration.cs",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "DesktopPro.Domain.Entities",
-      "file_type": "code",
-      "norm_label": "fileworkspacelinkconfiguration.cs",
-      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/FileWorkspaceLinkConfiguration.cs",
       "source_location": "L1"
     },
     {
@@ -4168,6 +4106,33 @@
       "source_location": "L1"
     },
     {
+      "id": "backend_src_infrastructure_desktoppro_persistence_contexts_appdbcontext",
+      "label": "AppDbContext.cs",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "DesktopPro.Domain.Entities",
+      "file_type": "code",
+      "norm_label": "appdbcontext.cs",
+      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Contexts/AppDbContext.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "csharp_namespace:1819be1bca509f8e",
+      "label": "DesktopPro.Application.Common.Interfaces",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "DesktopPro.Domain.Entities",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "DesktopPro.Application.Common.Interfaces"
+      },
+      "norm_label": "desktoppro.application.common.interfaces",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Common/Interfaces/IAppDbContext.cs",
+      "source_location": "L4",
+      "type": "namespace"
+    },
+    {
       "id": "csharp_namespace:332d8ec9095c1900",
       "label": "DesktopPro.Domain.Entities",
       "_origin": "ast",
@@ -4198,28 +4163,6 @@
       "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/AiTriageSuggestionConfiguration.cs",
       "source_location": "L5",
       "type": "namespace"
-    },
-    {
-      "id": "ientitytypeconfiguration",
-      "label": "IEntityTypeConfiguration",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "DesktopPro.Domain.Entities",
-      "file_type": "code",
-      "norm_label": "ientitytypeconfiguration",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_application_common_interfaces_iappdbcontext",
-      "label": "IAppDbContext.cs",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "IAppDbContext",
-      "file_type": "code",
-      "norm_label": "iappdbcontext.cs",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Common/Interfaces/IAppDbContext.cs",
-      "source_location": "L1"
     },
     {
       "id": "backend_src_core_desktoppro_application_common_interfaces_iappdbcontext_cs_dbset",
@@ -4335,31 +4278,37 @@
       "source_location": "L10"
     },
     {
-      "id": "backend_src_infrastructure_desktoppro_persistence_contexts_appdbcontext",
-      "label": "AppDbContext.cs",
+      "id": "backend_src_infrastructure_desktoppro_persistence_dependencyinjection",
+      "label": "DesktopPro.Persistence/DependencyInjection.cs",
       "_origin": "ast",
       "community": 15,
       "community_name": "IAppDbContext",
       "file_type": "code",
-      "norm_label": "appdbcontext.cs",
-      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Contexts/AppDbContext.cs",
+      "norm_label": "desktoppro.persistence/dependencyinjection.cs",
+      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/DependencyInjection.cs",
       "source_location": "L1"
     },
     {
-      "id": "csharp_namespace:1819be1bca509f8e",
-      "label": "DesktopPro.Application.Common.Interfaces",
+      "id": "backend_src_infrastructure_desktoppro_persistence_dependencyinjection_cs_iservicecollection",
+      "label": "IServiceCollection",
       "_origin": "ast",
       "community": 15,
       "community_name": "IAppDbContext",
       "file_type": "code",
-      "metadata": {
-        "kind": "csharp_namespace",
-        "namespace": "DesktopPro.Application.Common.Interfaces"
-      },
-      "norm_label": "desktoppro.application.common.interfaces",
-      "source_file": "Backend/src/Core/DesktopPro.Application/Common/Interfaces/IAppDbContext.cs",
-      "source_location": "L4",
-      "type": "namespace"
+      "norm_label": "iservicecollection",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "iconfiguration",
+      "label": "IConfiguration",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "IAppDbContext",
+      "file_type": "code",
+      "norm_label": "iconfiguration",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "backend_src_infrastructure_desktoppro_persistence_contexts_appdbcontext_cs_dbset",
@@ -4497,6 +4446,23 @@
       "source_location": ""
     },
     {
+      "id": "backend_src_core_desktoppro_domain_entities_aitriagesuggestion_desktoppro_domain_entities_aitriagesuggestion_virtualfile",
+      "label": "VirtualFile",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "AppUser",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Domain.Entities",
+        "scope_chain": [
+          "s17"
+        ]
+      },
+      "norm_label": "virtualfile",
+      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/AiTriageSuggestion.cs",
+      "source_location": "L25"
+    },
+    {
       "id": "backend_src_core_desktoppro_domain_entities_appuser_cs_datetime",
       "label": "DateTime",
       "_origin": "ast",
@@ -4517,7 +4483,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "lastlogindateutc",
@@ -4534,7 +4500,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "passwordhash",
@@ -4551,7 +4517,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "username",
@@ -4577,6 +4543,28 @@
       "community_name": "AppUser",
       "file_type": "code",
       "norm_label": "entitytypebuilder",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_virtualfileconfiguration_cs_entitytypebuilder",
+      "label": "EntityTypeBuilder",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "AppUser",
+      "file_type": "code",
+      "norm_label": "entitytypebuilder",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "ientitytypeconfiguration",
+      "label": "IEntityTypeConfiguration",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "AppUser",
+      "file_type": "code",
+      "norm_label": "ientitytypeconfiguration",
       "source_file": "",
       "source_location": ""
     },
@@ -4722,7 +4710,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "suggestedname",
@@ -4739,7 +4727,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "suggestedworkspaceid",
@@ -4756,7 +4744,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "suggestedworkspacename",
@@ -4773,12 +4761,23 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "virtualfileid",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/AiTriageSuggestion.cs",
       "source_location": "L10"
+    },
+    {
+      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_aitriagesuggestionconfiguration",
+      "label": "AiTriageSuggestionConfiguration.cs",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AiTriageSuggestion",
+      "file_type": "code",
+      "norm_label": "aitriagesuggestionconfiguration.cs",
+      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/AiTriageSuggestionConfiguration.cs",
+      "source_location": "L1"
     },
     {
       "id": "backend_src_infrastructure_desktoppro_persistence_configurations_aitriagesuggestionconfiguration_cs_entitytypebuilder",
@@ -4902,17 +4901,6 @@
       "source_location": "L7"
     },
     {
-      "id": "frontend_tsconfig_compileroptions_baseurl",
-      "label": "baseUrl",
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "tsconfig.json",
-      "file_type": "code",
-      "norm_label": "baseurl",
-      "source_file": "Frontend/tsconfig.json",
-      "source_location": "L8"
-    },
-    {
       "id": "frontend_tsconfig_compileroptions_paths",
       "label": "paths",
       "_origin": "ast",
@@ -4921,7 +4909,7 @@
       "file_type": "code",
       "norm_label": "paths",
       "source_file": "Frontend/tsconfig.json",
-      "source_location": "L9"
+      "source_location": "L8"
     },
     {
       "id": "frontend_tsconfig_files",
@@ -4955,7 +4943,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "workspacegroup",
@@ -4974,30 +4962,101 @@
       "source_location": ""
     },
     {
-      "id": "backend_src_core_desktoppro_domain_entities_aitriagesuggestion_desktoppro_domain_entities_aitriagesuggestion_virtualfile",
-      "label": "VirtualFile",
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto",
+      "label": "WorkspaceDto.cs",
       "_origin": "ast",
       "community": 22,
-      "community_name": "VirtualFile",
+      "community_name": "GetWorkspacesQuery",
       "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Domain.Entities",
-        "scope_chain": [
-          "s15"
-        ]
-      },
-      "norm_label": "virtualfile",
-      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/AiTriageSuggestion.cs",
-      "source_location": "L25"
+      "norm_label": "workspacedto.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDto.cs",
+      "source_location": "L1"
     },
     {
-      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_virtualfileconfiguration_cs_entitytypebuilder",
-      "label": "EntityTypeBuilder",
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto_cs_datetime",
+      "label": "DateTime",
       "_origin": "ast",
       "community": 22,
-      "community_name": "VirtualFile",
+      "community_name": "GetWorkspacesQuery",
       "file_type": "code",
-      "norm_label": "entitytypebuilder",
+      "norm_label": "datetime",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto_cs_guid",
+      "label": "Guid",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GetWorkspacesQuery",
+      "file_type": "code",
+      "norm_label": "guid",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery_cs_guid",
+      "label": "Guid",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GetWorkspacesQuery",
+      "file_type": "code",
+      "norm_label": "guid",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery_cs_ireadonlylist",
+      "label": "IReadOnlyList",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GetWorkspacesQuery",
+      "file_type": "code",
+      "norm_label": "ireadonlylist",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_cs_cancellationtoken",
+      "label": "CancellationToken",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GetWorkspacesQuery",
+      "file_type": "code",
+      "norm_label": "cancellationtoken",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_cs_ireadonlylist",
+      "label": "IReadOnlyList",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GetWorkspacesQuery",
+      "file_type": "code",
+      "norm_label": "ireadonlylist",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_cs_task",
+      "label": "Task",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GetWorkspacesQuery",
+      "file_type": "code",
+      "norm_label": "task",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_cs_workspacedto",
+      "label": "WorkspaceDto",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GetWorkspacesQuery",
+      "file_type": "code",
+      "norm_label": "workspacedto",
       "source_file": "",
       "source_location": ""
     },
@@ -5011,7 +5070,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "workspace",
@@ -5074,6 +5133,17 @@
       "source_location": "L1"
     },
     {
+      "id": "backend_src_core_desktoppro_domain_entities_workspace",
+      "label": "Workspace.cs",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Workspace",
+      "file_type": "code",
+      "norm_label": "workspace.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
+      "source_location": "L1"
+    },
+    {
       "id": "backend_src_core_desktoppro_domain_entities_workspace_cs_datetime",
       "label": "DateTime",
       "_origin": "ast",
@@ -5116,7 +5186,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "appuserid",
@@ -5133,7 +5203,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "expiresatutc",
@@ -5150,7 +5220,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "filelinks",
@@ -5167,7 +5237,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "iconname",
@@ -5184,7 +5254,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "istemporal",
@@ -5201,7 +5271,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "name",
@@ -5218,96 +5288,12 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "workspacegroups",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
       "source_location": "L28"
-    },
-    {
-      "id": "backend_src_core_desktoppro_domain_entities_baseentity",
-      "label": "BaseEntity.cs",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "WorkspaceGroup",
-      "file_type": "code",
-      "norm_label": "baseentity.cs",
-      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/BaseEntity.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_core_desktoppro_domain_entities_baseentity_cs_datetime",
-      "label": "DateTime",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "WorkspaceGroup",
-      "file_type": "code",
-      "norm_label": "datetime",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_domain_entities_baseentity_cs_guid",
-      "label": "Guid",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "WorkspaceGroup",
-      "file_type": "code",
-      "norm_label": "guid",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_core_desktoppro_domain_entities_baseentity_desktoppro_domain_entities_baseentity_createdat",
-      "label": "CreatedAt",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "WorkspaceGroup",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Domain.Entities",
-        "scope_chain": [
-          "s15"
-        ]
-      },
-      "norm_label": "createdat",
-      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/BaseEntity.cs",
-      "source_location": "L8"
-    },
-    {
-      "id": "backend_src_core_desktoppro_domain_entities_baseentity_desktoppro_domain_entities_baseentity_id",
-      "label": "Id",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "WorkspaceGroup",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Domain.Entities",
-        "scope_chain": [
-          "s15"
-        ]
-      },
-      "norm_label": "id",
-      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/BaseEntity.cs",
-      "source_location": "L7"
-    },
-    {
-      "id": "backend_src_core_desktoppro_domain_entities_baseentity_desktoppro_domain_entities_baseentity_updatedat",
-      "label": "UpdatedAt",
-      "_origin": "ast",
-      "community": 32,
-      "community_name": "WorkspaceGroup",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "DesktopPro.Domain.Entities",
-        "scope_chain": [
-          "s15"
-        ]
-      },
-      "norm_label": "updatedat",
-      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/BaseEntity.cs",
-      "source_location": "L9"
     },
     {
       "id": "backend_src_core_desktoppro_domain_entities_workspacegroup_cs_guid",
@@ -5341,7 +5327,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "filelinks",
@@ -5358,7 +5344,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "name",
@@ -5375,7 +5361,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "parentgroup",
@@ -5392,7 +5378,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "parentgroupid",
@@ -5409,7 +5395,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "subgroups",
@@ -5426,7 +5412,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "workspace",
@@ -5443,7 +5429,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s49"
+          "s52"
         ]
       },
       "norm_label": "workspaceid",
@@ -5471,7 +5457,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "virtualfile",
@@ -5488,7 +5474,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "virtualfileid",
@@ -5505,7 +5491,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "workspacegroupid",
@@ -5522,12 +5508,23 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "workspaceid",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/FileWorkspaceLink.cs",
       "source_location": "L11"
+    },
+    {
+      "id": "backend_src_infrastructure_desktoppro_persistence_configurations_fileworkspacelinkconfiguration",
+      "label": "FileWorkspaceLinkConfiguration.cs",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "FileWorkspaceLink",
+      "file_type": "code",
+      "norm_label": "fileworkspacelinkconfiguration.cs",
+      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/Configurations/FileWorkspaceLinkConfiguration.cs",
+      "source_location": "L1"
     },
     {
       "id": "backend_src_infrastructure_desktoppro_persistence_configurations_fileworkspacelinkconfiguration_cs_entitytypebuilder",
@@ -6002,6 +5999,17 @@
       "source_location": "L35"
     },
     {
+      "id": "ref_class_variance_authority",
+      "label": "class-variance-authority",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "class-variance-authority",
+      "source_file": "Frontend/package.json",
+      "source_location": "L18"
+    },
+    {
       "id": "ref_clsx",
       "label": "clsx",
       "_origin": "ast",
@@ -6088,6 +6096,17 @@
       "norm_label": "globals",
       "source_file": "Frontend/package.json",
       "source_location": "L39"
+    },
+    {
+      "id": "ref_lucide_react",
+      "label": "lucide-react",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "lucide-react",
+      "source_file": "Frontend/package.json",
+      "source_location": "L21"
     },
     {
       "id": "ref_postcss",
@@ -6233,6 +6252,553 @@
       "source_location": "L34"
     },
     {
+      "id": "backend_src_core_desktoppro_domain_entities_baseentity",
+      "label": "BaseEntity.cs",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "BaseEntity",
+      "file_type": "code",
+      "norm_label": "baseentity.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/BaseEntity.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_core_desktoppro_domain_entities_baseentity_cs_datetime",
+      "label": "DateTime",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "BaseEntity",
+      "file_type": "code",
+      "norm_label": "datetime",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_domain_entities_baseentity_cs_guid",
+      "label": "Guid",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "BaseEntity",
+      "file_type": "code",
+      "norm_label": "guid",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_domain_entities_baseentity_desktoppro_domain_entities_baseentity_createdat",
+      "label": "CreatedAt",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "BaseEntity",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Domain.Entities",
+        "scope_chain": [
+          "s17"
+        ]
+      },
+      "norm_label": "createdat",
+      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/BaseEntity.cs",
+      "source_location": "L8"
+    },
+    {
+      "id": "backend_src_core_desktoppro_domain_entities_baseentity_desktoppro_domain_entities_baseentity_id",
+      "label": "Id",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "BaseEntity",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Domain.Entities",
+        "scope_chain": [
+          "s17"
+        ]
+      },
+      "norm_label": "id",
+      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/BaseEntity.cs",
+      "source_location": "L7"
+    },
+    {
+      "id": "backend_src_core_desktoppro_domain_entities_baseentity_desktoppro_domain_entities_baseentity_updatedat",
+      "label": "UpdatedAt",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "BaseEntity",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Domain.Entities",
+        "scope_chain": [
+          "s17"
+        ]
+      },
+      "norm_label": "updatedat",
+      "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/BaseEntity.cs",
+      "source_location": "L9"
+    },
+    {
+      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_cs_cancellationtoken",
+      "label": "CancellationToken",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "norm_label": "cancellationtoken",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_cs_guid",
+      "label": "Guid",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "norm_label": "guid",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_cs_task",
+      "label": "Task",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "norm_label": "task",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "controllerbase",
+      "label": "ControllerBase",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "norm_label": "controllerbase",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "httpget",
+      "label": "HttpGet",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "norm_label": "httpget",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "httppost",
+      "label": "HttpPost",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "norm_label": "httppost",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "iactionresult",
+      "label": "IActionResult",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "norm_label": "iactionresult",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "isender",
+      "label": "ISender",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "norm_label": "isender",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "producesresponsetype",
+      "label": "ProducesResponseType",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": ".CreateWorkspaceAsync",
+      "file_type": "code",
+      "norm_label": "producesresponsetype",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "label": "WorkspaceDetailDto.cs",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "WorkspaceDetailDto",
+      "file_type": "code",
+      "norm_label": "workspacedetaildto.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_cs_datetime",
+      "label": "DateTime",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "WorkspaceDetailDto",
+      "file_type": "code",
+      "norm_label": "datetime",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_cs_guid",
+      "label": "Guid",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "WorkspaceDetailDto",
+      "file_type": "code",
+      "norm_label": "guid",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_createdat",
+      "label": "CreatedAt",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "WorkspaceDetailDto",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "norm_label": "createdat",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L12"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_expiresatutc",
+      "label": "ExpiresAtUtc",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "WorkspaceDetailDto",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "norm_label": "expiresatutc",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L11"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_iconname",
+      "label": "IconName",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "WorkspaceDetailDto",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "norm_label": "iconname",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L10"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_id",
+      "label": "Id",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "WorkspaceDetailDto",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "norm_label": "id",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L7"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_istemporal",
+      "label": "IsTemporal",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "WorkspaceDetailDto",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "norm_label": "istemporal",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L9"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_name",
+      "label": "Name",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "WorkspaceDetailDto",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "norm_label": "name",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L8"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler",
+      "label": "etWorkspaceByIdQueryHandler.cs",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "DesktopPro.Application.Features.Workspaces.DTOs",
+      "file_type": "code",
+      "norm_label": "etworkspacebyidqueryhandler.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "label": "GetWorkspaceByIdQuery.cs",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "DesktopPro.Application.Features.Workspaces.DTOs",
+      "file_type": "code",
+      "norm_label": "getworkspacebyidquery.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQuery.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery",
+      "label": "GetWorkspacesQuery.cs",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "DesktopPro.Application.Features.Workspaces.DTOs",
+      "file_type": "code",
+      "norm_label": "getworkspacesquery.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQuery.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler",
+      "label": "GetWorkspacesQueryHandler.cs",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "DesktopPro.Application.Features.Workspaces.DTOs",
+      "file_type": "code",
+      "norm_label": "getworkspacesqueryhandler.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQueryHandler.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller",
+      "label": "WorkspacesController.cs",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "DesktopPro.Application.Features.Workspaces.DTOs",
+      "file_type": "code",
+      "norm_label": "workspacescontroller.cs",
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "csharp_namespace:52b3febdf43fc8db",
+      "label": "DesktopPro.WebApi.Controllers",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "DesktopPro.Application.Features.Workspaces.DTOs",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "DesktopPro.WebApi.Controllers"
+      },
+      "norm_label": "desktoppro.webapi.controllers",
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L8",
+      "type": "namespace"
+    },
+    {
+      "id": "csharp_namespace:80f87349dc80f41e",
+      "label": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "DesktopPro.Application.Features.Workspaces.DTOs",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces"
+      },
+      "norm_label": "desktoppro.application.features.workspaces.queries.getworkspaces",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaces/GetWorkspacesQuery.cs",
+      "source_location": "L4",
+      "type": "namespace"
+    },
+    {
+      "id": "csharp_namespace:bf8bb63131d4289d",
+      "label": "DesktopPro.Application.Features.Workspaces.DTOs",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "DesktopPro.Application.Features.Workspaces.DTOs",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "DesktopPro.Application.Features.Workspaces.DTOs"
+      },
+      "norm_label": "desktoppro.application.features.workspaces.dtos",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/CreateWorkspaceDto.cs",
+      "source_location": "L1",
+      "type": "namespace"
+    },
+    {
+      "id": "csharp_namespace:de48d9fd40bb03c7",
+      "label": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaceById",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "DesktopPro.Application.Features.Workspaces.DTOs",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaceById"
+      },
+      "norm_label": "desktoppro.application.features.workspaces.queries.getworkspacebyid",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQuery.cs",
+      "source_location": "L5",
+      "type": "namespace"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_cs_cancellationtoken",
+      "label": "CancellationToken",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "GetWorkspaceByIdQuery",
+      "file_type": "code",
+      "norm_label": "cancellationtoken",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_cs_task",
+      "label": "Task",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "GetWorkspaceByIdQuery",
+      "file_type": "code",
+      "norm_label": "task",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_cs_workspacedetaildto",
+      "label": "WorkspaceDetailDto",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "GetWorkspaceByIdQuery",
+      "file_type": "code",
+      "norm_label": "workspacedetaildto",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_cs_guid",
+      "label": "Guid",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "GetWorkspaceByIdQuery",
+      "file_type": "code",
+      "norm_label": "guid",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "irequesthandler",
+      "label": "IRequestHandler",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "GetWorkspaceByIdQuery",
+      "file_type": "code",
+      "norm_label": "irequesthandler",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "abstractvalidator",
+      "label": "AbstractValidator",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "CreateWorkspaceCommandValidator",
+      "file_type": "code",
+      "norm_label": "abstractvalidator",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_commands_createworkspace_createworkspacecommandvalidator",
+      "label": "CreateWorkspaceCommandValidator.cs",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "CreateWorkspaceCommandValidator",
+      "file_type": "code",
+      "norm_label": "createworkspacecommandvalidator.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Commands/CreateWorkspace/CreateWorkspaceCommandValidator.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator",
+      "label": "GetWorkspaceByIdQueryValidator.cs",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "CreateWorkspaceCommandValidator",
+      "file_type": "code",
+      "norm_label": "getworkspacebyidqueryvalidator.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQueryValidator.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_createworkspacedto",
+      "label": "CreateWorkspaceDto.cs",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "CreateWorkspaceDto",
+      "file_type": "code",
+      "norm_label": "createworkspacedto.cs",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/CreateWorkspaceDto.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_core_desktoppro_application_features_workspaces_dtos_createworkspacedto_cs_datetime",
+      "label": "DateTime",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "CreateWorkspaceDto",
+      "file_type": "code",
+      "norm_label": "datetime",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "backend_src_core_desktoppro_application_common_behaviors_validationbehavior",
       "label": "ValidationBehavior.cs",
       "_origin": "ast",
@@ -6278,28 +6844,6 @@
     },
     {
       "id": "backend_src_core_desktoppro_application_dependencyinjection_cs_iservicecollection",
-      "label": "IServiceCollection",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "ValidationBehavior",
-      "file_type": "code",
-      "norm_label": "iservicecollection",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "backend_src_infrastructure_desktoppro_persistence_dependencyinjection",
-      "label": "DesktopPro.Persistence/DependencyInjection.cs",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "ValidationBehavior",
-      "file_type": "code",
-      "norm_label": "desktoppro.persistence/dependencyinjection.cs",
-      "source_file": "Backend/src/Infrastructure/DesktopPro.Persistence/DependencyInjection.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_infrastructure_desktoppro_persistence_dependencyinjection_cs_iservicecollection",
       "label": "IServiceCollection",
       "_origin": "ast",
       "community": 5,
@@ -6429,17 +6973,6 @@
       "source_location": ""
     },
     {
-      "id": "iconfiguration",
-      "label": "IConfiguration",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "ValidationBehavior",
-      "file_type": "code",
-      "norm_label": "iconfiguration",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "ienumerable",
       "label": "IEnumerable",
       "_origin": "ast",
@@ -6559,7 +7092,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "appuserid",
@@ -6576,7 +7109,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "extension",
@@ -6593,7 +7126,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "filehash",
@@ -6610,7 +7143,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "filename",
@@ -6627,7 +7160,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "filesize",
@@ -6644,7 +7177,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "ismissing",
@@ -6661,7 +7194,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "llmsummary",
@@ -6678,7 +7211,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "originalfilename",
@@ -6695,7 +7228,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "status",
@@ -6712,7 +7245,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "usernote",
@@ -6729,7 +7262,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "vaultrelativepath",
@@ -6746,7 +7279,7 @@
       "metadata": {
         "namespace": "DesktopPro.Domain.Entities",
         "scope_chain": [
-          "s80"
+          "s84"
         ]
       },
       "norm_label": "workspacelinks",
@@ -6887,6 +7420,17 @@
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_features_workspaces_api_useworkspace",
+      "label": "useWorkspace.ts",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "client.ts",
+      "file_type": "code",
+      "norm_label": "useworkspace.ts",
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_features_workspaces_api_useworkspaces",
       "label": "useWorkspaces.ts",
       "_origin": "ast",
@@ -6917,17 +7461,6 @@
       "file_type": "code",
       "norm_label": "workspaceitem.tsx",
       "source_file": "Frontend/src/features/workspaces/components/WorkspaceItem.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_features_workspaces_components_workspacelist",
-      "label": "WorkspaceList.tsx",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "client.ts",
-      "file_type": "code",
-      "norm_label": "workspacelist.tsx",
-      "source_file": "Frontend/src/features/workspaces/components/WorkspaceList.tsx",
       "source_location": "L1"
     },
     {
@@ -6962,17 +7495,6 @@
       "norm_label": "rfc-7807",
       "source_file": "Frontend/src/api/client.ts",
       "source_location": "L13"
-    },
-    {
-      "id": "frontend_src_features_workspaces_components_workspacelist_tsx_docref_rfc_7807",
-      "label": "RFC-7807",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "client.ts",
-      "file_type": "concept",
-      "norm_label": "rfc-7807",
-      "source_file": "Frontend/src/features/workspaces/components/WorkspaceList.tsx",
-      "source_location": "L23"
     },
     {
       "id": "ref_axios",
@@ -7313,18 +7835,7 @@
       "file_type": "code",
       "norm_label": "allowimportingtsextensions",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L20"
-    },
-    {
-      "id": "frontend_tsconfig_app_compileroptions_baseurl",
-      "label": "baseUrl",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "compilerOptions",
-      "file_type": "code",
-      "norm_label": "baseurl",
-      "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L13"
+      "source_location": "L18"
     },
     {
       "id": "frontend_tsconfig_app_compileroptions_erasablesyntaxonly",
@@ -7335,18 +7846,7 @@
       "file_type": "code",
       "norm_label": "erasablesyntaxonly",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L29"
-    },
-    {
-      "id": "frontend_tsconfig_app_compileroptions_ignoredeprecations",
-      "label": "ignoreDeprecations",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "compilerOptions",
-      "file_type": "code",
-      "norm_label": "ignoredeprecations",
-      "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L12"
+      "source_location": "L27"
     },
     {
       "id": "frontend_tsconfig_app_compileroptions_jsx",
@@ -7357,7 +7857,7 @@
       "file_type": "code",
       "norm_label": "jsx",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L24"
+      "source_location": "L22"
     },
     {
       "id": "frontend_tsconfig_app_compileroptions_lib",
@@ -7390,7 +7890,7 @@
       "file_type": "code",
       "norm_label": "moduledetection",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L22"
+      "source_location": "L20"
     },
     {
       "id": "frontend_tsconfig_app_compileroptions_moduleresolution",
@@ -7401,7 +7901,7 @@
       "file_type": "code",
       "norm_label": "moduleresolution",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L19"
+      "source_location": "L17"
     },
     {
       "id": "frontend_tsconfig_app_compileroptions_noemit",
@@ -7412,7 +7912,7 @@
       "file_type": "code",
       "norm_label": "noemit",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L23"
+      "source_location": "L21"
     },
     {
       "id": "frontend_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
@@ -7423,7 +7923,7 @@
       "file_type": "code",
       "norm_label": "nofallthroughcasesinswitch",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L30"
+      "source_location": "L28"
     },
     {
       "id": "frontend_tsconfig_app_compileroptions_nounusedlocals",
@@ -7434,7 +7934,7 @@
       "file_type": "code",
       "norm_label": "nounusedlocals",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L27"
+      "source_location": "L25"
     },
     {
       "id": "frontend_tsconfig_app_compileroptions_nounusedparameters",
@@ -7445,7 +7945,7 @@
       "file_type": "code",
       "norm_label": "nounusedparameters",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L28"
+      "source_location": "L26"
     },
     {
       "id": "frontend_tsconfig_app_compileroptions_paths",
@@ -7456,7 +7956,7 @@
       "file_type": "code",
       "norm_label": "paths",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L14"
+      "source_location": "L12"
     },
     {
       "id": "frontend_tsconfig_app_compileroptions_skiplibcheck",
@@ -7511,7 +8011,7 @@
       "file_type": "code",
       "norm_label": "verbatimmodulesyntax",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L21"
+      "source_location": "L19"
     },
     {
       "id": "frontend_tsconfig_app_include",
@@ -7522,7 +8022,7 @@
       "file_type": "code",
       "norm_label": "include",
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L32"
+      "source_location": "L30"
     },
     {
       "id": "agents_rules_graphify_rule",
@@ -7632,6 +8132,21 @@
   ],
   "links": [
     {
+      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacebyidasync",
+      "target": "httpget",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpGet"
+      },
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacesasync",
       "target": "httpget",
       "relation": "references",
@@ -7643,7 +8158,7 @@
         "ref_token": "HttpGet"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -7658,7 +8173,7 @@
         "ref_token": "HttpPost"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -7673,7 +8188,22 @@
         "ref_token": "ProducesResponseType"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L20",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacebyidasync",
+      "target": "producesresponsetype",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "ProducesResponseType"
+      },
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -7688,7 +8218,19 @@
         "ref_token": "ProducesResponseType"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L35",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler_handle",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_cs_workspacedetaildto",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -7713,6 +8255,18 @@
       "context": "call",
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/VirtualFile.cs",
       "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app_app",
+      "target": "frontend_src_features_workspaces_api_useworkspaces_useworkspaces",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Frontend/src/App.tsx",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -7752,6 +8306,18 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_features_workspaces_api_useworkspace_useworkspace",
+      "target": "frontend_src_features_workspaces_api_useworkspace_workspacedetailkey",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_features_workspaces_components_createworkspacedialog_createworkspacedialog",
       "target": "frontend_src_features_workspaces_api_usecreateworkspace_usecreateworkspace",
       "relation": "calls",
@@ -7760,7 +8326,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "Frontend/src/features/workspaces/components/CreateWorkspaceDialog.tsx",
-      "source_location": "L21",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -7772,7 +8338,43 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "Frontend/src/features/workspaces/components/CreateWorkspaceDialog.tsx",
-      "source_location": "L22",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview_workspacedetailview",
+      "target": "frontend_src_features_workspaces_components_workspacedetailview_formatexpirationdate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview_workspacedetailview",
+      "target": "frontend_src_features_workspaces_api_useworkspace_useworkspace",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview_workspacedetailview",
+      "target": "frontend_src_features_workspaces_utils_workspaceicons_getworkspaceicon",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -7827,6 +8429,21 @@
       },
       "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/CreateWorkspaceDto.cs",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_cs_datetime",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "DateTime"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -7950,6 +8567,21 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_cs_guid",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Guid"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto_desktoppro_application_features_workspaces_dtos_workspacedto",
       "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto_cs_guid",
       "relation": "references",
@@ -7962,6 +8594,21 @@
       },
       "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDto.cs",
       "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_cs_guid",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Guid"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQuery.cs",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -8085,6 +8732,21 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler",
+      "target": "backend_src_core_desktoppro_application_common_interfaces_iappdbcontext_desktoppro_application_common_interfaces_iappdbcontext",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "IAppDbContext"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler",
       "target": "backend_src_core_desktoppro_application_common_interfaces_iappdbcontext_desktoppro_application_common_interfaces_iappdbcontext",
       "relation": "references",
@@ -8186,7 +8848,7 @@
         "ref_token": "ISender"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -8288,6 +8950,78 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "Backend/src/Core/DesktopPro.Application/Common/Interfaces/IAppDbContext.cs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_iconname",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_expiresatutc",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_createdat",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_id",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_name",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto_istemporal",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
       "source_location": "L9",
       "weight": 1.0
     },
@@ -9312,6 +10046,36 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "GetWorkspaceByIdQuery"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "GetWorkspaceByIdQuery"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQueryValidator.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler",
       "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery",
       "relation": "references",
@@ -9473,7 +10237,22 @@
         "ref_token": "IActionResult"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L20",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacebyidasync",
+      "target": "iactionresult",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -9488,7 +10267,7 @@
         "ref_token": "IActionResult"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -9687,6 +10466,51 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "WorkspaceDetailDto"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler_handle",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "WorkspaceDetailDto"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "WorkspaceDetailDto"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQuery.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery",
       "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto_desktoppro_application_features_workspaces_dtos_workspacedto",
       "relation": "references",
@@ -9858,6 +10682,23 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler",
+      "target": "csharp_namespace:1819be1bca509f8e",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "DesktopPro.Application.Common.Interfaces",
+        "scope_kind": "file"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler",
       "target": "csharp_namespace:1819be1bca509f8e",
       "relation": "imports",
@@ -9943,6 +10784,40 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler",
+      "target": "csharp_namespace:bf8bb63131d4289d",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_kind": "file"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "target": "csharp_namespace:bf8bb63131d4289d",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_kind": "file"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQuery.cs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery",
       "target": "csharp_namespace:bf8bb63131d4289d",
       "relation": "imports",
@@ -9987,6 +10862,23 @@
       "metadata": {
         "using_kind": "namespace",
         "target_fqn": "DesktopPro.Application.Features.Workspaces.DTOs",
+        "scope_kind": "file"
+      },
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller",
+      "target": "csharp_namespace:de48d9fd40bb03c7",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaceById",
         "scope_kind": "file"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
@@ -10754,6 +11646,30 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_app",
+      "target": "frontend_src_features_workspaces_components_workspacedetailview_workspacedetailview",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_features_workspaces_api_useworkspaces_useworkspaces",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_layout_appsidebar",
       "target": "frontend_src_features_workspaces_components_workspacelist_workspacelist",
       "relation": "imports",
@@ -10883,6 +11799,30 @@
       "context": "import",
       "source_file": "Frontend/src/features/workspaces/api/useCreateWorkspace.ts",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_api_useworkspace",
+      "target": "frontend_src_api_client_apiclient",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_api_useworkspace",
+      "target": "frontend_src_features_workspaces_types_workspace_types_workspacedetaildto",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -11051,6 +11991,66 @@
       "context": "import",
       "source_file": "Frontend/src/features/workspaces/components/CreateWorkspaceDialog.tsx",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_features_workspaces_api_useworkspace_useworkspace",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_features_workspaces_utils_workspaceicons_getworkspaceicon",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_components_ui_tooltip_tooltip",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_components_ui_tooltip_tooltipcontent",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_components_ui_tooltip_tooltiptrigger",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -11244,6 +12244,30 @@
       "context": "import",
       "source_file": "Frontend/src/App.tsx",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_features_workspaces_components_workspacedetailview",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_features_workspaces_api_useworkspaces",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/App.tsx",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -11559,6 +12583,42 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_ui_tooltip",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_ui_tooltip",
+      "target": "ref_radix_ui",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_ui_tooltip",
+      "target": "ref_cn",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_features_workspaces_api_usecreateworkspace",
       "target": "ref_tanstack_react_query",
       "relation": "imports_from",
@@ -11604,6 +12664,43 @@
       "context": "import",
       "source_file": "Frontend/src/features/workspaces/api/useCreateWorkspace.ts",
       "source_location": "L4",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_api_useworkspace",
+      "target": "ref_tanstack_react_query",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_api_useworkspace",
+      "target": "frontend_src_api_client",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_api_useworkspace",
+      "target": "frontend_src_features_workspaces_types_workspace_types",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L3",
       "type_only": true,
       "weight": 1.0
     },
@@ -11750,6 +12847,54 @@
       "context": "import",
       "source_file": "Frontend/src/features/workspaces/components/CreateWorkspaceDialog.tsx",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "ref_phosphor_icons_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_features_workspaces_api_useworkspace",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_features_workspaces_utils_workspaceicons",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_components_ui_tooltip",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -11944,6 +13089,21 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler_handle",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_cs_cancellationtoken",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_handle",
       "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_cs_cancellationtoken",
       "relation": "references",
@@ -11970,7 +13130,22 @@
         "ref_token": "CancellationToken"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L20",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacebyidasync",
+      "target": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_cs_cancellationtoken",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -11985,7 +13160,7 @@
         "ref_token": "CancellationToken"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -12030,7 +13205,7 @@
         "ref_token": "CreateWorkspaceDto"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -12045,7 +13220,7 @@
         "ref_token": "DateTime"
       },
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L62",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -12060,7 +13235,7 @@
         "ref_token": "DateTime"
       },
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L82",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -12169,6 +13344,21 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler_handle",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "GetWorkspaceByIdQuery"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_handle",
       "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery",
       "relation": "references",
@@ -12226,6 +13416,21 @@
       },
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/WorkspaceGroup.cs",
       "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacebyidasync",
+      "target": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_cs_guid",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Guid"
+      },
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -12571,6 +13776,21 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler_handle",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_cs_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_handle",
       "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_cs_task",
       "relation": "references",
@@ -12597,7 +13817,22 @@
         "ref_token": "Task"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L20",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacebyidasync",
+      "target": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_cs_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -12612,7 +13847,7 @@
         "ref_token": "Task"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -12653,6 +13888,20 @@
         "ref_token": "AbstractValidator"
       },
       "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Commands/CreateWorkspace/CreateWorkspaceCommandValidator.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator",
+      "target": "abstractvalidator",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "AbstractValidator"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQueryValidator.cs",
       "source_location": "L5",
       "weight": 1.0
     },
@@ -12751,7 +14000,7 @@
         "ref_token": "ControllerBase"
       },
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -12909,6 +14158,20 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "target": "irequest",
+      "relation": "implements",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "IRequest"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQuery.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesquery",
       "target": "irequest",
       "relation": "implements",
@@ -12934,6 +14197,20 @@
       },
       "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Commands/CreateWorkspace/CreateWorkspaceCommandHandler.cs",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler",
+      "target": "irequesthandler",
+      "relation": "implements",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "metadata": {
+        "ref_token": "IRequestHandler"
+      },
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -13280,6 +14557,28 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "target": "csharp_namespace:bf8bb63131d4289d",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedetaildto_desktoppro_application_features_workspaces_dtos_workspacedetaildto",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDetailDto.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_dtos_workspacedto",
       "target": "csharp_namespace:bf8bb63131d4289d",
       "relation": "contains",
@@ -13299,6 +14598,72 @@
       "confidence_score": 1.0,
       "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/DTOs/WorkspaceDto.cs",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler",
+      "target": "csharp_namespace:de48d9fd40bb03c7",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "target": "csharp_namespace:de48d9fd40bb03c7",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQuery.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQuery.cs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator",
+      "target": "csharp_namespace:de48d9fd40bb03c7",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQueryValidator.cs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryvalidator",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQueryValidator.cs",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -13897,24 +15262,24 @@
     },
     {
       "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller",
-      "target": "csharp_namespace:52b3febdf43fc8db",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller",
       "target": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L9",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller",
+      "target": "csharp_namespace:52b3febdf43fc8db",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -14739,7 +16104,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/src/App.tsx",
-      "source_location": "L5",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -15018,6 +16383,50 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_ui_tooltip",
+      "target": "frontend_src_components_ui_tooltip_tooltip",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_ui_tooltip",
+      "target": "frontend_src_components_ui_tooltip_tooltiptrigger",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_ui_tooltip",
+      "target": "frontend_src_components_ui_tooltip_tooltipcontent",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_ui_tooltip",
+      "target": "frontend_src_components_ui_tooltip_tooltipprovider",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/components/ui/tooltip.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_config_env",
       "target": "frontend_src_config_env_env",
       "relation": "contains",
@@ -15037,6 +16446,28 @@
       "confidence_score": 1.0,
       "source_file": "Frontend/src/features/workspaces/api/useCreateWorkspace.ts",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_api_useworkspace",
+      "target": "frontend_src_features_workspaces_api_useworkspace_workspacedetailkey",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_api_useworkspace",
+      "target": "frontend_src_features_workspaces_api_useworkspace_useworkspace",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/features/workspaces/api/useWorkspace.ts",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -15063,13 +16494,57 @@
     },
     {
       "source": "frontend_src_features_workspaces_components_createworkspacedialog",
-      "target": "frontend_src_features_workspaces_components_createworkspacedialog_createworkspacedialog",
+      "target": "frontend_src_features_workspaces_components_createworkspacedialog_createworkspacedialogprops",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/src/features/workspaces/components/CreateWorkspaceDialog.tsx",
       "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_createworkspacedialog",
+      "target": "frontend_src_features_workspaces_components_createworkspacedialog_createworkspacedialog",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/features/workspaces/components/CreateWorkspaceDialog.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_features_workspaces_components_workspacedetailview_formatexpirationdate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_features_workspaces_components_workspacedetailview_workspacedetailview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_components_workspacedetailview",
+      "target": "frontend_src_features_workspaces_components_workspacedetailview_workspacedetailviewprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -15136,6 +16611,17 @@
       "confidence_score": 1.0,
       "source_file": "Frontend/src/features/workspaces/types/workspace.types.ts",
       "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_features_workspaces_types_workspace_types",
+      "target": "frontend_src_features_workspaces_types_workspace_types_workspacedetaildto",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/src/features/workspaces/types/workspace.types.ts",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -15300,29 +16786,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L32",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_tsconfig_app_compileroptions",
-      "target": "frontend_tsconfig_app_compileroptions_ignoredeprecations",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_tsconfig_app_compileroptions",
-      "target": "frontend_tsconfig_app_compileroptions_baseurl",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L13",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -15333,7 +16797,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L14",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -15344,7 +16808,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L19",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -15355,7 +16819,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L20",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -15366,7 +16830,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L21",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -15377,7 +16841,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L22",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -15388,7 +16852,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L23",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -15399,7 +16863,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L24",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -15410,7 +16874,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L27",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -15421,7 +16885,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L28",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -15432,7 +16896,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L29",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/tsconfig.app.json",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -15444,17 +16919,6 @@
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.app.json",
       "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_tsconfig_app_compileroptions",
-      "target": "frontend_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Frontend/tsconfig.app.json",
-      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -15525,24 +16989,13 @@
     },
     {
       "source": "frontend_tsconfig_compileroptions",
-      "target": "frontend_tsconfig_compileroptions_baseurl",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Frontend/tsconfig.json",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_tsconfig_compileroptions",
       "target": "frontend_tsconfig_compileroptions_paths",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/tsconfig.json",
-      "source_location": "L9",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -15945,6 +17398,17 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_etworkspacebyidqueryhandler_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidqueryhandler_handle",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler",
       "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_desktoppro_application_features_workspaces_queries_getworkspaces_getworkspacesqueryhandler_handle",
       "relation": "method",
@@ -16128,7 +17592,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L55",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -16139,7 +17603,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L62",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -16150,7 +17614,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L69",
+      "source_location": "L70",
       "weight": 1.0
     },
     {
@@ -16161,7 +17625,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L76",
+      "source_location": "L77",
       "weight": 1.0
     },
     {
@@ -16172,7 +17636,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Backend/src/Core/DesktopPro.Domain/Entities/Workspace.cs",
-      "source_location": "L82",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -16436,7 +17900,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -16447,7 +17911,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L35",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller",
+      "target": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacebyidasync",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -16582,7 +18057,19 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L30",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_presentation_desktoppro_webapi_controllers_workspacescontroller_desktoppro_webapi_controllers_workspacescontroller_getworkspacebyidasync",
+      "target": "backend_src_core_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery_desktoppro_application_features_workspaces_queries_getworkspacebyid_getworkspacebyidquery",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "call",
+      "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -16594,7 +18081,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -16621,5 +18108,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "50f114c60ac07f4cc610797e9a607db8db0f44c3"
+  "built_at_commit": "4fd892dc87afe57680ca34731628cff409a10d03"
 }

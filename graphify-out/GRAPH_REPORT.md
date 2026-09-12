@@ -1,16 +1,16 @@
 # Graph Report - DesktopPro  (2026-09-12)
 
 ## Corpus Check
-- 81 files · ~85,294 words
+- 88 files · ~86,333 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 539 nodes · 723 edges · 41 communities (32 shown, 7 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.86)
+- 577 nodes · 803 edges · 47 communities (37 shown, 8 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `50f114c6`
+- Built from commit: `4fd892dc`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -37,7 +37,7 @@
 - AiTriageSuggestion
 - tsconfig.json
 - WorkspaceGroup
-- VirtualFile
+- GetWorkspacesQuery
 - Workspace
 - vite-env.d.ts
 - Graphify Knowledge Graph Rule
@@ -54,10 +54,16 @@
 - .BuildModel
 - .BuildTargetModel
 - BaseEntity
+- .CreateWorkspaceAsync
+- WorkspaceDetailDto
+- DesktopPro.Application.Features.Workspaces.DTOs
+- GetWorkspaceByIdQuery
+- CreateWorkspaceCommandValidator
+- CreateWorkspaceDto
 
 ## God Nodes (most connected - your core abstractions)
 1. `VirtualFile` - 28 edges
-2. `IAppDbContext` - 19 edges
+2. `IAppDbContext` - 20 edges
 3. `Workspace` - 19 edges
 4. `compilerOptions` - 19 edges
 5. `FileWorkspaceLink` - 18 edges
@@ -82,22 +88,22 @@
 ## Import Cycles
 - None detected.
 
-## Communities (41 total, 7 thin omitted)
+## Communities (47 total, 8 thin omitted)
 
 ### Community 0 - "CreateWorkspaceCommand"
-Cohesion: 0.06
-Nodes (38): AbstractValidator, CancellationToken, Task, Guid, CreateWorkspaceCommand, CancellationToken, Guid, Task (+30 more)
+Cohesion: 0.18
+Nodes (10): CancellationToken, Task, Guid, CreateWorkspaceCommand, CancellationToken, Guid, Task, CreateWorkspaceCommandHandler (+2 more)
 
 ### Community 1 - "CreateWorkspaceDialog.tsx"
-Cohesion: 0.09
-Nodes (26): App(), AppSidebar(), AppSidebarProps, MainLayout(), MainLayoutProps, SidebarContext, SidebarContextValue, useSidebar() (+18 more)
+Cohesion: 0.06
+Nodes (45): App(), AppSidebar(), AppSidebarProps, MainLayout(), MainLayoutProps, SidebarContext, SidebarContextValue, useSidebar() (+37 more)
 
 ### Community 2 - "InitialCreate"
 Cohesion: 0.18
 Nodes (8): DateTime, Guid, MigrationBuilder, DateTime, Guid, ModelBuilder, InitialCreate, Migration
 
 ### Community 3 - "Workspace"
-Cohesion: 0.14
+Cohesion: 0.13
 Nodes (11): DateTime, Guid, ICollection, Workspace, AppUserId, ExpiresAtUtc, FileLinks, IconName (+3 more)
 
 ### Community 4 - "package.json"
@@ -106,15 +112,15 @@ Nodes (33): name, private, scripts, build, dev, lint, preview, type (+25 more)
 
 ### Community 5 - "ValidationBehavior"
 Cohesion: 0.07
-Nodes (21): CancellationToken, Task, ValidationBehavior, IServiceCollection, DependencyInjection, DependencyInjection, CancellationToken, GlobalExceptionHandler (+13 more)
+Nodes (20): CancellationToken, Task, ValidationBehavior, IServiceCollection, DependencyInjection, CancellationToken, GlobalExceptionHandler, DesktopPro.Persistence (+12 more)
 
 ### Community 6 - "VirtualFile"
 Cohesion: 0.07
 Nodes (20): Guid, ICollection, VirtualFile, AppUserId, Extension, FileHash, FileName, FileSize (+12 more)
 
 ### Community 7 - "client.ts"
-Cohesion: 0.11
-Nodes (23): apiClient, RFC-7807, ENV, useCreateWorkspace(), useWorkspaces(), workspaceKeys, WorkspaceItem(), WorkspaceItemProps (+15 more)
+Cohesion: 0.17
+Nodes (14): apiClient, RFC-7807, ENV, useWorkspace(), workspaceDetailKey(), workspaceKeys, WorkspaceItemProps, CreateWorkspaceDto (+6 more)
 
 ### Community 8 - "DesktopPro.Application.csproj"
 Cohesion: 0.11
@@ -141,28 +147,28 @@ Cohesion: 0.12
 Nodes (16): devDependencies, autoprefixer, eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh, globals, postcss (+8 more)
 
 ### Community 14 - "DesktopPro.Domain.Entities"
-Cohesion: 0.21
+Cohesion: 0.24
 Nodes (3): DesktopPro.Application.Common.Interfaces, DesktopPro.Domain.Entities, DesktopPro.Persistence.Configurations
 
 ### Community 15 - "IAppDbContext"
-Cohesion: 0.18
-Nodes (10): DbSet, IAppDbContext, AiTriageSuggestions, AppUsers, FileWorkspaceLinks, VirtualFiles, WorkspaceGroups, Workspaces (+2 more)
+Cohesion: 0.15
+Nodes (11): DbSet, IAppDbContext, AiTriageSuggestions, AppUsers, FileWorkspaceLinks, VirtualFiles, WorkspaceGroups, Workspaces (+3 more)
 
 ### Community 16 - "AppDbContext"
 Cohesion: 0.18
 Nodes (10): DbSet, ModelBuilder, AppDbContext, AiTriageSuggestions, AppUsers, FileWorkspaceLinks, VirtualFiles, WorkspaceGroups (+2 more)
 
 ### Community 17 - "AppUser"
-Cohesion: 0.18
-Nodes (7): DateTime, AppUser, LastLoginDateUtc, PasswordHash, Username, EntityTypeBuilder, AppUserConfiguration
+Cohesion: 0.14
+Nodes (11): VirtualFile, DateTime, AppUser, LastLoginDateUtc, PasswordHash, Username, EntityTypeBuilder, AppUserConfiguration (+3 more)
 
 ### Community 18 - "http"
 Cohesion: 0.20
 Nodes (9): ASPNETCORE_ENVIRONMENT, applicationUrl, commandName, dotnetRunMessages, environmentVariables, launchBrowser, profiles, http (+1 more)
 
 ### Community 19 - "AiTriageSuggestion"
-Cohesion: 0.18
-Nodes (9): Guid, AiTriageSuggestion, SuggestedName, SuggestedWorkspaceId, SuggestedWorkspaceName, VirtualFileId, EntityTypeBuilder, AiTriageSuggestionConfiguration (+1 more)
+Cohesion: 0.20
+Nodes (8): Guid, AiTriageSuggestion, SuggestedName, SuggestedWorkspaceId, SuggestedWorkspaceName, VirtualFileId, EntityTypeBuilder, AiTriageSuggestionConfiguration
 
 ### Community 20 - "tsconfig.json"
 Cohesion: 0.40
@@ -172,9 +178,9 @@ Nodes (4): compilerOptions, paths, files, references
 Cohesion: 0.67
 Nodes (3): WorkspaceGroup, EntityTypeBuilder, WorkspaceGroupConfiguration
 
-### Community 22 - "VirtualFile"
-Cohesion: 0.67
-Nodes (3): VirtualFile, EntityTypeBuilder, VirtualFileConfiguration
+### Community 22 - "GetWorkspacesQuery"
+Cohesion: 0.21
+Nodes (11): DateTime, Guid, WorkspaceDto, Guid, IReadOnlyList, GetWorkspacesQuery, CancellationToken, IReadOnlyList (+3 more)
 
 ### Community 23 - "Workspace"
 Cohesion: 0.67
@@ -212,25 +218,45 @@ Nodes (3): DateTime, Guid, ModelBuilder
 Cohesion: 0.29
 Nodes (6): DateTime, Guid, BaseEntity, CreatedAt, Id, UpdatedAt
 
+### Community 41 - ".CreateWorkspaceAsync"
+Cohesion: 0.27
+Nodes (10): CancellationToken, Guid, Task, WorkspacesController, ControllerBase, HttpGet, HttpPost, IActionResult (+2 more)
+
+### Community 42 - "WorkspaceDetailDto"
+Cohesion: 0.20
+Nodes (9): DateTime, Guid, WorkspaceDetailDto, CreatedAt, ExpiresAtUtc, IconName, Id, IsTemporal (+1 more)
+
+### Community 43 - "DesktopPro.Application.Features.Workspaces.DTOs"
+Cohesion: 0.33
+Nodes (4): DesktopPro.WebApi.Controllers, DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces, DesktopPro.Application.Features.Workspaces.DTOs, DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaceById
+
+### Community 44 - "GetWorkspaceByIdQuery"
+Cohesion: 0.29
+Nodes (7): CancellationToken, Task, WorkspaceDetailDto, GetWorkspaceByIdQueryHandler, Guid, GetWorkspaceByIdQuery, IRequestHandler
+
+### Community 45 - "CreateWorkspaceCommandValidator"
+Cohesion: 0.40
+Nodes (3): AbstractValidator, CreateWorkspaceCommandValidator, GetWorkspaceByIdQueryValidator
+
 ## Knowledge Gaps
-- **211 isolated node(s):** `AppUsers`, `VirtualFiles`, `Workspaces`, `WorkspaceGroups`, `FileWorkspaceLinks` (+206 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 304 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **219 isolated node(s):** `AppUsers`, `VirtualFiles`, `Workspaces`, `WorkspaceGroups`, `FileWorkspaceLinks` (+214 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 318 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `DesktopPro.Persistence.Contexts` connect `DesktopPro.Persistence.Migrations` to `ValidationBehavior`, `DesktopPro.Domain.Entities`?**
-  _High betweenness centrality (0.119) - this node is a cross-community bridge._
-- **Why does `AppDbContext` connect `AppDbContext` to `FileWorkspaceLink`, `DesktopPro.Domain.Entities`, `IAppDbContext`, `AppUser`, `AiTriageSuggestion`, `WorkspaceGroup`, `VirtualFile`, `Workspace`?**
-  _High betweenness centrality (0.079) - this node is a cross-community bridge._
-- **Why does `IAppDbContext` connect `IAppDbContext` to `CreateWorkspaceCommand`, `FileWorkspaceLink`, `DesktopPro.Domain.Entities`, `AppDbContext`, `AppUser`, `AiTriageSuggestion`, `WorkspaceGroup`, `VirtualFile`, `Workspace`?**
-  _High betweenness centrality (0.067) - this node is a cross-community bridge._
+- **Why does `DesktopPro.Persistence.Contexts` connect `DesktopPro.Persistence.Migrations` to `ValidationBehavior`, `DesktopPro.Domain.Entities`, `IAppDbContext`?**
+  _High betweenness centrality (0.114) - this node is a cross-community bridge._
+- **Why does `IAppDbContext` connect `IAppDbContext` to `CreateWorkspaceCommand`, `FileWorkspaceLink`, `GetWorkspaceByIdQuery`, `DesktopPro.Domain.Entities`, `AppDbContext`, `AppUser`, `AiTriageSuggestion`, `WorkspaceGroup`, `GetWorkspacesQuery`, `Workspace`?**
+  _High betweenness centrality (0.083) - this node is a cross-community bridge._
+- **Why does `AppDbContext` connect `AppDbContext` to `FileWorkspaceLink`, `DesktopPro.Domain.Entities`, `IAppDbContext`, `AppUser`, `AiTriageSuggestion`, `WorkspaceGroup`, `Workspace`?**
+  _High betweenness centrality (0.073) - this node is a cross-community bridge._
 - **What connects `AppUsers`, `VirtualFiles`, `Workspaces` to the rest of the system?**
-  _211 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `CreateWorkspaceCommand` be split into smaller, more focused modules?**
-  _Cohesion score 0.05725490196078432 - nodes in this community are weakly interconnected._
+  _219 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `CreateWorkspaceDialog.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.09302325581395349 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05970149253731343 - nodes in this community are weakly interconnected._
 - **Should `Workspace` be split into smaller, more focused modules?**
-  _Cohesion score 0.14166666666666666 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1323529411764706 - nodes in this community are weakly interconnected._
+- **Should `package.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.06349206349206349 - nodes in this community are weakly interconnected._
