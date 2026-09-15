@@ -5,11 +5,19 @@ export interface WorkspaceDto {
   isTemporal: boolean;
   expiresAtUtc: string | null;
   createdAt: string;
+  updatedAt?: string;
 }
 
 export interface CreateWorkspaceDto {
   name: string;
   isTemporal?: boolean;
+  expiresAtUtc?: string | null;
+  iconName?: string | null;
+}
+
+export interface UpdateWorkspaceDto {
+  name: string;
+  isTemporal: boolean;
   expiresAtUtc?: string | null;
   iconName?: string | null;
 }
@@ -21,4 +29,5 @@ export interface WorkspaceDetailDto {
   iconName?: string;
   expiresAtUtc?: string;
   createdAt: string;
+  updatedAt?: string;
 }

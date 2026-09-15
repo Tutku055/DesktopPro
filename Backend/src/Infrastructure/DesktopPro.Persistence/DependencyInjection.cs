@@ -1,5 +1,6 @@
-﻿using DesktopPro.Application.Common.Interfaces;
+using DesktopPro.Application.Common.Interfaces;
 using DesktopPro.Persistence.Contexts;
+using DesktopPro.Persistence.Interceptors;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,9 +15,13 @@ public static class DependencyInjection
     {
         var connectionString = configuration.GetConnectionString("DefaultConnection");
 
-        services.AddDbContext<AppDbContext>(options =>
+        services.AddScoped<AuditableEntityInterceptor>();
+
+        services.AddDbContext<AppDbContext>((sp, options) =>
         {
-            options.UseSqlServer(connectionString);
+            var interceptor = sp.GetRequiredService<AuditableEntityInterceptor>();
+            options.UseSqlServer(connectionString)
+                   .AddInterceptors(interceptor);
         });
 
         services.AddScoped<IAppDbContext>(provider =>

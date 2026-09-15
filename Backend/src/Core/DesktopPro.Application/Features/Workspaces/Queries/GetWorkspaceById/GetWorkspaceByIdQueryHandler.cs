@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -30,7 +30,8 @@ public class GetWorkspaceByIdQueryHandler : IRequestHandler<GetWorkspaceByIdQuer
                 IsTemporal = w.IsTemporal,
                 IconName = w.IconName,
                 ExpiresAtUtc = w.ExpiresAtUtc,
-                CreatedAt = w.CreatedAt
+                CreatedAt = w.CreatedAt,
+                UpdatedAt = w.UpdatedAt
             })
             .FirstOrDefaultAsync(cancellationToken);
 

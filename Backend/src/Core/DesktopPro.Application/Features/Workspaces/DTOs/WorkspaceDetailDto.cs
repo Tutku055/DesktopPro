@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace DesktopPro.Application.Features.Workspaces.DTOs;
 
@@ -10,6 +10,7 @@ public record WorkspaceDetailDto
     public string? IconName { get; init; }
     public DateTime? ExpiresAtUtc { get; init; }
     public DateTime CreatedAt { get; init; }
+    public DateTime? UpdatedAt { get; init; }
 
     // Future additions: WorkspaceGroups, VirtualFiles
 }

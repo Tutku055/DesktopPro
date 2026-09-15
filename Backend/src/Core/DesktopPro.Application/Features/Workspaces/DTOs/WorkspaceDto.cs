@@ -10,7 +10,8 @@ namespace DesktopPro.Application.Features.Workspaces.DTOs
         string? IconName,
         bool IsTemporal,
         DateTime? ExpiresAtUtc,
-        DateTime CreatedAt
+        DateTime CreatedAt,
+        DateTime? UpdatedAt
     );
     
 }

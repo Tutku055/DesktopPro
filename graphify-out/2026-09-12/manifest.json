@@ -588,9 +588,9 @@
     "semantic_hash": ""
   },
   "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx": {
-    "mtime": 1789234232.544942,
-    "seen": 1789234257.8604834,
-    "ast_hash": "25fccf2b50ffb32e438e48892c8f139e",
+    "mtime": 1789234443.3316753,
+    "seen": 1789234455.954962,
+    "ast_hash": "15eccc7b74c4c0a50897a4011601f875",
     "semantic_hash": ""
   }
 }

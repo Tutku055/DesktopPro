@@ -8,15 +8,12 @@
 
   <ItemGroup>
     <Compile Remove="Design\**" />
-    <Compile Remove="Interceptors\**" />
     <Compile Remove="Repositories\**" />
     <Compile Remove="Seeders\**" />
     <EmbeddedResource Remove="Design\**" />
-    <EmbeddedResource Remove="Interceptors\**" />
     <EmbeddedResource Remove="Repositories\**" />
     <EmbeddedResource Remove="Seeders\**" />
     <None Remove="Design\**" />
-    <None Remove="Interceptors\**" />
     <None Remove="Repositories\**" />
     <None Remove="Seeders\**" />
   </ItemGroup>

@@ -1,5 +1,5 @@
 {
-  "0": "CreateWorkspaceCommand",
+  "0": ".AddPersistence",
   "1": "CreateWorkspaceDialog.tsx",
   "2": "InitialCreate",
   "3": "Workspace",
@@ -20,8 +20,6 @@
   "18": "http",
   "19": "AiTriageSuggestion",
   "20": "tsconfig.json",
-  "21": "WorkspaceGroup",
-  "22": "GetWorkspacesQuery",
   "23": "Workspace",
   "24": "vite-env.d.ts",
   "25": "Graphify Knowledge Graph Rule",
@@ -39,11 +37,10 @@
   "37": "IsolatedVaultArchitecture",
   "38": ".BuildModel",
   "39": ".BuildTargetModel",
-  "40": "BaseEntity",
-  "41": ".CreateWorkspaceAsync",
+  "40": "VirtualFile",
+  "41": "WorkspaceDto",
   "42": "WorkspaceDetailDto",
-  "43": "DesktopPro.Application.Features.Workspaces.DTOs",
-  "44": "GetWorkspaceByIdQuery",
-  "45": "CreateWorkspaceCommandValidator",
-  "46": "CreateWorkspaceDto"
+  "44": "BaseEntity",
+  "46": "Frontend Architecture & Development Rules",
+  "47": "Backend Architecture & Development Rules"
 }

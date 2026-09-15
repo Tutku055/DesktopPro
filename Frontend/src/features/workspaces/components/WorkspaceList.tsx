@@ -5,10 +5,11 @@ import { WorkspaceItem } from './WorkspaceItem';
 interface WorkspaceListProps {
   selectedId: string | null;
   onSelectWorkspace: (id: string) => void;
+  searchQuery?: string;
 }
 
-export const WorkspaceList = ({ selectedId, onSelectWorkspace }: WorkspaceListProps) => {
-  const { data: workspaces, isLoading, isError} = useWorkspaces();
+export const WorkspaceList = ({ selectedId, onSelectWorkspace, searchQuery }: WorkspaceListProps) => {
+  const { data: workspaces, isLoading, isError} = useWorkspaces(searchQuery);
 
   // 1. Loading State
   if (isLoading) {
