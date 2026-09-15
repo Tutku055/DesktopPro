@@ -1,6 +1,10 @@
 ---
-trigger: always_on
-description: Frontend architecture rules — React 19, Vite, TypeScript, TailwindCSS v3, shadcn/ui, TanStack Query, Axios, feature-slice structure.
+trigger: model_decision
+description: >-
+  Activate ONLY when creating or significantly restructuring frontend TypeScript/React
+  files under Frontend/src/ — e.g. adding a new feature slice, hook, component,
+  API client, or type definition. Do NOT activate for small quickfixes, CSS-only
+  edits, renaming a class, editing a comment, or when the task is purely backend.
 ---
 
 # Frontend Architecture & Development Rules

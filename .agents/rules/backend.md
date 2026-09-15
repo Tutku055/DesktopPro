@@ -1,6 +1,10 @@
 ---
-trigger: always_on
-description: Backend Clean Architecture, CQRS (MediatR), Rich Domain Model, FluentValidation, and EF Core configuration rules.
+trigger: model_decision
+description: >-
+  Activate ONLY when creating or significantly restructuring backend C# files
+  under Backend/src/ — e.g. adding a new Feature (Command, Query, Handler, Validator,
+  Entity, Configuration, Controller, DTO). Do NOT activate for small quickfixes,
+  renaming a variable, editing a comment, or when the task is purely frontend.
 ---
 
 # Backend Architecture & Development Rules
