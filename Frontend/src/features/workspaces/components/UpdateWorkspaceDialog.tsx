@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import { PlusIcon, CircleNotchIcon } from '@phosphor-icons/react';
-import { useCreateWorkspace } from '../api/useCreateWorkspace';
+import { useEffect, useState } from 'react';
+import { CircleNotchIcon } from '@phosphor-icons/react';
+import { useUpdateWorkspace } from '../api/useUpdateWorkspace';
 import { Button } from '@/components/ui/button';
-import { useSidebar } from '@/components/layout/SidebarContext';
 import {
   Dialog,
   DialogContent,
@@ -13,95 +12,87 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { WORKSPACE_ICONS, DEFAULT_WORKSPACE_ICON } from '../utils/workspaceIcons';
+import type { WorkspaceDto } from '../types/workspace.types';
 
-interface CreateWorkspaceDialogProps {
-  onWorkspaceCreated?: (id: string) => void;
+interface UpdateWorkspaceDialogProps {
+  workspace: WorkspaceDto;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
 }
 
-export const CreateWorkspaceDialog = ({ onWorkspaceCreated }: CreateWorkspaceDialogProps) => {
-  const [open, setOpen] = useState(false);
-  const [name, setName] = useState('');
-  const [selectedIcon, setSelectedIcon] = useState<string>(DEFAULT_WORKSPACE_ICON);
-  const [isTemporal, setIsTemporal] = useState(false);
+export const UpdateWorkspaceDialog = ({ workspace, open, onOpenChange }: UpdateWorkspaceDialogProps) => {
+  const [name, setName] = useState(workspace.name);
+  const [selectedIcon, setSelectedIcon] = useState<string>(workspace.iconName || DEFAULT_WORKSPACE_ICON);
+  const [isTemporal, setIsTemporal] = useState(workspace.isTemporal);
   const [temporalHours, setTemporalHours] = useState(24);
-  const createMutation = useCreateWorkspace();
-  const { isOpen } = useSidebar();
+  const updateMutation = useUpdateWorkspace(workspace.id);
+
+  useEffect(() => {
+    if (open) {
+      setName(workspace.name);
+      setSelectedIcon(workspace.iconName || DEFAULT_WORKSPACE_ICON);
+      setIsTemporal(workspace.isTemporal);
+      
+      if (workspace.isTemporal && workspace.expiresAtUtc) {
+        const diff = new Date(workspace.expiresAtUtc).getTime() - Date.now();
+        const hours = Math.max(1, Math.round(diff / (1000 * 60 * 60)));
+        const allowed = [1, 6, 24, 72, 168];
+        const closest = allowed.reduce((prev, curr) => Math.abs(curr - hours) < Math.abs(prev - hours) ? curr : prev);
+        setTemporalHours(closest);
+      } else {
+        setTemporalHours(24);
+      }
+    }
+  }, [open, workspace]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const trimmed = name.trim();
-    if (!trimmed || createMutation.isPending) return;
+    if (!trimmed || updateMutation.isPending) return;
 
     try {
       const expiresAtUtc = isTemporal
         ? new Date(Date.now() + temporalHours * 60 * 60 * 1000).toISOString()
         : null;
 
-      const createdId = await createMutation.mutateAsync({
+      await updateMutation.mutateAsync({
         name: trimmed,
         isTemporal,
         expiresAtUtc,
         iconName: selectedIcon,
       });
 
-      setName('');
-      setSelectedIcon(DEFAULT_WORKSPACE_ICON);
-      setIsTemporal(false);
-      setOpen(false);
-
-      if (createdId && onWorkspaceCreated) {
-        onWorkspaceCreated(createdId);
-      }
+      onOpenChange(false);
     } catch {
-      // API errors are handled centrally by apiClient interceptor
+      // API errors are handled centrally
     }
   };
 
-  const handleOpenChange = (nextOpen: boolean) => {
-    setOpen(nextOpen);
-    if (!nextOpen) {
-      setName('');
-      setSelectedIcon(DEFAULT_WORKSPACE_ICON);
-    }
-  };
+  const formattedDate = workspace.updatedAt
+    ? new Intl.DateTimeFormat('en-GB', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+      }).format(new Date(workspace.updatedAt))
+    : 'N/A';
 
   return (
-    <Dialog open={open} onOpenChange={handleOpenChange}>
-      <DialogTrigger asChild>
-        {isOpen ? (
-          <Button
-            variant="outline"
-            size="sm"
-            className="w-full justify-start gap-2 h-8 text-xs font-medium rounded-md border-sidebar-border bg-sidebar-hover/30 hover:bg-sidebar-hover hover:text-sidebar-hover-foreground text-sidebar-foreground cursor-pointer transition-colors shadow-2xs"
-          >
-            <PlusIcon size={14} weight="bold" className="shrink-0" />
-            <span>New Workspace</span>
-          </Button>
-        ) : (
-          <Button
-            variant="outline"
-            size="icon"
-            title="New Workspace"
-            className="h-8 w-8 rounded-md border-sidebar-border bg-sidebar-hover/30 hover:bg-sidebar-hover hover:text-sidebar-hover-foreground text-sidebar-foreground cursor-pointer transition-colors shadow-2xs"
-          >
-            <PlusIcon size={16} weight="bold" className="shrink-0" />
-          </Button>
-        )}
-      </DialogTrigger>
-
-      <DialogContent className="sm:max-w-[380px]">
+    <Dialog open={open} onOpenChange={onOpenChange}>
+      <DialogContent className="sm:max-w-[380px]" onClick={(e) => e.stopPropagation()}>
         <DialogHeader>
-          <DialogTitle className="text-sm font-heading font-semibold">Create Workspace</DialogTitle>
+          <DialogTitle className="text-sm font-heading font-semibold">Update Workspace</DialogTitle>
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="space-y-4 pt-1">
           {/* Workspace Name Input */}
           <div className="space-y-1.5">
-            <Label htmlFor="workspace-name" className="text-xs text-muted-foreground font-medium">
+            <Label htmlFor={`update-workspace-name-${workspace.id}`} className="text-xs text-muted-foreground font-medium">
               Name
             </Label>
             <Input
-              id="workspace-name"
+              id={`update-workspace-name-${workspace.id}`}
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="e.g. Core Architecture"
@@ -173,29 +164,34 @@ export const CreateWorkspaceDialog = ({ onWorkspaceCreated }: CreateWorkspaceDia
             )}
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex justify-end gap-2 pt-2">
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              onClick={() => handleOpenChange(false)}
-              className="h-8 text-xs rounded-md cursor-pointer text-muted-foreground hover:text-foreground"
-            >
-              Cancel
-            </Button>
-            <Button
-              type="submit"
-              size="sm"
-              disabled={!name.trim() || createMutation.isPending}
-              className="h-8 text-xs rounded-md cursor-pointer font-medium"
-            >
-              {createMutation.isPending ? (
-                <CircleNotchIcon size={14} className="animate-spin" />
-              ) : (
-                'Create'
-              )}
-            </Button>
+          {/* Action Buttons & Info */}
+          <div className="flex items-center justify-between pt-2">
+            <span className="text-[10px] text-muted-foreground font-medium">
+              Last updated: {formattedDate}
+            </span>
+            <div className="flex justify-end gap-2">
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={() => onOpenChange(false)}
+                className="h-8 text-xs rounded-md cursor-pointer text-muted-foreground hover:text-foreground"
+              >
+                Cancel
+              </Button>
+              <Button
+                type="submit"
+                size="sm"
+                disabled={!name.trim() || updateMutation.isPending}
+                className="h-8 text-xs rounded-md cursor-pointer font-medium"
+              >
+                {updateMutation.isPending ? (
+                  <CircleNotchIcon size={14} className="animate-spin" />
+                ) : (
+                  'Save'
+                )}
+              </Button>
+            </div>
           </div>
         </form>
       </DialogContent>

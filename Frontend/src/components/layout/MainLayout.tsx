@@ -123,7 +123,7 @@ export const MainLayout = ({ sidebar, sidebarFooter, children }: MainLayoutProps
 
         {/* Main Viewport Content Area */}
         <div className="flex-1 flex flex-col h-full min-w-0 overflow-hidden bg-background">
-          <main className="flex-1 overflow-y-auto">
+          <main className="flex-1 h-full flex flex-col min-h-0 overflow-hidden">
             {children}
           </main>
         </div>

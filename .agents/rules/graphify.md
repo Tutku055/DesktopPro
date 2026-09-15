@@ -1,14 +1,32 @@
 ---
 trigger: always_on
-description: Consult the graphify knowledge graph at graphify-out/ for codebase and architecture questions.
+description: MANDATORY graphify usage for all codebase investigation and research tasks.
 ---
 
-## graphify
+# Graphify – Mandatory Usage Rules
 
-This project has a graphify knowledge graph at graphify-out/.
+> This project has a knowledge graph at `graphify-out/`.
 
-Rules:
-- For codebase or architecture questions, when `graphify-out/graph.json` exists, first run `graphify query "<question>"` (CLI) or `query_graph` (MCP). Use `graphify path "<A>" "<B>"` / `shortest_path` for relationships and `graphify explain "<concept>"` / `get_node` for focused concepts. These return a scoped subgraph, usually much smaller than `GRAPH_REPORT.md` or raw grep output.
-- If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
-- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context
-- After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost)
+## ⛔ NEVER
+
+- Skip graphify before using `grep_search`, `list_dir`, or `view_file` for research → **FORBIDDEN**
+- End a session after code changes without running `graphify update .` → **FORBIDDEN**
+
+## ✅ ALWAYS
+
+**Before any research** — finding files, understanding classes/modules, exploring architecture, locating features — run first:
+
+```
+graphify query "<question>"    # general question
+graphify path "<A>" "<B>"      # relationship between two components
+graphify explain "<concept>"   # focused concept lookup
+```
+
+- If `graphify-out/wiki/index.md` exists → use the wiki instead of raw files
+- If `graphify-out/GRAPH_REPORT.md` exists → use it for broad architecture review
+
+**After any code change** (create / edit / delete):
+
+```
+graphify update .
+```

@@ -56,32 +56,37 @@ public class Workspace : BaseEntity
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(newName);
         Name = newName;
-        UpdatedAt = DateTime.UtcNow;
     }
 
     public void MakeTemporal(DateTime? expiresAtUtc)
     {
         IsTemporal = true;
         ExpiresAtUtc = expiresAtUtc;
-        UpdatedAt = DateTime.UtcNow;
     }
 
     public void MakePermanent()
     {
         IsTemporal = false;
         ExpiresAtUtc = null;
-        UpdatedAt = DateTime.UtcNow;
     }
 
     public void UpdateIconName(string? newIconName)
     {
         IconName = newIconName;
-        UpdatedAt = DateTime.UtcNow;
     }
 
     public void UpdateExpiration(DateTime? newExpiration)
     {
         ExpiresAtUtc = newExpiration;
-        UpdatedAt = DateTime.UtcNow;
+    }
+
+    public void Update(string name, bool isTemporal, DateTime? expiresAtUtc, string? iconName)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(name);
+        
+        Name = name;
+        IsTemporal = isTemporal;
+        ExpiresAtUtc = expiresAtUtc;
+        IconName = iconName;
     }
 }

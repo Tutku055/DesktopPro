@@ -28,7 +28,8 @@ namespace DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces
                     w.IconName,
                     w.IsTemporal,
                     w.ExpiresAtUtc,
-                    w.CreatedAt
+                    w.CreatedAt,
+                    w.UpdatedAt
                 ))
                 .ToListAsync(cancellationToken);
         }

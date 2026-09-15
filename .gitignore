@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Graphify
+graphify-out/
+
+# AI Agent configuration (local only)
+.agents/
