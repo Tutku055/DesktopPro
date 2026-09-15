@@ -72,22 +72,23 @@ export const WorkspaceItem = ({ workspace, isSelected, onSelect }: WorkspaceItem
             <button 
               type="button" 
               title="Workspace Options"
-              className="p-1 rounded text-sidebar-foreground/50 hover:bg-sidebar-hover hover:text-sidebar-foreground transition-colors cursor-pointer outline-none"
+              className="p-1 rounded text-sidebar-foreground/50 hover:bg-sidebar-hover hover:text-sidebar-foreground transition-colors cursor-pointer outline-none focus:outline-none focus-visible:outline-none ring-0 focus-visible:ring-0"
             >
               <DotsThreeVertical size={16} weight="bold" />
             </button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="w-36">
+          <DropdownMenuContent align="end" className="w-36 outline-none focus:outline-none">
             <DropdownMenuItem 
               onClick={() => setUpdateOpen(true)}
-              className="text-xs cursor-pointer gap-2"
+              className="text-xs cursor-pointer gap-2 outline-none focus:outline-none"
             >
               <PencilSimple size={14} />
               Update
             </DropdownMenuItem>
             <DropdownMenuItem 
               onClick={() => setDeleteOpen(true)}
-              className="text-xs cursor-pointer text-destructive focus:text-destructive focus:bg-destructive/10 gap-2"
+              variant="destructive"
+              className="text-xs cursor-pointer gap-2 outline-none focus:outline-none"
             >
               <Trash size={14} />
               Delete
