@@ -24,6 +24,16 @@ export const WorkspaceItem = ({ workspace, isSelected, onSelect }: WorkspaceItem
   const displayName = workspace.name || (workspace as any).title || 'Untitled Workspace';
   const IconComponent = getWorkspaceIcon(workspace.iconName);
 
+  const formattedExpiry = workspace.expiresAtUtc
+    ? new Intl.DateTimeFormat('en-GB', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+      }).format(new Date(workspace.expiresAtUtc))
+    : '';
+
   return (
     <div className="relative group flex items-center w-full">
       <button
@@ -49,7 +59,7 @@ export const WorkspaceItem = ({ workspace, isSelected, onSelect }: WorkspaceItem
 
         {workspace.isTemporal && (
           <span
-            title="Temporal Workspace"
+            title={formattedExpiry ? `Expires: ${formattedExpiry}` : 'Temporal Workspace'}
             className={`shrink-0 transition-colors ${
               isSelected
                 ? 'text-sidebar-primary'

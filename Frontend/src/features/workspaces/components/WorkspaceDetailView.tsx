@@ -15,13 +15,13 @@ function formatExpirationDate(dateStr?: string | null): string {
   try {
     const d = new Date(dateStr);
     if (isNaN(d.getTime())) return dateStr;
-    return d.toLocaleString(undefined, {
-      year: 'numeric',
-      month: 'short',
+    return new Intl.DateTimeFormat('en-GB', {
       day: 'numeric',
+      month: 'long',
+      year: 'numeric',
       hour: '2-digit',
       minute: '2-digit',
-    });
+    }).format(d);
   } catch {
     return dateStr;
   }
@@ -120,7 +120,7 @@ export const WorkspaceDetailView = ({ workspaceId }: WorkspaceDetailViewProps) =
               <div className="space-y-1">
                 <div className="flex items-center gap-1.5 font-semibold text-foreground">
                   <ClockCountdownIcon size={15} weight="bold" className="text-foreground/80" />
-                  <span>Temporal</span>
+                  <span>Temporal Workspace</span>
                 </div>
                 <div className="text-[11px] text-muted-foreground">
                   <span className="font-medium text-foreground">Expires: </span>

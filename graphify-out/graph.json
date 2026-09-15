@@ -34,7 +34,7 @@
       "metadata": {
         "namespace": "DesktopPro.Persistence.Interceptors",
         "scope_chain": [
-          "s189"
+          "s196"
         ]
       },
       "norm_label": "auditableentityinterceptor",
@@ -574,7 +574,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Commands.UpdateWorkspace",
         "scope_chain": [
-          "s85"
+          "s89"
         ]
       },
       "norm_label": "updateworkspacecommand",
@@ -593,7 +593,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Commands.UpdateWorkspace",
         "scope_chain": [
-          "s203"
+          "s211"
         ]
       },
       "norm_label": "updateworkspacecommandhandler",
@@ -612,7 +612,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Commands.UpdateWorkspace",
         "scope_chain": [
-          "s25"
+          "s27"
         ]
       },
       "norm_label": "updateworkspacecommandvalidator",
@@ -631,7 +631,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.DTOs",
         "scope_chain": [
-          "s15"
+          "s17"
         ]
       },
       "norm_label": "updateworkspacedto",
@@ -707,7 +707,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Queries.SearchWorkspaces",
         "scope_chain": [
-          "s71"
+          "s74"
         ]
       },
       "norm_label": "searchworkspacesquery",
@@ -726,7 +726,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Queries.SearchWorkspaces",
         "scope_chain": [
-          "s156"
+          "s161"
         ]
       },
       "norm_label": "searchworkspacesqueryhandler",
@@ -840,7 +840,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Commands.DeleteWorkspace",
         "scope_chain": [
-          "s30"
+          "s33"
         ]
       },
       "norm_label": "deleteworkspacecommand",
@@ -859,7 +859,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Commands.DeleteWorkspace",
         "scope_chain": [
-          "s203"
+          "s211"
         ]
       },
       "norm_label": "deleteworkspacecommandhandler",
@@ -878,7 +878,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Commands.DeleteWorkspace",
         "scope_chain": [
-          "s25"
+          "s27"
         ]
       },
       "norm_label": "deleteworkspacecommandvalidator",
@@ -929,7 +929,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Queries.SearchWorkspaces",
         "scope_chain": [
-          "s25"
+          "s27"
         ]
       },
       "norm_label": "searchworkspacesqueryvalidator",
@@ -1178,7 +1178,7 @@
       "metadata": {
         "namespace": "DesktopPro.Persistence.Interceptors",
         "scope_chain": [
-          "s189"
+          "s196"
         ]
       },
       "norm_label": ".savingchanges()",
@@ -1196,7 +1196,7 @@
       "metadata": {
         "namespace": "DesktopPro.Persistence.Interceptors",
         "scope_chain": [
-          "s189"
+          "s196"
         ]
       },
       "norm_label": ".savingchangesasync()",
@@ -1214,7 +1214,7 @@
       "metadata": {
         "namespace": "DesktopPro.Persistence.Interceptors",
         "scope_chain": [
-          "s189"
+          "s196"
         ]
       },
       "norm_label": ".updateentities()",
@@ -2746,7 +2746,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Commands.UpdateWorkspace",
         "scope_chain": [
-          "s203"
+          "s211"
         ]
       },
       "norm_label": ".handle()",
@@ -2782,7 +2782,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Queries.SearchWorkspaces",
         "scope_chain": [
-          "s156"
+          "s161"
         ]
       },
       "norm_label": ".handle()",
@@ -3016,7 +3016,7 @@
       "metadata": {
         "namespace": "DesktopPro.Application.Features.Workspaces.Commands.DeleteWorkspace",
         "scope_chain": [
-          "s203"
+          "s211"
         ]
       },
       "norm_label": ".handle()",
@@ -8046,8 +8046,8 @@
       "community_name": "Frontend Architecture & Development Rules",
       "file_type": "document",
       "frontmatter": {
-        "trigger": "always_on",
-        "description": "Frontend architecture rules \u2014 React 19, Vite, TypeScript, TailwindCSS v3, shadcn/ui, TanStack Query, Axios, feature-slice structure."
+        "trigger": "model_decision",
+        "description": "&gt;-"
       },
       "node_kind": "page",
       "norm_label": "frontend.md",
@@ -8064,7 +8064,7 @@
       "node_kind": "heading",
       "norm_label": "\u2705 always",
       "source_file": ".agents/rules/frontend.md",
-      "source_location": "L21"
+      "source_location": "L25"
     },
     {
       "id": "agents_rules_frontend_frontend_architecture_development_rules",
@@ -8076,7 +8076,7 @@
       "node_kind": "heading",
       "norm_label": "frontend architecture & development rules",
       "source_file": ".agents/rules/frontend.md",
-      "source_location": "L6"
+      "source_location": "L10"
     },
     {
       "id": "agents_rules_frontend_never",
@@ -8088,7 +8088,7 @@
       "node_kind": "heading",
       "norm_label": "\u26d4 never",
       "source_file": ".agents/rules/frontend.md",
-      "source_location": "L10"
+      "source_location": "L14"
     },
     {
       "id": "agents_rules_frontend_stack",
@@ -8100,7 +8100,7 @@
       "node_kind": "heading",
       "norm_label": "stack",
       "source_file": ".agents/rules/frontend.md",
-      "source_location": "L32"
+      "source_location": "L36"
     },
     {
       "id": "agents_rules_frontend_theming",
@@ -8112,7 +8112,7 @@
       "node_kind": "heading",
       "norm_label": "theming",
       "source_file": ".agents/rules/frontend.md",
-      "source_location": "L44"
+      "source_location": "L48"
     },
     {
       "id": "agents_rules_backend",
@@ -8122,8 +8122,8 @@
       "community_name": "Backend Architecture & Development Rules",
       "file_type": "document",
       "frontmatter": {
-        "trigger": "always_on",
-        "description": "Backend Clean Architecture, CQRS (MediatR), Rich Domain Model, FluentValidation, and EF Core configuration rules."
+        "trigger": "model_decision",
+        "description": "&gt;-"
       },
       "node_kind": "page",
       "norm_label": "backend.md",
@@ -8140,7 +8140,7 @@
       "node_kind": "heading",
       "norm_label": "\u2705 always",
       "source_file": ".agents/rules/backend.md",
-      "source_location": "L20"
+      "source_location": "L24"
     },
     {
       "id": "agents_rules_backend_backend_architecture_development_rules",
@@ -8152,7 +8152,7 @@
       "node_kind": "heading",
       "norm_label": "backend architecture & development rules",
       "source_file": ".agents/rules/backend.md",
-      "source_location": "L6"
+      "source_location": "L10"
     },
     {
       "id": "agents_rules_backend_layer_dependencies",
@@ -8164,7 +8164,7 @@
       "node_kind": "heading",
       "norm_label": "layer dependencies",
       "source_file": ".agents/rules/backend.md",
-      "source_location": "L32"
+      "source_location": "L36"
     },
     {
       "id": "agents_rules_backend_never",
@@ -8176,7 +8176,7 @@
       "node_kind": "heading",
       "norm_label": "\u26d4 never",
       "source_file": ".agents/rules/backend.md",
-      "source_location": "L10"
+      "source_location": "L14"
     },
     {
       "id": "frontend_src_components_ui_tooltip",
@@ -18032,7 +18032,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".agents/rules/backend.md",
-      "source_location": "L6",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -18043,7 +18043,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".agents/rules/backend.md",
-      "source_location": "L10",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -18054,7 +18054,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".agents/rules/backend.md",
-      "source_location": "L20",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -18065,7 +18065,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".agents/rules/backend.md",
-      "source_location": "L32",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -18076,7 +18076,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".agents/rules/frontend.md",
-      "source_location": "L6",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -18087,7 +18087,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".agents/rules/frontend.md",
-      "source_location": "L10",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -18098,7 +18098,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".agents/rules/frontend.md",
-      "source_location": "L21",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -18109,7 +18109,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".agents/rules/frontend.md",
-      "source_location": "L32",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -18120,7 +18120,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".agents/rules/frontend.md",
-      "source_location": "L44",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -22688,5 +22688,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0125d45560aed1869f9cbdd23220272ec717fa6a"
+  "built_at_commit": "a99322d1a0073e61edaa883375f55c216bd482fe"
 }
