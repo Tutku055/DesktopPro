@@ -222,9 +222,9 @@
     "semantic_hash": ""
   },
   "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs": {
-    "mtime": 1789477909.551519,
-    "seen": 1789478036.0120363,
-    "ast_hash": "e79811bdbfde32047605ce11c3906e94",
+    "mtime": 1789478972.0781019,
+    "seen": 1789479100.0366213,
+    "ast_hash": "003b4c21f6ea3d3fe791ed711e849c56",
     "semantic_hash": ""
   },
   "Backend/src/Presentation/DesktopPro.WebApi/DesktopPro.WebApi.csproj": {
@@ -372,9 +372,9 @@
     "semantic_hash": ""
   },
   "Frontend/src/features/workspaces/components/WorkspaceItem.tsx": {
-    "mtime": 1789478014.8230915,
-    "seen": 1789478036.0120547,
-    "ast_hash": "63c40a0ec74e24dd139fcb63a3b0187b",
+    "mtime": 1789479076.0386617,
+    "seen": 1789479100.0366433,
+    "ast_hash": "7b3ffd692bd3baa6bd8c5eb4eeb3a1ea",
     "semantic_hash": ""
   },
   "Frontend/src/features/workspaces/components/WorkspaceList.tsx": {
@@ -654,15 +654,57 @@
     "semantic_hash": ""
   },
   "Frontend/src/features/workspaces/components/UpdateWorkspaceDialog.tsx": {
-    "mtime": 1789478251.3215868,
-    "seen": 1789478262.461857,
-    "ast_hash": "0ba478262a0ab4e9a49112f38e88f5fe",
+    "mtime": 1789479059.7748892,
+    "seen": 1789479100.0366423,
+    "ast_hash": "8890b91129c4fc4d79dc371622306acc",
     "semantic_hash": ""
   },
   "Backend/src/Infrastructure/DesktopPro.Persistence/Interceptors/AuditableEntityInterceptor.cs": {
     "mtime": 1789478240.2536695,
     "seen": 1789478262.4618323,
     "ast_hash": "f79b3854544c8b180f647c9a7b6ef638",
+    "semantic_hash": ""
+  },
+  "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Commands/DeleteWorkspace/DeleteWorkspaceCommand.cs": {
+    "mtime": 1789478965.4213939,
+    "seen": 1789479100.03659,
+    "ast_hash": "e3cfe7e422ea11ec1d376cbc3e7eaec8",
+    "semantic_hash": ""
+  },
+  "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Commands/DeleteWorkspace/DeleteWorkspaceCommandHandler.cs": {
+    "mtime": 1789478968.0287547,
+    "seen": 1789479100.036591,
+    "ast_hash": "e59d791beec1314c49d47ea38647c8b4",
+    "semantic_hash": ""
+  },
+  "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Commands/DeleteWorkspace/DeleteWorkspaceCommandValidator.cs": {
+    "mtime": 1789478970.055383,
+    "seen": 1789479100.0365918,
+    "ast_hash": "f63311110b4b869f67e4549c7a769141",
+    "semantic_hash": ""
+  },
+  "Frontend/src/components/ui/alert-dialog.tsx": {
+    "mtime": 1789479017.1525948,
+    "seen": 1789479100.0366328,
+    "ast_hash": "92eb21908048440b7f1cd48b05d589fc",
+    "semantic_hash": ""
+  },
+  "Frontend/src/components/ui/dropdown-menu.tsx": {
+    "mtime": 1789478997.9558525,
+    "seen": 1789479100.0366347,
+    "ast_hash": "15b6910c901b73bab731783810d8ea9a",
+    "semantic_hash": ""
+  },
+  "Frontend/src/features/workspaces/api/useDeleteWorkspace.ts": {
+    "mtime": 1789479000.145093,
+    "seen": 1789479100.0366385,
+    "ast_hash": "66ee7693f38e800b37fed6c1dcae2b9b",
+    "semantic_hash": ""
+  },
+  "Frontend/src/features/workspaces/components/DeleteWorkspaceDialog.tsx": {
+    "mtime": 1789479044.0836108,
+    "seen": 1789479100.0366418,
+    "ast_hash": "669f4ddcf3ea7c930d72890abe8e0103",
     "semantic_hash": ""
   }
 }

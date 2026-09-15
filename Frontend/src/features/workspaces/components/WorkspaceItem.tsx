@@ -1,7 +1,15 @@
-import { ClockCountdown, DotsThreeVertical } from '@phosphor-icons/react';
+import { useState } from 'react';
+import { ClockCountdown, DotsThreeVertical, PencilSimple, Trash } from '@phosphor-icons/react';
 import type { WorkspaceDto } from '../types/workspace.types';
 import { getWorkspaceIcon } from '../utils/workspaceIcons';
 import { UpdateWorkspaceDialog } from './UpdateWorkspaceDialog';
+import { DeleteWorkspaceDialog } from './DeleteWorkspaceDialog';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 interface WorkspaceItemProps {
   workspace: WorkspaceDto;
@@ -10,6 +18,9 @@ interface WorkspaceItemProps {
 }
 
 export const WorkspaceItem = ({ workspace, isSelected, onSelect }: WorkspaceItemProps) => {
+  const [updateOpen, setUpdateOpen] = useState(false);
+  const [deleteOpen, setDeleteOpen] = useState(false);
+
   const displayName = workspace.name || (workspace as any).title || 'Untitled Workspace';
   const IconComponent = getWorkspaceIcon(workspace.iconName);
 
@@ -56,16 +67,45 @@ export const WorkspaceItem = ({ workspace, isSelected, onSelect }: WorkspaceItem
         className="absolute right-1 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity"
         onClick={(e) => e.stopPropagation()}
       >
-        <UpdateWorkspaceDialog workspace={workspace}>
-          <button 
-            type="button" 
-            title="Update Workspace"
-            className="p-1 rounded text-sidebar-foreground/50 hover:bg-sidebar-hover hover:text-sidebar-foreground transition-colors cursor-pointer"
-          >
-            <DotsThreeVertical size={16} weight="bold" />
-          </button>
-        </UpdateWorkspaceDialog>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <button 
+              type="button" 
+              title="Workspace Options"
+              className="p-1 rounded text-sidebar-foreground/50 hover:bg-sidebar-hover hover:text-sidebar-foreground transition-colors cursor-pointer outline-none"
+            >
+              <DotsThreeVertical size={16} weight="bold" />
+            </button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="w-36">
+            <DropdownMenuItem 
+              onClick={() => setUpdateOpen(true)}
+              className="text-xs cursor-pointer gap-2"
+            >
+              <PencilSimple size={14} />
+              Update
+            </DropdownMenuItem>
+            <DropdownMenuItem 
+              onClick={() => setDeleteOpen(true)}
+              className="text-xs cursor-pointer text-destructive focus:text-destructive focus:bg-destructive/10 gap-2"
+            >
+              <Trash size={14} />
+              Delete
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
+
+      <UpdateWorkspaceDialog 
+        workspace={workspace} 
+        open={updateOpen} 
+        onOpenChange={setUpdateOpen} 
+      />
+      <DeleteWorkspaceDialog 
+        workspace={workspace} 
+        open={deleteOpen} 
+        onOpenChange={setDeleteOpen} 
+      />
     </div>
   );
 };

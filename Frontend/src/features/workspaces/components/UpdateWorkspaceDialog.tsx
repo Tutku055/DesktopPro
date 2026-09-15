@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { CircleNotchIcon } from '@phosphor-icons/react';
 import { useUpdateWorkspace } from '../api/useUpdateWorkspace';
 import { Button } from '@/components/ui/button';
@@ -16,11 +16,11 @@ import type { WorkspaceDto } from '../types/workspace.types';
 
 interface UpdateWorkspaceDialogProps {
   workspace: WorkspaceDto;
-  children: React.ReactNode;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
 }
 
-export const UpdateWorkspaceDialog = ({ workspace, children }: UpdateWorkspaceDialogProps) => {
-  const [open, setOpen] = useState(false);
+export const UpdateWorkspaceDialog = ({ workspace, open, onOpenChange }: UpdateWorkspaceDialogProps) => {
   const [name, setName] = useState(workspace.name);
   const [selectedIcon, setSelectedIcon] = useState<string>(workspace.iconName || DEFAULT_WORKSPACE_ICON);
   const [isTemporal, setIsTemporal] = useState(workspace.isTemporal);
@@ -62,7 +62,7 @@ export const UpdateWorkspaceDialog = ({ workspace, children }: UpdateWorkspaceDi
         iconName: selectedIcon,
       });
 
-      setOpen(false);
+      onOpenChange(false);
     } catch {
       // API errors are handled centrally
     }
@@ -79,11 +79,7 @@ export const UpdateWorkspaceDialog = ({ workspace, children }: UpdateWorkspaceDi
     : 'N/A';
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        {children}
-      </DialogTrigger>
-
+    <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[380px]" onClick={(e) => e.stopPropagation()}>
         <DialogHeader>
           <DialogTitle className="text-sm font-heading font-semibold">Update Workspace</DialogTitle>
@@ -178,7 +174,7 @@ export const UpdateWorkspaceDialog = ({ workspace, children }: UpdateWorkspaceDi
                 type="button"
                 variant="ghost"
                 size="sm"
-                onClick={() => setOpen(false)}
+                onClick={() => onOpenChange(false)}
                 className="h-8 text-xs rounded-md cursor-pointer text-muted-foreground hover:text-foreground"
               >
                 Cancel

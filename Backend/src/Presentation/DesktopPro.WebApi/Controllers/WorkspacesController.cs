@@ -1,5 +1,6 @@
 using DesktopPro.Application.Features.Workspaces.Commands.CreateWorkspace;
 using DesktopPro.Application.Features.Workspaces.Commands.UpdateWorkspace;
+using DesktopPro.Application.Features.Workspaces.Commands.DeleteWorkspace;
 using DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaces;
 using DesktopPro.Application.Features.Workspaces.Queries.GetWorkspaceById;
 using DesktopPro.Application.Features.Workspaces.Queries.SearchWorkspaces;
@@ -47,6 +48,21 @@ public sealed class WorkspacesController: ControllerBase
         var currentUserId = Guid.Parse("A1B2C3D4-E5F6-7890-ABCD-EF1234567890");
         
         var command = new UpdateWorkspaceCommand(id, currentUserId, updateWorkspaceDto);
+        await _sender.Send(command, cancellationToken);
+        return NoContent();
+    }
+
+    [HttpDelete("{id:guid}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> DeleteWorkspaceAsync(
+        [FromRoute] Guid id,
+        CancellationToken cancellationToken)
+    {
+        var currentUserId = Guid.Parse("A1B2C3D4-E5F6-7890-ABCD-EF1234567890");
+        
+        var command = new DeleteWorkspaceCommand(id, currentUserId);
         await _sender.Send(command, cancellationToken);
         return NoContent();
     }
