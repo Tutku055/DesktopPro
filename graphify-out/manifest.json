@@ -222,9 +222,9 @@
     "semantic_hash": ""
   },
   "Backend/src/Presentation/DesktopPro.WebApi/Controllers/WorkspacesController.cs": {
-    "mtime": 1789231546.6854632,
-    "seen": 1789233392.1044452,
-    "ast_hash": "3519e166da655b26db1f9237ac925270",
+    "mtime": 1789477048.5078561,
+    "seen": 1789477068.8865256,
+    "ast_hash": "b132f2ef29607241664bedd360654155",
     "semantic_hash": ""
   },
   "Backend/src/Presentation/DesktopPro.WebApi/DesktopPro.WebApi.csproj": {
@@ -300,9 +300,9 @@
     "semantic_hash": "43f03bf7a4fa3e37073473c2997e75a6"
   },
   "Frontend/src/components/layout/AppSidebar.tsx": {
-    "mtime": 1789232865.079715,
-    "seen": 1789233392.1044533,
-    "ast_hash": "79cf8b32f3de74c5a9bd99875cae211d",
+    "mtime": 1789477056.6883724,
+    "seen": 1789477068.8865342,
+    "ast_hash": "2539c1dba336983626aff4948e476743",
     "semantic_hash": ""
   },
   "Frontend/src/components/layout/MainLayout.tsx": {
@@ -360,10 +360,10 @@
     "semantic_hash": "9c8ee530606d48f7eef3a1bab8647c71"
   },
   "Frontend/src/features/workspaces/api/useWorkspaces.ts": {
-    "mtime": 1789221944.2346895,
-    "seen": 1789233392.1044607,
-    "ast_hash": "314d75da31f6d7f605ff75535c4a616f",
-    "semantic_hash": "314d75da31f6d7f605ff75535c4a616f"
+    "mtime": 1789477052.6482286,
+    "seen": 1789477068.8865423,
+    "ast_hash": "4d8461db81ac99c47fd13eb150a182fd",
+    "semantic_hash": ""
   },
   "Frontend/src/features/workspaces/components/CreateWorkspaceDialog.tsx": {
     "mtime": 1789232859.8823445,
@@ -378,10 +378,10 @@
     "semantic_hash": ""
   },
   "Frontend/src/features/workspaces/components/WorkspaceList.tsx": {
-    "mtime": 1789221944.2346895,
-    "seen": 1789233392.104463,
-    "ast_hash": "c7f76ae0d0a242679c7f568a8c50d587",
-    "semantic_hash": "c7f76ae0d0a242679c7f568a8c50d587"
+    "mtime": 1789477054.6671944,
+    "seen": 1789477068.886545,
+    "ast_hash": "590c6fc26dd7c74504a913c7166aab15",
+    "semantic_hash": ""
   },
   "Frontend/src/features/workspaces/types/workspace.types.ts": {
     "mtime": 1789233426.862478,
@@ -450,10 +450,10 @@
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
-    "mtime": 1789221944.2071583,
-    "seen": 1789233392.1044705,
-    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
-    "semantic_hash": "a0e4d192b9e2e17256124dbfc8e24e6a"
+    "mtime": 1789476797.677116,
+    "seen": 1789477068.886554,
+    "ast_hash": "4cffc77ab8f1e072ec6a271b4330cd3a",
+    "semantic_hash": ""
   },
   ".agents/workflows/graphify.md": {
     "mtime": 1789221944.207728,
@@ -569,12 +569,6 @@
     "ast_hash": "541bc10cfb3193a32bc64926ffdeece8",
     "semantic_hash": ""
   },
-  "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/etWorkspaceByIdQueryHandler.cs": {
-    "mtime": 1789231330.4920652,
-    "seen": 1789233392.1044242,
-    "ast_hash": "dad2dcb6ced01d33e9368b121dc6931a",
-    "semantic_hash": ""
-  },
   "Frontend/src/components/ui/tooltip.tsx": {
     "mtime": 1789232756.4227633,
     "seen": 1789233392.1044583,
@@ -588,9 +582,45 @@
     "semantic_hash": ""
   },
   "Frontend/src/features/workspaces/components/WorkspaceDetailView.tsx": {
-    "mtime": 1789234443.3316753,
-    "seen": 1789234455.954962,
-    "ast_hash": "15eccc7b74c4c0a50897a4011601f875",
+    "mtime": 1789234588.6247835,
+    "seen": 1789235890.4858484,
+    "ast_hash": "96b7e493b9a48f8962e5113847835d63",
+    "semantic_hash": ""
+  },
+  "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/GetWorkspaceById/GetWorkspaceByIdQueryHandler.cs": {
+    "mtime": 1789231330.4920652,
+    "seen": 1789235890.4858084,
+    "ast_hash": "dad2dcb6ced01d33e9368b121dc6931a",
+    "semantic_hash": ""
+  },
+  "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/SearchWorkspaces/SearchWorkspacesQuery.cs": {
+    "mtime": 1789477041.1746333,
+    "seen": 1789477068.8865042,
+    "ast_hash": "5ab5292f73a5a27fa0f07d6e49dfbe42",
+    "semantic_hash": ""
+  },
+  "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/SearchWorkspaces/SearchWorkspacesQueryHandler.cs": {
+    "mtime": 1789477043.943632,
+    "seen": 1789477068.8865051,
+    "ast_hash": "db63f4da452c54ab6e4747a0e79de7c6",
+    "semantic_hash": ""
+  },
+  "Backend/src/Core/DesktopPro.Application/Features/Workspaces/Queries/SearchWorkspaces/SearchWorkspacesQueryValidator.cs": {
+    "mtime": 1789477046.4737055,
+    "seen": 1789477068.8865058,
+    "ast_hash": "8772e176919fccbe892da27c4ddcef47",
+    "semantic_hash": ""
+  },
+  ".agents/rules/backend.md": {
+    "mtime": 1789476788.2317822,
+    "seen": 1789477068.8865528,
+    "ast_hash": "8d7f748d7b4a705f8cc0ceeabddd8969",
+    "semantic_hash": ""
+  },
+  ".agents/rules/frontend.md": {
+    "mtime": 1789476795.6577609,
+    "seen": 1789477068.8865533,
+    "ast_hash": "d30d222d79fb5ee3d6064353dbe86b57",
     "semantic_hash": ""
   }
 }
