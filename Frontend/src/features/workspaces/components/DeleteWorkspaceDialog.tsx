@@ -37,7 +37,11 @@ export const DeleteWorkspaceDialog = ({
 
   return (
     <AlertDialog open={open} onOpenChange={onOpenChange}>
-      <AlertDialogContent className="sm:max-w-[425px]" onClick={(e) => e.stopPropagation()}>
+      <AlertDialogContent 
+        className="sm:max-w-[425px]" 
+        onClick={(e) => e.stopPropagation()}
+        onOpenAutoFocus={(e) => e.preventDefault()}
+      >
         <AlertDialogHeader>
           <AlertDialogTitle className="font-heading font-semibold text-destructive">
             Delete Workspace
@@ -56,7 +60,8 @@ export const DeleteWorkspaceDialog = ({
               handleDelete();
             }}
             disabled={deleteMutation.isPending}
-            className="h-8 text-xs bg-destructive text-destructive-foreground hover:bg-destructive/90 cursor-pointer"
+            variant="destructive"
+            className="h-8 text-xs cursor-pointer"
           >
             {deleteMutation.isPending ? (
               <CircleNotchIcon size={14} className="animate-spin mr-1.5" />
